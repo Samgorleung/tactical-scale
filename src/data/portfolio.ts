@@ -37,6 +37,7 @@ export interface PortfolioItem {
   accentColor: 'sky' | 'purple' | 'rose';
   highlightMetric?: string;
   organizationOrEvent?: string;
+  videoUrl?: string;
 }
 
 export const FILTER_TABS: {
@@ -48,13 +49,13 @@ export const FILTER_TABS: {
   {
     id: 'all',
     label: 'All Portfolio & Mandates',
-    shortLabel: 'All (11)',
+    shortLabel: 'All (12)',
     description: 'Complete track record across applied AI systems and tier-one enterprise transformation.',
   },
   {
     id: 'ai-systems',
     label: 'Applied AI Systems & Technical Builds',
-    shortLabel: 'Part A: Applied AI (7)',
+    shortLabel: 'Part A: Applied AI (8)',
     description: 'Production-grade agentic workflows, multimodal applications, and AI coaching engagements.',
   },
   {
@@ -79,7 +80,7 @@ export const FILTER_TABS: {
     id: 'multimodal-web',
     label: 'Multimodal & GenMedia Systems',
     shortLabel: 'Multimodal & GenMedia',
-    description: 'Real-time voice/video agents, multi-AI storyboarding pipelines, and interactive web applications.',
+    description: 'Real-time voice/video agents, serverless video verification pipelines, and interactive web applications.',
   },
 ];
 
@@ -92,7 +93,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     track: 'ai-systems',
     trackLabel: 'Part A • Applied AI Build',
     role: 'Co-Creator & Lead Architect',
-    collaborator: 'William Tam',
+    collaborator: 'Technical Engineering Partner',
     category: 'AI Product & Agile Governance',
     filterGroups: ['all', 'ai-systems', 'agile-advisory'],
     techOrSectorLabel: 'Tech Stack',
@@ -101,6 +102,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'SprintClarify enforces structured engineering planning before code generation. The platform ingests high-level product requirements and decomposes them into granular, sprint-ready user stories complete with acceptance criteria, dependency graphs, and technical risk flags. By enforcing strict JSON schema outputs from Gemini models, it eliminates vague backlog items and accelerates sprint planning for agile delivery teams.',
     accentColor: 'sky',
     highlightMetric: 'Schema-Enforced Sprint Decomposition & Dependency Graphs',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'guardian-ai',
@@ -118,6 +120,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     accentColor: 'rose',
     organizationOrEvent: '#AllThingsAgentic Hackathon',
     highlightMetric: 'Autonomous Multi-Model Security & Compliance Auditing on Cloud Run',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'echohire',
@@ -126,7 +129,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     track: 'ai-systems',
     trackLabel: 'Part A • Applied AI Build',
     role: 'Co-Creator & AI Systems Lead',
-    collaborator: 'William Tam',
+    collaborator: 'Technical Engineering Partner',
     category: 'Real-Time Multimodal AI',
     filterGroups: ['all', 'ai-systems', 'multimodal-web'],
     techOrSectorLabel: 'Tech Stack',
@@ -136,6 +139,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     accentColor: 'purple',
     organizationOrEvent: 'Google Gemini Live Agent Challenge',
     highlightMetric: 'Low-Latency Bidirectional Voice & Competency Rubric Evaluation',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'dual-market-compliance',
@@ -152,6 +156,25 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'A specialized analytical platform designed to cross-reference corporate governance disclosures and regulatory requirements across dual-market jurisdictions. The tool streamlines compliance verification by extracting key statutory obligations and highlighting discrepancies across complex regulatory filings.',
     accentColor: 'rose',
     highlightMetric: 'Automated Dual-Jurisdiction Statutory Obligation Extraction',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  },
+  {
+    id: 'cinefact-ai',
+    title: 'CineFact AI',
+    subtitle: 'Serverless Video Intelligence & Multimodal Claim Verification Pipeline',
+    track: 'ai-systems',
+    trackLabel: 'Part A • Applied AI Build',
+    role: 'Co-Creator & Lead Architect',
+    collaborator: 'Technical Engineering Partner',
+    category: 'Real-Time Multimodal AI',
+    filterGroups: ['all', 'ai-systems', 'multimodal-web'],
+    techOrSectorLabel: 'Tech Stack',
+    techStack: ['Gemini API', 'Serverless Video Intelligence', 'Firestore', 'React', 'TypeScript'],
+    overview:
+      'A high-throughput serverless multimodal verification engine that analyzes video streams in real time, extracting factual assertions and cross-referencing them against authoritative knowledge bases with low-latency parallel claim verification. Designed for broadcast media verification and automated digital compliance workflows.',
+    accentColor: 'purple',
+    highlightMetric: 'Parallel Claim Extraction & Multimodal Video Verification',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'extraordinary-agents',
@@ -168,6 +191,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'A collaborative multi-AI orchestration pipeline that automates creative scriptwriting, character-consistent visual storyboarding, and video generation. The architecture separates narrative planning, visual prompt enforcement, and quality assurance across specialized agent roles to maintain visual and thematic continuity.',
     accentColor: 'purple',
     highlightMetric: 'Role-Separated Multi-Agent Narrative & Visual QA Orchestration',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'production-ai-coaching',
@@ -176,7 +200,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     track: 'ai-systems',
     trackLabel: 'Part A • Technical Advisory',
     role: 'Principal Consultant & Technical Advisor',
-    collaborator: 'William Tam (Troubleshooting Support)',
+    collaborator: 'Technical Engineering Partner',
     category: 'Technical Advisory & Production Support',
     filterGroups: ['all', 'ai-systems', 'agile-advisory'],
     techOrSectorLabel: 'Tech Stack',
@@ -185,6 +209,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Ongoing client consultancy focused on transitioning AI Studio prototypes into stable production environments. Work includes resolving deployment pipeline discrepancies, synchronizing prompt and model configurations between staging and production, and coaching internal stakeholders on sustainable self-service maintenance.',
     accentColor: 'sky',
     highlightMetric: 'Staging-to-Production Prompt Sync & Self-Service Handover',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'ai-festival-card-maker',
@@ -192,8 +217,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     subtitle: 'Culturally Tailored Generative Greeting Application',
     track: 'ai-systems',
     trackLabel: 'Part A • Applied AI Build',
-    role: 'Co-Creator',
-    collaborator: 'William Tam',
+    role: 'Co-Creator & Lead Architect',
+    collaborator: 'Technical Engineering Partner',
     category: 'Consumer Web Application',
     filterGroups: ['all', 'ai-systems', 'multimodal-web'],
     techOrSectorLabel: 'Tech Stack',
@@ -202,6 +227,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'A lightweight, high-speed web application that generates culturally tailored digital greeting cards across global festivals while preserving subject likeness. Built with a streamlined frontend and automated canvas compositing for instant sharing.',
     accentColor: 'purple',
     highlightMetric: 'Subject-Likeness Preservation & Automated HTML5 Canvas Compositing',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
 
   // Part B: Enterprise Transformation & Regulatory Delivery
@@ -227,6 +253,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     accentColor: 'sky',
     organizationOrEvent: 'United Kingdom • via TCS UK',
     highlightMetric: '100% On-Schedule Governance Gate & Audit Control Compliance',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'axa-health-claims',
@@ -249,6 +276,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     accentColor: 'purple',
     organizationOrEvent: 'Hong Kong / APAC • via TCS Hong Kong',
     highlightMetric: 'End-to-End Legacy Claims Modernization & Turnaround Acceleration',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'aia-regional-cloud',
@@ -272,11 +300,12 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     accentColor: 'rose',
     organizationOrEvent: '18 Offices, Multiple Asian Markets • via Kingviews',
     highlightMetric: '18-Office Regional Actuarial Cloud Migration to Microsoft Azure',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    id: 'seewoo-sutton-licensing',
+    id: 'uk-commercial-licensing',
     title: 'UK Commercial Licensing & AWRS Regulatory Compliance',
-    subtitle: 'Premises Licensing, HMRC AWRS & Statutory Due Diligence (SeeWoo Sutton Limited)',
+    subtitle: 'Premises Licensing, HMRC AWRS & Statutory Due Diligence (Confidential UK Operator)',
     track: 'enterprise-delivery',
     trackLabel: 'Part B • Regulatory Delivery',
     role: 'Compliance & Delivery Lead',
@@ -290,10 +319,11 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Due Diligence & Audit Trails',
     ],
     overview:
-      'Successfully managed complex UK statutory applications, including local authority Premises Licenses and HMRC Alcohol Wholesaler Registration Scheme (AWRS) compliance. Prepared comprehensive operating schedules, due diligence frameworks, and audit trails to secure full regulatory approval.',
+      'Successfully managed complex UK statutory applications, including local authority Premises Licenses and HMRC Alcohol Wholesaler Registration Scheme (AWRS) compliance for a Confidential UK Commercial & Hospitality Operator. Prepared comprehensive operating schedules, due diligence frameworks, and audit trails to secure full regulatory approval.',
     accentColor: 'sky',
-    organizationOrEvent: 'Greater London, UK • SeeWoo Sutton Limited',
+    organizationOrEvent: 'Greater London, UK • Confidential UK Commercial & Hospitality Operator',
     highlightMetric: 'Full UK Local Authority & HMRC AWRS Regulatory Approval Secured',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
 ];
 
@@ -341,7 +371,7 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     days90:
       'Full integration into operational workflows with automated compliance auditing, CI/CD pipelines, and team handover.',
     proof:
-      'Engineering Proof: Architected SprintClarify (Gemini 3.8 Flash + React 19), GuardianAI (Gemma 4 + Gemini 3.7 Flash on Cloud Run), and EchoHire (Gemini 3.1 Pro + 2.5 Live).',
+      'Engineering Proof: Architected SprintClarify (Gemini 3.8 Flash + React 19), GuardianAI (Gemma 4 + Gemini 3.7 Flash on Cloud Run), CineFact AI (Serverless Video Intelligence), and EchoHire (Gemini 3.1 Pro + 2.5 Live).',
   },
   {
     id: 'ai-coaching-sync',
@@ -373,6 +403,6 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     days90:
       'Formal audit trail verification, regulatory authority submission, and 100% on-schedule compliance sign-off.',
     proof:
-      'Compliance Proof: Secured full UK Premises License & HMRC AWRS approval for SeeWoo Sutton Limited, cleared Tier-1 UK Exchange risk gates, and built Dual-Market Compliance Analytics.',
+      'Compliance Proof: Secured full UK Premises License & HMRC AWRS approval for a Confidential UK Commercial & Hospitality Operator, cleared Tier-1 UK Exchange risk gates, and built Dual-Market Compliance Analytics.',
   },
 ];

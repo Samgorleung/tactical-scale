@@ -5,7 +5,7 @@
 * **Primary Domain:** tactical-scale.com
 * **Trading Structure:** Sam Leung T/A Tactical Scale (Sole Trader transitioning to UK Limited Company)
 * **Principal Consultant:** Tat Shun Leung (Sam Leung), PMP, DASSM
-* **Technical Partner & Collaborator:** William Tam
+* **Collaborative Delivery Model:** Principal-led delivery supported by specialized Technical Engineering Partners
 * **Location:** Greater London, United Kingdom
 
 ## 2. Executive Positioning & Value Proposition

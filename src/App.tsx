@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   Mail,
   Calendar,
@@ -22,9 +22,9 @@ import {
   Sparkles,
   Code2,
   Terminal,
-  GraduationCap,
   FileCheck2,
   Globe,
+  Play,
 } from 'lucide-react';
 import {
   PORTFOLIO_ITEMS,
@@ -38,6 +38,17 @@ export function App() {
   const [activeFilter, setActiveFilter] = useState<FilterTabId>('all');
   const [activeScenarioIdx, setActiveScenarioIdx] = useState<number>(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const [activeVideoItem, setActiveVideoItem] = useState<PortfolioItem | null>(null);
+
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === 'Escape') {
+        setActiveVideoItem(null);
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   const filteredItems = useMemo(() => {
     return PORTFOLIO_ITEMS.filter((item) => item.filterGroups.includes(activeFilter));
@@ -56,7 +67,7 @@ export function App() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
       {/* Top Navigation */}
-      <header className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+      <header className="fixed top-0 w-full z-40 bg-white/90 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <a href="#" className="flex items-center space-x-3.5 group">
             {/* Custom Geometric Vector Emblem: Blue, Purple, Crimson Red on Obsidian Black */}
@@ -223,7 +234,7 @@ export function App() {
               className="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-900 font-semibold text-sm border border-slate-300 transition flex items-center space-x-2 shadow-sm"
             >
               <Cpu className="w-4 h-4 text-purple-700" />
-              <span>Explore Delivered Projects (11)</span>
+              <span>Explore Delivered Projects (12)</span>
             </a>
             <a
               href="#scoper"
@@ -269,7 +280,7 @@ export function App() {
                 onClick={() => setActiveFilter('regtech-security')}
                 className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm hover:border-sky-300 transition text-left"
               >
-                <div className="font-bold text-xs text-slate-900">SeeWoo Sutton UK</div>
+                <div className="font-bold text-xs text-slate-900">Confidential UK Operator</div>
                 <div className="text-[11px] text-slate-500 mt-0.5">HMRC AWRS & Licensing</div>
               </a>
               <a
@@ -282,11 +293,11 @@ export function App() {
               </a>
               <a
                 href="#portfolio"
-                onClick={() => setActiveFilter('regtech-security')}
+                onClick={() => setActiveFilter('multimodal-web')}
                 className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm hover:border-rose-300 transition text-left"
               >
-                <div className="font-bold text-xs text-slate-900">GuardianAI & RegTech</div>
-                <div className="text-[11px] text-slate-500 mt-0.5">Gemma 4 + Cloud Run Audit</div>
+                <div className="font-bold text-xs text-slate-900">CineFact AI & GuardianAI</div>
+                <div className="text-[11px] text-slate-500 mt-0.5">Serverless Video & RegTech</div>
               </a>
             </div>
           </div>
@@ -346,8 +357,8 @@ export function App() {
                 Principal Governance + Rapid Execution
               </h4>
               <p className="text-sm text-slate-300 leading-relaxed">
-                Led directly by Sam Leung (PMP®, DASSM®, SC-100, AI-102) in collaboration with
-                technical partner William Tam—combining tier-one RAID governance with production AI
+                Led directly by Sam Leung (PMP®, DASSM®, SC-100, AI-102) supported by specialized
+                Technical Engineering Partners—combining tier-one RAID governance with production AI
                 systems.
               </p>
             </div>
@@ -549,8 +560,9 @@ export function App() {
                 Applied AI Builds & Enterprise Transformation Mandates
               </h3>
               <p className="text-sm text-slate-600 mt-2 max-w-2xl">
-                Filter across our 7 production AI engineering builds & coaching mandates (Part A)
-                and 4 flagship enterprise & UK regulatory transformation deliveries (Part B).
+                Filter across our 8 production AI engineering builds & coaching mandates (Part A)
+                and 4 flagship enterprise & UK regulatory transformation deliveries (Part B). Click
+                "Watch Demo" to view video walkthroughs.
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-4 shrink-0">
@@ -628,11 +640,86 @@ export function App() {
           {/* Portfolio Cards Grid */}
           <div className="grid md:grid-cols-2 gap-6">
             {filteredItems.map((item) => (
-              <PortfolioCard key={item.id} item={item} />
+              <PortfolioCard
+                key={item.id}
+                item={item}
+                onWatchDemo={(selected) => setActiveVideoItem(selected)}
+              />
             ))}
           </div>
         </div>
       </section>
+
+      {/* Embedded YouTube Video Modal Player */}
+      {activeVideoItem && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-sm animate-fadeIn"
+          onClick={() => setActiveVideoItem(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="relative w-full max-w-4xl bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-800 bg-slate-900/90">
+              <div className="flex items-center space-x-3">
+                <span className="w-3 h-3 rounded-full bg-rose-500 animate-pulse shrink-0" />
+                <div>
+                  <h4 className="text-white font-extrabold text-sm sm:text-base leading-tight">
+                    {activeVideoItem.title} — Video Walkthrough Demo
+                  </h4>
+                  {activeVideoItem.subtitle && (
+                    <p className="text-slate-400 text-xs mt-0.5">{activeVideoItem.subtitle}</p>
+                  )}
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setActiveVideoItem(null)}
+                className="p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 transition"
+                aria-label="Close video demo"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Video Iframe Container (16:9) */}
+            <div className="relative aspect-video w-full bg-black">
+              <iframe
+                src={getYouTubeEmbedUrl(activeVideoItem.videoUrl)}
+                title={`${activeVideoItem.title} Walkthrough Demo`}
+                className="w-full h-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+
+            {/* Modal Footer */}
+            <div className="p-4 sm:p-5 bg-slate-900/95 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-400">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="px-2.5 py-1 rounded bg-slate-800 text-slate-200 font-semibold text-[11px]">
+                  {activeVideoItem.category}
+                </span>
+                <span>•</span>
+                <span>{activeVideoItem.techStack.slice(0, 3).join(', ')}</span>
+              </div>
+              <div className="flex items-center space-x-3 shrink-0">
+                <a
+                  href={`mailto:sam@tactical-scale.com?subject=${encodeURIComponent(
+                    `Executive Demo Briefing: ${activeVideoItem.title}`
+                  )}`}
+                  className="px-4 py-2 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold transition flex items-center space-x-1.5"
+                >
+                  <Mail className="w-3.5 h-3.5" />
+                  <span>Request Custom Briefing</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Interactive 30-60-90 Day B2B Solution Scoper */}
       <section id="scoper" className="py-20 px-6 bg-slate-50 border-b border-slate-200">
@@ -909,25 +996,28 @@ export function App() {
                   agentic AI engineering.
                 </p>
 
-                {/* Technical Partner & Collaborator Callout */}
+                {/* Technical Engineering Partner Callout */}
                 <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-800 mb-8">
                   <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
                     <div className="flex items-center space-x-2">
                       <Users className="w-4 h-4 text-purple-400" />
                       <span className="text-xs font-bold uppercase tracking-wider text-purple-400">
-                        Technical Partner & Collaborator
+                        Technical Engineering Partner Network
                       </span>
                     </div>
                     <span className="text-xs font-semibold text-slate-400">
-                      Co-Creator Across Flagship AI Systems
+                      Collaborative Delivery Across Flagship AI Systems
                     </span>
                   </div>
-                  <div className="font-bold text-base text-white mb-1">William Tam</div>
+                  <div className="font-bold text-base text-white mb-1">
+                    Specialized Full-Stack & AI Engineering Partners
+                  </div>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Collaborating closely with Sam across applied AI architecture, rapid prototyping,
-                    and production troubleshooting—co-creating{' '}
+                    Collaborating across applied AI architecture, rapid prototyping, and production
+                    troubleshooting—supporting builds including{' '}
                     <span className="text-white font-semibold">SprintClarify</span>,{' '}
                     <span className="text-white font-semibold">EchoHire</span>,{' '}
+                    <span className="text-white font-semibold">CineFact AI</span>,{' '}
                     <span className="text-white font-semibold">AI Festival Card Maker</span>, and
                     supporting client{' '}
                     <span className="text-white font-semibold">
@@ -1027,7 +1117,7 @@ export function App() {
               <MapPin className="w-3.5 h-3.5 text-slate-400 shrink-0" />
               <span>
                 Greater London, United Kingdom • Principal Consultant: Tat Shun Leung (Sam Leung),
-                PMP, DASSM • Technical Partner: William Tam
+                PMP, DASSM • Supported by Specialized Technical Engineering Partners
               </span>
             </p>
           </div>
@@ -1075,7 +1165,13 @@ export function App() {
   );
 }
 
-function PortfolioCard({ item }: { item: PortfolioItem }) {
+function PortfolioCard({
+  item,
+  onWatchDemo,
+}: {
+  item: PortfolioItem;
+  onWatchDemo: (item: PortfolioItem) => void;
+}) {
   const isAI = item.track === 'ai-systems';
 
   const badgeStyles =
@@ -1143,10 +1239,22 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
           </div>
         )}
 
-        {/* Tech Stack / Sector Pills */}
+        {/* Tech Stack Pills & Watch Demo Button */}
         <div className="pt-3 border-t border-slate-200/80">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-2">
-            {item.techOrSectorLabel}
+          <div className="flex items-center justify-between gap-2 mb-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+              {item.techOrSectorLabel}
+            </span>
+            {item.videoUrl && (
+              <button
+                type="button"
+                onClick={() => onWatchDemo(item)}
+                className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg bg-slate-950 hover:bg-slate-800 text-white text-[11px] font-bold transition shadow-sm hover:scale-[1.02]"
+              >
+                <Play className="w-3 h-3 text-rose-500 fill-rose-500" />
+                <span>Watch Demo</span>
+              </button>
+            )}
           </div>
           <div className="flex flex-wrap gap-1.5">
             {item.techStack.map((tech) => (
@@ -1162,6 +1270,23 @@ function PortfolioCard({ item }: { item: PortfolioItem }) {
       </div>
     </div>
   );
+}
+
+function getYouTubeEmbedUrl(url?: string): string {
+  if (!url) return '';
+  if (url.includes('youtube.com/embed/')) return url;
+  try {
+    let id = '';
+    if (url.includes('youtube.com/watch')) {
+      const parsed = new URL(url);
+      id = parsed.searchParams.get('v') || '';
+    } else if (url.includes('youtu.be/')) {
+      id = url.split('youtu.be/')[1]?.split('?')[0] || '';
+    }
+    return id ? `https://www.youtube.com/embed/${id}?autoplay=1&rel=0` : url;
+  } catch {
+    return url;
+  }
 }
 
 export default App;
