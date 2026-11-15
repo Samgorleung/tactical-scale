@@ -73,3 +73,7 @@
 * **Role:** Compliance & Delivery Lead
 * **Sector:** UK Retail, Wholesale & Regulatory Compliance
 * **Overview & Business Value:** Successfully managed complex UK statutory applications, including local authority Premises Licenses and HMRC Alcohol Wholesaler Registration Scheme (AWRS) compliance for a Confidential UK Commercial & Hospitality Operator. Prepared comprehensive operating schedules, due diligence frameworks, and audit trails to secure full regulatory approval.
+
+### Enterprise Delivery Foundation
+Prior to recent cloud and AI transformation leadership, Sam Leung's foundation includes starting hands-on in software development before managing over 20 enterprise infrastructure, Microsoft System Center (SCCM/SCOM), Exchange, SharePoint, and network migration projects across tier-one banking, energy utilities, listed property groups, higher education, and public sector agencies.
+

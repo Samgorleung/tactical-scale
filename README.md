@@ -3,7 +3,7 @@
 > Pragmatic Project Delivery & Applied AI Engineering. Bridging enterprise governance with rapid technical execution across cloud transformation, agentic AI workflows, and regulatory delivery.
 
 Website: **[tactical-scale.com](https://tactical-scale.com)**  
-Principal: **Tat Shun Leung (Sam Leung), PMP, DASSM**  
+Principal: **Sam Leung, PMP, DASSM**  
 Location: **Greater London, United Kingdom**
 
 ---

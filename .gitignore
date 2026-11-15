@@ -27,3 +27,7 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# Local private context folder (never pushed to GitHub)
+private_docs/
+

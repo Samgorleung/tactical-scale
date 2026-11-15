@@ -920,7 +920,7 @@ export function App() {
                 </h3>
               </div>
               <div className="text-xs font-semibold text-slate-600">
-                PMI | Microsoft Certified Expert | Academic Honours
+                PMI | Microsoft Certified Expert
               </div>
             </div>
 
@@ -930,11 +930,10 @@ export function App() {
                   Programme & Agile Governance
                 </div>
                 <div className="font-bold text-sm text-slate-950">
-                  PMP | DASSM | PMI GenAI | CSM
+                  PMP | DASSM
                 </div>
                 <div className="text-xs text-slate-600 mt-1">
-                  Project Management Professional, Disciplined Agile Senior Scrum Master, FLMI Level
-                  1, ITIL / ISO 20000
+                  Project Management Professional (PMI) & Disciplined Agile Senior Scrum Master (PMI)
                 </div>
               </div>
 
@@ -953,14 +952,14 @@ export function App() {
 
               <div className="p-6 sm:col-span-2 lg:col-span-1">
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
-                  Academic Foundation
+                  Applied AI Project Delivery
                 </div>
                 <div className="font-bold text-sm text-slate-950">
-                  Warwick | HKUST | HKU FinTech
+                  PMI GenAI Certifications
                 </div>
                 <div className="text-xs text-slate-600 mt-1">
-                  PGCert Engineering Business Management (Warwick), BEng Electronic Engineering
-                  (HKUST), FinTech (HKU)
+                  PMI Generative AI Overview for Project Managers & Prompt Engineering for Project
+                  Managers
                 </div>
               </div>
             </div>
@@ -974,19 +973,27 @@ export function App() {
                   Principal Consultant & Founder | Greater London, UK
                 </div>
                 <h3 className="text-3xl font-extrabold mb-1">
-                  Tat Shun Leung (Sam Leung), PMP, DASSM
+                  Sam Leung, PMP, DASSM
                 </h3>
                 <p className="text-xs text-slate-400 font-medium mb-5">
                   Trading as: Sam Leung T/A Tactical Scale (Sole Trader transitioning to UK Limited
                   Company)
                 </p>
 
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
                   With over 14 years leading complex operational transformations, regional cloud
                   migrations, and regulatory workstreams across tier-one financial market
                   infrastructure (LSEG / LCH Operations) and global insurers (AXA, AIA), Sam founded
                   Tactical Scale in London to bridge boardroom governance with hands-on cloud and
                   agentic AI engineering.
+                </p>
+
+                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
+                  Prior to his recent cloud and AI transformation leadership, his foundation
+                  includes starting hands-on in software development before managing over 20
+                  enterprise infrastructure, Microsoft System Center (SCCM/SCOM), Exchange,
+                  SharePoint, and network migration projects across tier-one banking, energy
+                  utilities, listed property groups, higher education, and public sector agencies.
                 </p>
 
                 {/* Technical Engineering Partner Callout */}
@@ -1104,8 +1111,8 @@ export function App() {
               transitioning to UK Limited Company)
             </p>
             <p className="text-slate-500">
-              Greater London, United Kingdom | Principal Consultant: Tat Shun Leung (Sam Leung),
-              PMP, DASSM | Supported by Specialized Technical Engineering Partners
+              Greater London, United Kingdom | Principal Consultant: Sam Leung, PMP, DASSM |
+              Supported by Specialized Technical Engineering Partners
             </p>
           </div>
 
