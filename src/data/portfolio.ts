@@ -223,9 +223,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
   // Part B: Enterprise Transformation & Regulatory Delivery
   {
-    id: 'lseg-lch-operations',
-    title: 'London Stock Exchange Group (LSEG / LCH Operations)',
-    subtitle: 'Financial Market Infrastructure & Clearing Transformation (via TCS UK)',
+    id: 'uk-market-infrastructure',
+    title: 'Tier-1 UK Financial Market Infrastructure & Clearing House',
+    subtitle: 'Financial Market Infrastructure & Clearing Transformation',
     track: 'enterprise-delivery',
     trackLabel: 'Part B: Enterprise Delivery',
     role: 'Senior IT Project Manager',
@@ -240,15 +240,15 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Service Transition',
     ],
     overview:
-      'Led complex operational transformation and IT delivery workstreams within a highly regulated financial market infrastructure environment. Managed cross-functional engineering and operations stakeholders, ensuring strict adherence to governance gates, risk controls, and service transition standards.',
-    organizationOrEvent: 'United Kingdom, via TCS UK',
+      'Led complex operational transformation and IT delivery workstreams within a highly regulated financial market infrastructure environment for a Tier-1 UK Financial Market Infrastructure & Clearing House. Managed cross-functional engineering and operations stakeholders, ensuring strict adherence to governance gates, risk controls, and service transition standards.',
+    organizationOrEvent: 'United Kingdom',
     highlightMetric: '100% On-Schedule Governance Gate & Audit Control Compliance',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    id: 'axa-health-claims',
-    title: 'AXA Health Claims Transformation',
-    subtitle: 'End-to-End Legacy Claims Modernization & Digital Self-Service (via TCS Hong Kong)',
+    id: 'multinational-health-insurer',
+    title: 'Global Multinational Health & General Insurer',
+    subtitle: 'End-to-End Legacy Claims Modernization & Digital Self-Service',
     track: 'enterprise-delivery',
     trackLabel: 'Part B: Enterprise Delivery',
     role: 'Project Manager',
@@ -262,15 +262,15 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Digital Self-Service',
     ],
     overview:
-      'Directed end-to-end delivery for a major health claims processing transformation initiative. Coordinated business analysts, technical vendors, and operations teams to modernize legacy claims workflows, improving turnaround accuracy and digital self-service capabilities.',
-    organizationOrEvent: 'Hong Kong / APAC, via TCS Hong Kong',
+      'Directed end-to-end delivery for a major health claims processing transformation initiative for a Global Multinational Health & General Insurer. Coordinated business analysts, technical vendors, and operations teams to modernize legacy claims workflows, improving turnaround accuracy and digital self-service capabilities.',
+    organizationOrEvent: 'Hong Kong / APAC',
     highlightMetric: 'End-to-End Legacy Claims Modernization & Turnaround Acceleration',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
-    id: 'aia-regional-cloud',
-    title: 'AIA Regional Cloud Migration',
-    subtitle: 'Prophet Professional Actuarial Migration to Microsoft Azure (via Kingviews)',
+    id: 'pan-asian-life-insurer',
+    title: 'Pan-Asian Life Insurance Group (18 Regional Markets)',
+    subtitle: 'Prophet Professional Actuarial Migration to Microsoft Azure',
     track: 'enterprise-delivery',
     trackLabel: 'Part B: Enterprise Delivery',
     role: 'IT Project Manager',
@@ -285,8 +285,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Regional Cutover Execution',
     ],
     overview:
-      'Managed the regional migration of mission-critical Prophet Professional actuarial applications across 18 offices onto Microsoft Azure. Coordinated infrastructure provisioning, security compliance, user acceptance testing, and cutover execution across multiple Asian markets.',
-    organizationOrEvent: '18 Offices, Multiple Asian Markets, via Kingviews',
+      'Managed the regional migration of mission-critical Prophet Professional actuarial applications across 18 offices onto Microsoft Azure for a Pan-Asian Life Insurance Group (18 Regional Markets). Coordinated infrastructure provisioning, security compliance, user acceptance testing, and cutover execution across multiple Asian markets.',
+    organizationOrEvent: '18 Regional Offices, Multiple Asian Markets',
     highlightMetric: '18-Office Regional Actuarial Cloud Migration to Microsoft Azure',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -340,7 +340,7 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     days90:
       'Stabilised production cutover, service transition sign-off, and measurable operational turnaround.',
     proof:
-      'Track Record Proof: Directed complex transformation and cloud migration workstreams across LSEG / LCH Operations (UK), AXA Health Claims (HK), and AIA 18-office Prophet Professional migration to Microsoft Azure.',
+      'Track Record Proof: Directed complex transformation and cloud migration workstreams across Tier-1 UK Financial Market Infrastructure & Clearing House, Global Multinational Health & General Insurer, and Pan-Asian Life Insurance Group (18 Regional Markets) 18-office Prophet Professional migration to Microsoft Azure.',
   },
   {
     id: 'ai-poc-to-prod',

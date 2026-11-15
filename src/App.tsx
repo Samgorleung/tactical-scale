@@ -256,7 +256,7 @@ export function App() {
                   Capital Markets & Clearing
                 </div>
                 <div className="font-bold text-sm text-slate-950 group-hover:text-sky-700 transition-colors duration-250 ease-out">
-                  LSEG / LCH Operations (UK)
+                  Tier-1 UK Market Infrastructure
                 </div>
                 <div className="text-xs text-slate-600 mt-1">
                   Market infrastructure governance, risk controls, and clearing transformation.
@@ -272,10 +272,10 @@ export function App() {
                   Insurance & Regional Cloud
                 </div>
                 <div className="font-bold text-sm text-slate-950 group-hover:text-sky-700 transition-colors duration-250 ease-out">
-                  AXA Health & AIA 18-Office Azure
+                  Global Health & Pan-Asian Life Insurers
                 </div>
                 <div className="text-xs text-slate-600 mt-1">
-                  Claims workflow modernization and Prophet actuarial migration to Azure.
+                  Claims workflow modernization and 18-office actuarial migration to Azure.
                 </div>
               </a>
 
@@ -982,8 +982,8 @@ export function App() {
 
                 <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
                   With over 14 years leading complex operational transformations, regional cloud
-                  migrations, and regulatory workstreams across tier-one financial market
-                  infrastructure (LSEG / LCH Operations) and global insurers (AXA, AIA), Sam founded
+                  migrations, and regulatory workstreams across Tier-1 UK Financial Market Infrastructure
+                  and Clearing House operations, as well as global multinational and life insurers, Sam founded
                   Tactical Scale in London to bridge boardroom governance with hands-on cloud and
                   agentic AI engineering.
                 </p>
