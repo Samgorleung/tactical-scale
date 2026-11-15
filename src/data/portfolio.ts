@@ -100,7 +100,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     overview:
       'SprintClarify enforces structured engineering planning before code generation. The platform ingests high-level product requirements and decomposes them into granular, sprint-ready user stories complete with acceptance criteria, dependency graphs, and technical risk flags. By enforcing strict JSON schema outputs from Gemini models, it eliminates vague backlog items and accelerates sprint planning for agile delivery teams.',
     highlightMetric: 'Schema-Enforced Sprint Decomposition & Dependency Graphs',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    videoUrl: 'https://youtu.be/X1Wsjzx7cpM?si=zVhZzLRBU1TfisIk',
   },
   {
     id: 'guardian-ai',
@@ -117,7 +117,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Built for the #AllThingsAgentic Hackathon, GuardianAI is an autonomous auditing agent deployed on Google Cloud Run. It evaluates technical documentation, system configurations, and operational workflows against regulatory and cybersecurity frameworks. Combining open-weights Gemma 4 models with Gemini 3.7 Flash, the system surfaces compliance gaps and generates actionable remediation logs automatically.',
     organizationOrEvent: '#AllThingsAgentic Hackathon',
     highlightMetric: 'Autonomous Multi-Model Security & Compliance Auditing on Cloud Run',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    videoUrl: 'https://youtu.be/4gXi8fSt7gA?si=TKB00xLZTG1Tg8uN',
   },
   {
     id: 'echohire',
@@ -135,7 +135,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Developed for the Google Gemini Live Agent Challenge, EchoHire provides low-latency voice and text interview simulations. It operates in two distinct modes: an interactive interviewer that adapts follow-up questions in real time based on candidate responses, and an analytical career coach that evaluates transcripts against structured competency rubrics to provide actionable feedback.',
     organizationOrEvent: 'Google Gemini Live Agent Challenge',
     highlightMetric: 'Low-Latency Bidirectional Voice & Competency Rubric Evaluation',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    videoUrl: 'https://youtu.be/vVuzmVtWq84?si=8l651Z7YqxeEW5ut',
   },
   {
     id: 'dual-market-compliance',
@@ -151,7 +151,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     overview:
       'A specialized analytical platform designed to cross-reference corporate governance disclosures and regulatory requirements across dual-market jurisdictions. The tool streamlines compliance verification by extracting key statutory obligations and highlighting discrepancies across complex regulatory filings.',
     highlightMetric: 'Automated Dual-Jurisdiction Statutory Obligation Extraction',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    videoUrl: 'https://youtu.be/36Xfl-hmO9M?si=6ZawpjZ4yYWJ_XhT',
   },
   {
     id: 'cinefact-ai',
@@ -168,7 +168,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     overview:
       'A high-throughput serverless multimodal verification engine that analyzes video streams in real time, extracting factual assertions and cross-referencing them against authoritative knowledge bases with low-latency parallel claim verification. Designed for broadcast media verification and automated digital compliance workflows.',
     highlightMetric: 'Parallel Claim Extraction & Multimodal Video Verification',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    videoUrl: 'https://youtu.be/eYbYHq_tyJk?si=n46zCM44sLjokhmt',
   },
   {
     id: 'extraordinary-agents',
@@ -184,7 +184,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     overview:
       'A collaborative multi-AI orchestration pipeline that automates creative scriptwriting, character-consistent visual storyboarding, and video generation. The architecture separates narrative planning, visual prompt enforcement, and quality assurance across specialized agent roles to maintain visual and thematic continuity.',
     highlightMetric: 'Role-Separated Multi-Agent Narrative & Visual QA Orchestration',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'production-ai-coaching',
@@ -201,7 +200,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     overview:
       'Ongoing client consultancy focused on transitioning AI Studio prototypes into stable production environments. Work includes resolving deployment pipeline discrepancies, synchronizing prompt and model configurations between staging and production, and coaching internal stakeholders on sustainable self-service maintenance.',
     highlightMetric: 'Staging-to-Production Prompt Sync & Self-Service Handover',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'ai-festival-card-maker',
@@ -218,7 +216,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     overview:
       'A lightweight, high-speed web application that generates culturally tailored digital greeting cards across global festivals while preserving subject likeness. Built with a streamlined frontend and automated canvas compositing for instant sharing.',
     highlightMetric: 'Subject-Likeness Preservation & Automated HTML5 Canvas Compositing',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
 
   // Part B: Enterprise Transformation & Regulatory Delivery
@@ -243,7 +240,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Led complex operational transformation and IT delivery workstreams within a highly regulated financial market infrastructure environment for a Tier-1 UK Financial Market Infrastructure & Clearing House. Managed cross-functional engineering and operations stakeholders, ensuring strict adherence to governance gates, risk controls, and service transition standards.',
     organizationOrEvent: 'United Kingdom',
     highlightMetric: '100% On-Schedule Governance Gate & Audit Control Compliance',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'multinational-health-insurer',
@@ -265,7 +261,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Directed end-to-end delivery for a major health claims processing transformation initiative for a Global Multinational Health & General Insurer. Coordinated business analysts, technical vendors, and operations teams to modernize legacy claims workflows, improving turnaround accuracy and digital self-service capabilities.',
     organizationOrEvent: 'Hong Kong / APAC',
     highlightMetric: 'End-to-End Legacy Claims Modernization & Turnaround Acceleration',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'pan-asian-life-insurer',
@@ -288,7 +283,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Managed the regional migration of mission-critical Prophet Professional actuarial applications across 18 offices onto Microsoft Azure for a Pan-Asian Life Insurance Group (18 Regional Markets). Coordinated infrastructure provisioning, security compliance, user acceptance testing, and cutover execution across multiple Asian markets.',
     organizationOrEvent: '18 Regional Offices, Multiple Asian Markets',
     highlightMetric: '18-Office Regional Actuarial Cloud Migration to Microsoft Azure',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
   {
     id: 'uk-commercial-licensing',
@@ -310,7 +304,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Successfully managed complex UK statutory applications, including local authority Premises Licenses and HMRC Alcohol Wholesaler Registration Scheme (AWRS) compliance for a Confidential UK Commercial & Hospitality Operator. Prepared comprehensive operating schedules, due diligence frameworks, and audit trails to secure full regulatory approval.',
     organizationOrEvent: 'Greater London, UK, Confidential UK Commercial & Hospitality Operator',
     highlightMetric: 'Full UK Local Authority & HMRC AWRS Regulatory Approval Secured',
-    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
 ];
 

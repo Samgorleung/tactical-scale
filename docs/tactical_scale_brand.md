@@ -28,6 +28,7 @@ Hands-on advisory and technical troubleshooting for leadership teams and builder
 * **Financial Services & Enterprise Operations:** Banks, insurers, and market infrastructure providers requiring seasoned PMP and Agile delivery leadership for cloud, security, and AI transformation programmes.
 * **SMEs & Commercial Operators:** UK businesses requiring digital workflow modernization, compliance automation, and regulatory application management.
 * **Founders & Product Teams:** Technical and non-technical founders seeking rapid MVP development, AI agent integration, and production deployment support.
+* **Cloud Solution Partners & UK Procurement Teams:** Available for UK Contract Programme Leadership, B2B Statement of Work (SOW) Delivery, and White-Label Associate Subcontracting for Microsoft, Google Cloud, and AWS Solution Partners.
 
 ## 5. Website Architecture & UI Specification (tactical-scale.com)
 
@@ -46,7 +47,11 @@ Hands-on advisory and technical troubleshooting for leadership teams and builder
    * Three structured cards presenting Enterprise Programme Delivery, Applied AI Architecture, and AI Coaching & Troubleshooting.
 3. **Featured Portfolio & Case Studies:**
    * Dynamically rendered or mapped directly from `docs/project_portfolio.md`, filtering between AI Engineering Prototypes and Enterprise Delivery Case Studies.
-4. **Credentials & Governance Banner:**
-   * Highlighting PMP, DASSM, Microsoft Cybersecurity Architect Expert (SC-100), Azure AI Engineer Associate (AI-102), Azure Administrator (AZ-104), and PMI GenAI certifications.
-5. **Footer & Contact:**
+4. **Credentials & Ecosystem Grid:**
+   * Highlighting PMI Governance (PMP, DASSM, PMI GenAI) alongside two cloud ecosystem pillars:
+     * **Microsoft Partner Ecosystem:** SC-100 Cybersecurity Architect Expert, AI-102 Azure AI Engineer, AZ-104 Azure Administrator, M365 Copilot, plus 14+ years delivering Azure migrations, Exchange, Active Directory, SCCM/SCOM, and SharePoint transformations.
+     * **Google Cloud & Multi-Cloud AI Ecosystem:** Gemini Enterprise API, ADK 2.0, A2A Multi-Agent Protocol, Gemma 4, Cloud Run, Firebase, and cross-cloud architecture governance.
+5. **Commercial Engagement Models:**
+   * Three architectural columns covering Fixed-Scope Architectural Discovery, Production AI Sprint & MVP Delivery, and Retained SOW / Interim Leadership (explicitly supporting UK Contract Programme Leadership, B2B Statement of Work (SOW) Delivery, and White-Label Associate Subcontracting for Microsoft, Google Cloud, and AWS Solution Partners).
+6. **Footer & Contact:**
    * Trading identity disclosure (`Sam Leung T/A Tactical Scale`), LinkedIn link, GitHub link, and direct contact details.

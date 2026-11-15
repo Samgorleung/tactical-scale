@@ -570,7 +570,7 @@ export function App() {
               <p className="text-sm text-slate-600 mt-2 max-w-2xl">
                 Filter across our 8 production AI engineering builds and coaching mandates (Part A)
                 and 4 flagship enterprise and UK regulatory transformation deliveries (Part B).
-                Select "Watch Demo" on any item to view a video walkthrough.
+                Select "Watch Demo" on featured AI builds to view a video walkthrough.
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-3 shrink-0">
@@ -888,13 +888,14 @@ export function App() {
                   Programme Delivery & AI Coaching
                 </h4>
                 <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-                  Embedded Principal Programme Management or ongoing Technical Advisory to steer
-                  critical-path execution, vendor alignment, and production AI adoption across
-                  London and global hubs.
+                  Available for UK Contract Programme Leadership, B2B Statement of Work (SOW)
+                  Delivery, and White-Label Associate Subcontracting for Microsoft, Google Cloud,
+                  and AWS Solution Partners to steer critical-path execution, vendor alignment, and
+                  production AI adoption.
                 </p>
               </div>
               <a
-                href="mailto:sam@tactical-scale.com?subject=Enquiry%3A%20Programme%20Turnaround%20%26%20Advisory%20SOW"
+                href="mailto:sam@tactical-scale.com?subject=Enquiry%3A%20UK%20Contract%2C%20SOW%20Delivery%20%26%20Partner%20Subcontracting"
                 className="text-xs font-bold text-slate-950 hover:text-sky-700 transition-colors duration-250 ease-out flex items-center space-x-1 pt-4 border-t border-slate-200"
               >
                 <span>Check Availability</span>
@@ -916,50 +917,53 @@ export function App() {
                   Verified Governance & Technical Credentials
                 </div>
                 <h3 className="text-2xl font-extrabold text-slate-950">
-                  Industry-Standard Delivery & Cloud Security Accreditations
+                  Industry-Standard Delivery & Multi-Cloud Partner Ecosystem
                 </h3>
               </div>
               <div className="text-xs font-semibold text-slate-600">
-                PMI | Microsoft Certified Expert
+                PMI | Microsoft Partner Ecosystem | Google Cloud & Multi-Cloud AI
               </div>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-b border-slate-200 divide-y sm:divide-y-0 sm:divide-x divide-slate-200 bg-slate-50/60">
               <div className="p-6">
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
-                  Programme & Agile Governance
+                  PMI Governance
                 </div>
                 <div className="font-bold text-sm text-slate-950">
-                  PMP | DASSM
+                  PMP | DASSM | PMI GenAI
                 </div>
-                <div className="text-xs text-slate-600 mt-1">
-                  Project Management Professional (PMI) & Disciplined Agile Senior Scrum Master (PMI)
+                <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                  Project Management Professional (PMI), Disciplined Agile Senior Scrum Master (PMI),
+                  PMI Generative AI Overview for Project Managers, and Prompt Engineering for Project
+                  Managers.
                 </div>
               </div>
 
               <div className="p-6">
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
-                  Microsoft Cloud, Cyber & AI
+                  Microsoft Partner Ecosystem
                 </div>
                 <div className="font-bold text-sm text-slate-950">
-                  SC-100 Expert | AI-102 | AZ-104
+                  SC-100 Expert | AI-102 | AZ-104 | M365 Copilot
                 </div>
-                <div className="text-xs text-slate-600 mt-1">
-                  Microsoft Cybersecurity Architect Expert, Azure AI Engineer Associate, Azure
-                  Administrator Associate
+                <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                  SC-100 Cybersecurity Architect Expert, AI-102 Azure AI Engineer, AZ-104 Azure
+                  Administrator, and M365 Copilot, plus 14+ years delivering Azure migrations,
+                  Exchange, Active Directory, SCCM/SCOM, and SharePoint transformations.
                 </div>
               </div>
 
               <div className="p-6 sm:col-span-2 lg:col-span-1">
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
-                  Applied AI Project Delivery
+                  Google Cloud & Multi-Cloud AI Ecosystem
                 </div>
                 <div className="font-bold text-sm text-slate-950">
-                  PMI GenAI Certifications
+                  Gemini Enterprise | ADK 2.0 | A2A | Gemma 4
                 </div>
-                <div className="text-xs text-slate-600 mt-1">
-                  PMI Generative AI Overview for Project Managers & Prompt Engineering for Project
-                  Managers
+                <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                  Gemini Enterprise API, ADK 2.0, A2A Multi-Agent Protocol, Gemma 4, Cloud Run,
+                  Firebase, and cross-cloud architecture governance.
                 </div>
               </div>
             </div>
