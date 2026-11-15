@@ -54,20 +54,20 @@
 
 ## Part B: Enterprise Transformation & Regulatory Delivery
 
-### 1. London Stock Exchange Group (LSEG / LCH Operations) via TCS UK
+### 1. Tier-1 UK Financial Market Infrastructure & Clearing House
 * **Role:** Senior IT Project Manager
 * **Sector:** Financial Market Infrastructure & Clearing Operations
-* **Overview & Business Value:** Led complex operational transformation and IT delivery workstreams within a highly regulated financial market infrastructure environment. Managed cross-functional engineering and operations stakeholders, ensuring strict adherence to governance gates, risk controls, and service transition standards.
+* **Overview & Business Value:** Led complex operational transformation and IT delivery workstreams within a highly regulated financial market infrastructure environment for a Tier-1 UK Financial Market Infrastructure & Clearing House. Managed cross-functional engineering and operations stakeholders, ensuring strict adherence to governance gates, risk controls, and service transition standards.
 
-### 2. AXA Health Claims Transformation via TCS Hong Kong
+### 2. Global Multinational Health & General Insurer
 * **Role:** Project Manager
 * **Sector:** Insurance & Healthcare Financial Services
-* **Overview & Business Value:** Directed end-to-end delivery for a major health claims processing transformation initiative. Coordinated business analysts, technical vendors, and operations teams to modernize legacy claims workflows, improving turnaround accuracy and digital self-service capabilities.
+* **Overview & Business Value:** Directed end-to-end delivery for a major health claims processing transformation initiative for a Global Multinational Health & General Insurer. Coordinated business analysts, technical vendors, and operations teams to modernize legacy claims workflows, improving turnaround accuracy and digital self-service capabilities.
 
-### 3. AIA Regional Cloud Migration (Prophet Professional to Microsoft Azure) via Kingviews
+### 3. Pan-Asian Life Insurance Group (18 Regional Markets)
 * **Role:** IT Project Manager
 * **Sector:** Actuarial Systems & Cloud Infrastructure
-* **Overview & Business Value:** Managed the regional migration of mission-critical Prophet Professional actuarial applications across 18 offices onto Microsoft Azure. Coordinated infrastructure provisioning, security compliance, user acceptance testing, and cutover execution across multiple Asian markets.
+* **Overview & Business Value:** Managed the regional migration of mission-critical Prophet Professional actuarial applications across 18 offices onto Microsoft Azure for a Pan-Asian Life Insurance Group (18 Regional Markets). Coordinated infrastructure provisioning, security compliance, user acceptance testing, and cutover execution across multiple Asian markets.
 
 ### 4. UK Commercial Licensing & AWRS Regulatory Compliance (Confidential UK Commercial & Hospitality Operator)
 * **Role:** Compliance & Delivery Lead
