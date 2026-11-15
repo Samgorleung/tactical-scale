@@ -34,7 +34,6 @@ export interface PortfolioItem {
   techOrSectorLabel: string;
   techStack: string[];
   overview: string;
-  accentColor: 'sky' | 'purple' | 'rose';
   highlightMetric?: string;
   organizationOrEvent?: string;
   videoUrl?: string;
@@ -91,7 +90,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'SprintClarify',
     subtitle: 'Agile Backlog & Dependency Decomposition Engine',
     track: 'ai-systems',
-    trackLabel: 'Part A • Applied AI Build',
+    trackLabel: 'Part A: Applied AI Build',
     role: 'Co-Creator & Lead Architect',
     collaborator: 'Technical Engineering Partner',
     category: 'AI Product & Agile Governance',
@@ -100,7 +99,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini 3.8 Flash', 'React 19', 'TypeScript', 'Tailwind CSS', 'Typed JSON Schemas'],
     overview:
       'SprintClarify enforces structured engineering planning before code generation. The platform ingests high-level product requirements and decomposes them into granular, sprint-ready user stories complete with acceptance criteria, dependency graphs, and technical risk flags. By enforcing strict JSON schema outputs from Gemini models, it eliminates vague backlog items and accelerates sprint planning for agile delivery teams.',
-    accentColor: 'sky',
     highlightMetric: 'Schema-Enforced Sprint Decomposition & Dependency Graphs',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -109,7 +107,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'GuardianAI',
     subtitle: 'Autonomous Compliance & Security Auditing Agent',
     track: 'ai-systems',
-    trackLabel: 'Part A • Applied AI Build',
+    trackLabel: 'Part A: Applied AI Build',
     role: 'Co-Creator & Security Architect',
     category: 'Agentic AI & Cybersecurity Compliance',
     filterGroups: ['all', 'ai-systems', 'regtech-security'],
@@ -117,7 +115,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemma 4', 'Gemini 3.7 Flash', 'Google Cloud Run', 'Containerized Microservices'],
     overview:
       'Built for the #AllThingsAgentic Hackathon, GuardianAI is an autonomous auditing agent deployed on Google Cloud Run. It evaluates technical documentation, system configurations, and operational workflows against regulatory and cybersecurity frameworks. Combining open-weights Gemma 4 models with Gemini 3.7 Flash, the system surfaces compliance gaps and generates actionable remediation logs automatically.',
-    accentColor: 'rose',
     organizationOrEvent: '#AllThingsAgentic Hackathon',
     highlightMetric: 'Autonomous Multi-Model Security & Compliance Auditing on Cloud Run',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
@@ -127,7 +124,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'EchoHire',
     subtitle: 'Adaptive Dual-Mode AI Career Coach & Interviewer',
     track: 'ai-systems',
-    trackLabel: 'Part A • Applied AI Build',
+    trackLabel: 'Part A: Applied AI Build',
     role: 'Co-Creator & AI Systems Lead',
     collaborator: 'Technical Engineering Partner',
     category: 'Real-Time Multimodal AI',
@@ -136,7 +133,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini 3.1 Pro', 'Gemini 2.5 Live', 'Firebase', 'React', 'Tailwind CSS'],
     overview:
       'Developed for the Google Gemini Live Agent Challenge, EchoHire provides low-latency voice and text interview simulations. It operates in two distinct modes: an interactive interviewer that adapts follow-up questions in real time based on candidate responses, and an analytical career coach that evaluates transcripts against structured competency rubrics to provide actionable feedback.',
-    accentColor: 'purple',
     organizationOrEvent: 'Google Gemini Live Agent Challenge',
     highlightMetric: 'Low-Latency Bidirectional Voice & Competency Rubric Evaluation',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
@@ -146,7 +142,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'Dual-Market Corporate Compliance Analytics',
     subtitle: 'Cross-Jurisdiction Governance & Statutory Verification',
     track: 'ai-systems',
-    trackLabel: 'Part A • Applied AI Build',
+    trackLabel: 'Part A: Applied AI Build',
     role: 'Co-Creator & Compliance Lead',
     category: 'RegTech & Financial Compliance',
     filterGroups: ['all', 'ai-systems', 'regtech-security'],
@@ -154,7 +150,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini API', 'React', 'TypeScript', 'Tailwind CSS'],
     overview:
       'A specialized analytical platform designed to cross-reference corporate governance disclosures and regulatory requirements across dual-market jurisdictions. The tool streamlines compliance verification by extracting key statutory obligations and highlighting discrepancies across complex regulatory filings.',
-    accentColor: 'rose',
     highlightMetric: 'Automated Dual-Jurisdiction Statutory Obligation Extraction',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -163,7 +158,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'CineFact AI',
     subtitle: 'Serverless Video Intelligence & Multimodal Claim Verification Pipeline',
     track: 'ai-systems',
-    trackLabel: 'Part A • Applied AI Build',
+    trackLabel: 'Part A: Applied AI Build',
     role: 'Co-Creator & Lead Architect',
     collaborator: 'Technical Engineering Partner',
     category: 'Real-Time Multimodal AI',
@@ -172,7 +167,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini API', 'Serverless Video Intelligence', 'Firestore', 'React', 'TypeScript'],
     overview:
       'A high-throughput serverless multimodal verification engine that analyzes video streams in real time, extracting factual assertions and cross-referencing them against authoritative knowledge bases with low-latency parallel claim verification. Designed for broadcast media verification and automated digital compliance workflows.',
-    accentColor: 'purple',
     highlightMetric: 'Parallel Claim Extraction & Multimodal Video Verification',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -181,7 +175,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'Extraordinary Agents',
     subtitle: 'Multi-AI Storyboarding & Video Production Pipeline',
     track: 'ai-systems',
-    trackLabel: 'Part A • Applied AI Build',
+    trackLabel: 'Part A: Applied AI Build',
     role: 'Lead Architect',
     category: 'Generative Media & Workflow Automation',
     filterGroups: ['all', 'ai-systems', 'multimodal-web'],
@@ -189,7 +183,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Google GenMedia APIs', 'Multi-Agent Workflow', 'GitHub', 'WSL'],
     overview:
       'A collaborative multi-AI orchestration pipeline that automates creative scriptwriting, character-consistent visual storyboarding, and video generation. The architecture separates narrative planning, visual prompt enforcement, and quality assurance across specialized agent roles to maintain visual and thematic continuity.',
-    accentColor: 'purple',
     highlightMetric: 'Role-Separated Multi-Agent Narrative & Visual QA Orchestration',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -198,7 +191,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'Production AI Coaching & Environment Synchronization',
     subtitle: 'AI Studio to Production CI/CD & Stakeholder Enablement',
     track: 'ai-systems',
-    trackLabel: 'Part A • Technical Advisory',
+    trackLabel: 'Part A: Technical Advisory',
     role: 'Principal Consultant & Technical Advisor',
     collaborator: 'Technical Engineering Partner',
     category: 'Technical Advisory & Production Support',
@@ -207,7 +200,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Google AI Studio', 'Cloud Run', 'Production CI/CD Workflows'],
     overview:
       'Ongoing client consultancy focused on transitioning AI Studio prototypes into stable production environments. Work includes resolving deployment pipeline discrepancies, synchronizing prompt and model configurations between staging and production, and coaching internal stakeholders on sustainable self-service maintenance.',
-    accentColor: 'sky',
     highlightMetric: 'Staging-to-Production Prompt Sync & Self-Service Handover',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -216,7 +208,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'AI Festival Card Maker',
     subtitle: 'Culturally Tailored Generative Greeting Application',
     track: 'ai-systems',
-    trackLabel: 'Part A • Applied AI Build',
+    trackLabel: 'Part A: Applied AI Build',
     role: 'Co-Creator & Lead Architect',
     collaborator: 'Technical Engineering Partner',
     category: 'Consumer Web Application',
@@ -225,7 +217,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini 2.5 Flash', 'HTML5 Canvas', 'Tailwind CSS'],
     overview:
       'A lightweight, high-speed web application that generates culturally tailored digital greeting cards across global festivals while preserving subject likeness. Built with a streamlined frontend and automated canvas compositing for instant sharing.',
-    accentColor: 'purple',
     highlightMetric: 'Subject-Likeness Preservation & Automated HTML5 Canvas Compositing',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -236,7 +227,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'London Stock Exchange Group (LSEG / LCH Operations)',
     subtitle: 'Financial Market Infrastructure & Clearing Transformation (via TCS UK)',
     track: 'enterprise-delivery',
-    trackLabel: 'Part B • Enterprise Delivery',
+    trackLabel: 'Part B: Enterprise Delivery',
     role: 'Senior IT Project Manager',
     category: 'Financial Market Infrastructure & Clearing Operations',
     filterGroups: ['all', 'enterprise-delivery', 'regtech-security', 'agile-advisory'],
@@ -250,8 +241,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Led complex operational transformation and IT delivery workstreams within a highly regulated financial market infrastructure environment. Managed cross-functional engineering and operations stakeholders, ensuring strict adherence to governance gates, risk controls, and service transition standards.',
-    accentColor: 'sky',
-    organizationOrEvent: 'United Kingdom • via TCS UK',
+    organizationOrEvent: 'United Kingdom, via TCS UK',
     highlightMetric: '100% On-Schedule Governance Gate & Audit Control Compliance',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -260,7 +250,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'AXA Health Claims Transformation',
     subtitle: 'End-to-End Legacy Claims Modernization & Digital Self-Service (via TCS Hong Kong)',
     track: 'enterprise-delivery',
-    trackLabel: 'Part B • Enterprise Delivery',
+    trackLabel: 'Part B: Enterprise Delivery',
     role: 'Project Manager',
     category: 'Insurance & Healthcare Financial Services',
     filterGroups: ['all', 'enterprise-delivery', 'agile-advisory'],
@@ -273,8 +263,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Directed end-to-end delivery for a major health claims processing transformation initiative. Coordinated business analysts, technical vendors, and operations teams to modernize legacy claims workflows, improving turnaround accuracy and digital self-service capabilities.',
-    accentColor: 'purple',
-    organizationOrEvent: 'Hong Kong / APAC • via TCS Hong Kong',
+    organizationOrEvent: 'Hong Kong / APAC, via TCS Hong Kong',
     highlightMetric: 'End-to-End Legacy Claims Modernization & Turnaround Acceleration',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -283,7 +272,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'AIA Regional Cloud Migration',
     subtitle: 'Prophet Professional Actuarial Migration to Microsoft Azure (via Kingviews)',
     track: 'enterprise-delivery',
-    trackLabel: 'Part B • Enterprise Delivery',
+    trackLabel: 'Part B: Enterprise Delivery',
     role: 'IT Project Manager',
     category: 'Actuarial Systems & Cloud Infrastructure',
     filterGroups: ['all', 'enterprise-delivery'],
@@ -297,8 +286,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Managed the regional migration of mission-critical Prophet Professional actuarial applications across 18 offices onto Microsoft Azure. Coordinated infrastructure provisioning, security compliance, user acceptance testing, and cutover execution across multiple Asian markets.',
-    accentColor: 'rose',
-    organizationOrEvent: '18 Offices, Multiple Asian Markets • via Kingviews',
+    organizationOrEvent: '18 Offices, Multiple Asian Markets, via Kingviews',
     highlightMetric: '18-Office Regional Actuarial Cloud Migration to Microsoft Azure',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -307,7 +295,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     title: 'UK Commercial Licensing & AWRS Regulatory Compliance',
     subtitle: 'Premises Licensing, HMRC AWRS & Statutory Due Diligence (Confidential UK Operator)',
     track: 'enterprise-delivery',
-    trackLabel: 'Part B • Regulatory Delivery',
+    trackLabel: 'Part B: Regulatory Delivery',
     role: 'Compliance & Delivery Lead',
     category: 'UK Retail, Wholesale & Regulatory Compliance',
     filterGroups: ['all', 'enterprise-delivery', 'regtech-security'],
@@ -320,8 +308,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Successfully managed complex UK statutory applications, including local authority Premises Licenses and HMRC Alcohol Wholesaler Registration Scheme (AWRS) compliance for a Confidential UK Commercial & Hospitality Operator. Prepared comprehensive operating schedules, due diligence frameworks, and audit trails to secure full regulatory approval.',
-    accentColor: 'sky',
-    organizationOrEvent: 'Greater London, UK • Confidential UK Commercial & Hospitality Operator',
+    organizationOrEvent: 'Greater London, UK, Confidential UK Commercial & Hospitality Operator',
     highlightMetric: 'Full UK Local Authority & HMRC AWRS Regulatory Approval Secured',
     videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
   },
@@ -333,7 +320,6 @@ export interface DiagnosticScenario {
   shortTitle: string;
   title: string;
   badge: string;
-  accent: 'sky' | 'purple' | 'rose';
   days30: string;
   days60: string;
   days90: string;
@@ -347,7 +333,6 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     shortTitle: 'Stalled Core Programme',
     title: 'Stalled Core Platform, Cloud Migration, or Multi-Vendor Programme',
     badge: 'Enterprise Programme Delivery',
-    accent: 'sky',
     days30:
       'Rapid RAID forensic audit, critical-path re-baselining, vendor accountability reset, and SteerCo governance alignment.',
     days60:
@@ -363,7 +348,6 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     shortTitle: 'AI PoC to Governed Production',
     title: 'Moving Generative AI from Fragile Prototype to Schema-Enforced Production',
     badge: 'Applied AI & Agentic Systems',
-    accent: 'purple',
     days30:
       'Architecture & security review (SC-100 aligned), typed JSON schema design, and model routing selection (Gemini, ADK 2.0, Gemma).',
     days60:
@@ -379,7 +363,6 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     shortTitle: 'AI Studio Sync & Coaching',
     title: 'Rescuing Stalled Prototypes & Synchronizing AI Studio with Production',
     badge: 'AI Coaching & Technical Advisory',
-    accent: 'rose',
     days30:
       'Diagnose staging-vs-production drift, environment variable bottlenecks, prompt degradation, and CI/CD deployment blockers.',
     days60:
@@ -395,7 +378,6 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     shortTitle: 'Audit & UK Regulatory Delivery',
     title: 'High-Stakes Technology Risk Remediation & UK Statutory Licensing',
     badge: 'Regulatory & Compliance Delivery',
-    accent: 'sky',
     days30:
       'Comprehensive gap analysis across statutory requirements (HMRC AWRS, local authority licensing, or financial market IT risk controls).',
     days60:
