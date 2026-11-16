@@ -100,7 +100,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Tech Stack',
     techStack: ['Gemini 3.8 Flash', 'React 19', 'TypeScript', 'Tailwind CSS', 'Typed JSON Schemas'],
     overview:
-      'SprintClarify enforces structured engineering planning before code generation. The platform ingests high-level product requirements and decomposes them into granular, sprint-ready user stories complete with acceptance criteria, dependency graphs, and technical risk flags. By enforcing strict JSON schema outputs from Gemini models, it eliminates vague backlog items and accelerates sprint planning for agile delivery teams.',
+      'Decomposes product requirements into sprint-ready stories, acceptance criteria, dependency graphs, and risk flags. Enforces strict Gemini JSON schemas to eliminate vague backlogs.',
     highlightMetric: 'Schema-Enforced Sprint Decomposition & Dependency Graphs',
     videoUrl: 'https://youtu.be/X1Wsjzx7cpM?si=zVhZzLRBU1TfisIk',
   },
@@ -116,7 +116,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Tech Stack',
     techStack: ['Gemma 4', 'Gemini 3.7 Flash', 'Google Cloud Run', 'Containerized Microservices'],
     overview:
-      'Built for the #AllThingsAgentic Hackathon, GuardianAI is an autonomous auditing agent deployed on Google Cloud Run. It evaluates technical documentation, system configurations, and operational workflows against regulatory and cybersecurity frameworks. Combining open-weights Gemma 4 models with Gemini 3.7 Flash, the system surfaces compliance gaps and generates actionable remediation logs automatically.',
+      'Autonomous Cloud Run auditing agent combining Gemma 4 and Gemini 3.7 Flash. Evaluates system configurations against cybersecurity frameworks and generates automated remediation logs.',
     organizationOrEvent: '#AllThingsAgentic Hackathon',
     highlightMetric: 'Autonomous Multi-Model Security & Compliance Auditing on Cloud Run',
     videoUrl: 'https://youtu.be/4gXi8fSt7gA?si=TKB00xLZTG1Tg8uN',
@@ -134,7 +134,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Tech Stack',
     techStack: ['Gemini 3.1 Pro', 'Gemini 2.5 Live', 'Firebase', 'React', 'Tailwind CSS'],
     overview:
-      'Developed for the Google Gemini Live Agent Challenge, EchoHire provides low-latency voice and text interview simulations. It operates in two distinct modes: an interactive interviewer that adapts follow-up questions in real time based on candidate responses, and an analytical career coach that evaluates transcripts against structured competency rubrics to provide actionable feedback.',
+      'Low-latency voice and text interview simulator built for the Google Gemini Live Agent Challenge. Pairs adaptive interviewing with structured rubric coaching analytics.',
     organizationOrEvent: 'Google Gemini Live Agent Challenge',
     highlightMetric: 'Low-Latency Bidirectional Voice & Competency Rubric Evaluation',
     videoUrl: 'https://youtu.be/vVuzmVtWq84?si=8l651Z7YqxeEW5ut',
@@ -151,7 +151,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Tech Stack',
     techStack: ['Gemini API', 'React', 'TypeScript', 'Tailwind CSS'],
     overview:
-      'A specialized analytical platform designed to cross-reference corporate governance disclosures and regulatory requirements across dual-market jurisdictions. The tool streamlines compliance verification by extracting key statutory obligations and highlighting discrepancies across complex regulatory filings.',
+      'Cross-references corporate governance disclosures across dual-market jurisdictions using Gemini APIs. Extracts statutory obligations and flags regulatory filing discrepancies automatically.',
     highlightMetric: 'Automated Dual-Jurisdiction Statutory Obligation Extraction',
     videoUrl: 'https://youtu.be/36Xfl-hmO9M?si=6ZawpjZ4yYWJ_XhT',
   },
@@ -168,7 +168,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Tech Stack',
     techStack: ['Gemini API', 'Serverless Video Intelligence', 'Firestore', 'React', 'TypeScript'],
     overview:
-      'A high-throughput serverless multimodal verification engine that analyzes video streams in real time, extracting factual assertions and cross-referencing them against authoritative knowledge bases with low-latency parallel claim verification. Designed for broadcast media verification and automated digital compliance workflows.',
+      'Serverless video intelligence pipeline extracting factual assertions from live streams. Cross-references claims in parallel against authoritative knowledge bases for media compliance.',
     highlightMetric: 'Parallel Claim Extraction & Multimodal Video Verification',
     videoUrl: 'https://youtu.be/eYbYHq_tyJk?si=n46zCM44sLjokhmt',
   },
@@ -184,7 +184,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Tech Stack',
     techStack: ['Google GenMedia APIs', 'Multi-Agent Workflow', 'GitHub', 'WSL'],
     overview:
-      'A collaborative multi-AI orchestration pipeline that automates creative scriptwriting, character-consistent visual storyboarding, and video generation. The architecture separates narrative planning, visual prompt enforcement, and quality assurance across specialized agent roles to maintain visual and thematic continuity.',
+      'Multi-agent orchestration pipeline automating scriptwriting, character-consistent storyboarding, and video generation. Separates planning, prompt enforcement, and QA across specialized agent roles.',
     highlightMetric: 'Role-Separated Multi-Agent Narrative & Visual QA Orchestration',
   },
   {
@@ -200,7 +200,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Tech Stack',
     techStack: ['Google AI Studio', 'Cloud Run', 'Production CI/CD Workflows'],
     overview:
-      'Ongoing client consultancy focused on transitioning AI Studio prototypes into stable production environments. Work includes resolving deployment pipeline discrepancies, synchronizing prompt and model configurations between staging and production, and coaching internal stakeholders on sustainable self-service maintenance.',
+      'Principal advisory transitioning fragile Google AI Studio prototypes into stable Cloud Run production pipelines. Resolves staging drift and enables internal self-service maintenance.',
     highlightMetric: 'Staging-to-Production Prompt Sync & Self-Service Handover',
   },
   {
@@ -216,7 +216,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Tech Stack',
     techStack: ['Gemini 2.5 Flash', 'HTML5 Canvas', 'Tailwind CSS'],
     overview:
-      'A lightweight, high-speed web application that generates culturally tailored digital greeting cards across global festivals while preserving subject likeness. Built with a streamlined frontend and automated canvas compositing for instant sharing.',
+      'High-speed web application generating culturally tailored greeting cards across global festivals while preserving subject likeness. Uses automated HTML5 canvas compositing.',
     highlightMetric: 'Subject-Likeness Preservation & Automated HTML5 Canvas Compositing',
   },
 
@@ -239,7 +239,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Vendor Security Controls',
     ],
     overview:
-      'Chaired weekly executive risk forums with Senior Operations and Risk Directors and directed multi-path remediation across 300+ end-of-life (EOL) servers, firewall rule hardening, and vendor security controls for a Tier-1 UK Financial Market Infrastructure & Clearing House, clearing 100% of audit milestones on schedule.',
+      'Chaired weekly executive risk forums across 300+ EOL servers for a Tier-1 UK Financial Market Infrastructure & Clearing House. Directed firewall hardening and security controls to clear 100% of audit milestones.',
     organizationOrEvent: 'United Kingdom',
     highlightMetric: '100% On-Schedule Governance Gate & Audit Control Compliance',
   },
@@ -261,7 +261,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       '80% Workflow Automation',
     ],
     overview:
-      'Directed 4 workstreams across 40+ specialists and 1.5M+ policy records for a Global Multinational Health & General Insurer. Introduced DevSecOps and pre-production staging, migrated core workloads to Microsoft Azure, launched co-branded bancassurance API portals, and achieved an approximate 30% IT operational cost reduction and 80% automation of manual claims processing.',
+      'Directed 4 workstreams (40+ specialists, 1.5M+ records) migrating core claims to Azure with DevSecOps staging and bancassurance APIs. Achieved ~30% IT cost reduction and 80% claims automation.',
     organizationOrEvent: 'Hong Kong / APAC',
     highlightMetric: '~30% IT Cost Reduction & 80% Claims Workflow Automation (1.5M+ Records)',
   },
@@ -283,7 +283,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Regional Cutover Execution',
     ],
     overview:
-      'Managed the regional migration of mission-critical Prophet Professional actuarial applications across 18 offices onto Microsoft Azure for a Pan-Asian Life Insurance Group (18 Regional Markets). Coordinated infrastructure provisioning, security compliance, user acceptance testing, and cutover execution across multiple Asian markets.',
+      'Led regional migration of Prophet Professional actuarial systems across 18 offices onto Microsoft Azure. Coordinated security compliance, UAT, and multi-market cutovers.',
     organizationOrEvent: '18 Regional Offices, Multiple Asian Markets',
     highlightMetric: '18-Office Regional Actuarial Cloud Migration to Microsoft Azure',
   },
@@ -304,7 +304,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Due Diligence & Audit Trails',
     ],
     overview:
-      'Successfully managed complex UK statutory applications, including local authority Premises Licenses and HMRC Alcohol Wholesaler Registration Scheme (AWRS) compliance for a Confidential UK Commercial & Hospitality Operator. Prepared comprehensive operating schedules, due diligence frameworks, and audit trails to secure full regulatory approval.',
+      'Managed UK local authority Premises Licenses and HMRC AWRS statutory applications for a Confidential UK Operator. Delivered operating schedules, due diligence, and audit trails.',
     organizationOrEvent: 'Greater London, UK, Confidential UK Commercial & Hospitality Operator',
     highlightMetric: 'Full UK Local Authority & HMRC AWRS Regulatory Approval Secured',
   },
@@ -326,7 +326,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Capacity Right-Sizing',
     ],
     overview:
-      'Directed a global Azure cloud readiness and capacity right-sizing assessment across 65 offices and 6 cloud regions covering 1,000+ servers for a Global Media & Digital Communications Network (UK). Evaluated workload dependencies, infrastructure utilization, and migration readiness to establish an executive cloud transformation roadmap.',
+      'Directed a global Azure cloud readiness and right-sizing assessment across 65 offices and 6 regions covering 1,000+ servers. Delivered an executive migration roadmap.',
     organizationOrEvent: 'London, UK & 6 Global Cloud Regions',
     highlightMetric: '1,000+ Servers Assessed Across 65 Offices & 6 Cloud Regions',
   },
@@ -349,7 +349,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Global MPLS Voice',
     ],
     overview:
-      'Concurrently led 18 enterprise Microsoft Unified Communications, Office 365 Cloud PBX (CCE), High Availability Skype for Business/Teams precursor pools, SQL Mirroring, F5/Cisco/Avaya/Mitel/ShoreTel SIP integrations, and global MPLS voice rollouts across Big-4 accounting, premier real estate, utilities (jointly with Microsoft Enterprise Services), banking, higher education, and global manufacturing. Delivered a 10-country WAN/MPLS optimization and Edge PoC achieving a 20% media performance improvement with an automated QoS diagnostic robot; a 163-day Big-4 legacy PABX decommission across 12 Greater China cities; a 1,000+ user factory relocation with an 11-server HA pool, custom IM/SMS broadcast server, and 40 training sessions; custom 10-port VXML Auto-Attendant IVR software development; and an 11-server VMware/F5/Cisco UCS campus integration.',
+      'Led 18 concurrent O365 Cloud PBX and HA Skype for Business mandates across Big-4, utilities, and banking. Delivered 10-country MPLS (+20% QoS), 163-day 12-city PABX decommissions, 1,000+ user pools, and VXML IVRs.',
     organizationOrEvent: 'APAC, Greater China, Europe & Americas',
     highlightMetric: '18 Concurrent Enterprise Hybrid Cloud & Global Voice Transformations',
   },

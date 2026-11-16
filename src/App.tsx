@@ -19,6 +19,7 @@ export function App() {
   const [activeScenarioIdx, setActiveScenarioIdx] = useState<number>(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [activeVideoItem, setActiveVideoItem] = useState<PortfolioItem | null>(null);
+  const [showAllBadges, setShowAllBadges] = useState<boolean>(false);
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -987,32 +988,74 @@ export function App() {
 
             {/* Verified Certification Badge Showcase Grid */}
             <div className="mb-8">
-              <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500 mb-3">
-                Verified Certification & Skills Badges
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3">
+                <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
+                  Verified Certification & Skills Badges (
+                  {showAllBadges ? CERTIFICATION_BADGES.length : 12} of {CERTIFICATION_BADGES.length})
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setShowAllBadges(!showAllBadges)}
+                  className="text-xs font-bold text-sky-700 hover:text-slate-950 transition-colors duration-250 ease-out self-start sm:self-auto"
+                >
+                  {showAllBadges
+                    ? 'Show Core 12 Badges'
+                    : `Show All ${CERTIFICATION_BADGES.length} Official Badges`}
+                </button>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-4 border-t border-l border-slate-200 bg-white">
-                {CERTIFICATION_BADGES.map((badge) => (
-                  <div
-                    key={badge.code}
-                    className="p-5 border-r border-b border-slate-200 flex flex-col justify-between hover:bg-slate-50 transition-colors duration-250 ease-out"
-                  >
-                    <div className="flex items-center justify-between gap-2 mb-3">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-                        {badge.issuer}
-                      </span>
-                      <span className="w-7 h-7 rounded bg-slate-950 flex items-center justify-center shrink-0">
-                        <BadgeIssuerEmblem issuer={badge.issuer} />
-                      </span>
-                    </div>
-                    <div>
-                      <div className="text-sm font-extrabold text-slate-950">{badge.code}</div>
-                      <div className="text-xs text-slate-600 mt-0.5 leading-snug">{badge.name}</div>
-                    </div>
-                    <div className="mt-3 pt-2.5 border-t border-slate-100 text-[10px] font-bold uppercase tracking-wider text-sky-700">
-                      {badge.tier}
-                    </div>
-                  </div>
-                ))}
+                {(showAllBadges ? CERTIFICATION_BADGES : CERTIFICATION_BADGES.slice(0, 12)).map(
+                  (badge) => {
+                    const badgeContent = (
+                      <>
+                        <div className="flex items-start justify-between gap-2 mb-2">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+                            {badge.issuer}
+                          </span>
+                          {badge.verifyUrl && (
+                            <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                          )}
+                        </div>
+                        <div className="my-2 flex items-center justify-center bg-slate-50/70 rounded p-2.5 border border-slate-100">
+                          <img
+                            src={badge.imageUrl}
+                            alt={badge.name}
+                            className="w-14 h-14 object-contain"
+                            loading="lazy"
+                          />
+                        </div>
+                        <div className="mt-2">
+                          <div className="text-sm font-extrabold text-slate-950">{badge.code}</div>
+                          <div className="text-xs text-slate-600 mt-0.5 leading-snug">
+                            {badge.name}
+                          </div>
+                        </div>
+                        <div className="mt-3 pt-2.5 border-t border-slate-100 text-[10px] font-bold uppercase tracking-wider text-sky-700">
+                          {badge.tier}
+                        </div>
+                      </>
+                    );
+
+                    return badge.verifyUrl ? (
+                      <a
+                        key={`${badge.issuer}-${badge.code}`}
+                        href={badge.verifyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-5 border-r border-b border-slate-200 flex flex-col justify-between hover:bg-slate-50 transition-colors duration-250 ease-out"
+                      >
+                        {badgeContent}
+                      </a>
+                    ) : (
+                      <div
+                        key={`${badge.issuer}-${badge.code}`}
+                        className="p-5 border-r border-b border-slate-200 flex flex-col justify-between hover:bg-slate-50 transition-colors duration-250 ease-out"
+                      >
+                        {badgeContent}
+                      </div>
+                    );
+                  }
+                )}
               </div>
             </div>
 
@@ -1376,97 +1419,262 @@ const CERTIFICATION_BADGES: {
   code: string;
   name: string;
   tier: string;
+  imageUrl: string;
+  verifyUrl?: string;
 }[] = [
   {
     issuer: 'PMI',
     code: 'PMP',
     name: 'Project Management Professional',
     tier: 'Verified Credential',
+    imageUrl: '/Badges/project-management-professional-pmp.png',
   },
   {
     issuer: 'PMI',
     code: 'DASSM',
     name: 'Disciplined Agile Senior Scrum Master',
     tier: 'Verified Credential',
-  },
-  {
-    issuer: 'PMI',
-    code: 'PMI GenAI',
-    name: 'GenAI & Prompt Engineering for PMs',
-    tier: 'Verified Credential',
+    imageUrl: '/Badges/disciplined-agile-senior-scrum-master-dassm.png',
   },
   {
     issuer: 'Microsoft',
     code: 'SC-100 Expert',
     name: 'Cybersecurity Architect Expert',
     tier: 'Microsoft Certified Expert',
+    imageUrl: '/Badges/microsoft-certified-expert-badge.svg',
   },
   {
     issuer: 'Microsoft',
-    code: 'AI-102',
+    code: 'AI-102 Associate',
     name: 'Azure AI Engineer Associate',
     tier: 'Microsoft Certified Associate',
+    imageUrl: '/Badges/microsoft-certified-associate-badge.svg',
   },
   {
     issuer: 'Microsoft',
-    code: 'AZ-104',
+    code: 'AZ-104 Associate',
     name: 'Azure Administrator Associate',
     tier: 'Microsoft Certified Associate',
+    imageUrl: '/Badges/microsoft-certified-associate-badge.svg',
   },
   {
-    issuer: 'Google Skills',
-    code: 'Gemini & ADK 2.0',
-    name: 'Google GenAI, Gemma 4 & Cloud Run',
-    tier: 'Cloud & AI Badge',
+    issuer: 'Google Cloud',
+    code: 'Gemini Multi-Agent',
+    name: 'Orchestrate Multi-Agent Workflows with Gemini Enterprise',
+    tier: 'Google Skill Badge',
+    imageUrl: '/Badges/orchestrate-multi-agent-workflows-with-gemini-enter.png',
   },
   {
-    issuer: 'Enterprise',
-    code: 'LSS & DevSecOps',
-    name: 'Lean Six Sigma, ITSM, BCM & Privacy',
-    tier: 'Governance Competency',
+    issuer: 'Google Cloud',
+    code: 'Google AI Studio',
+    name: 'Develop AI-Powered Prototypes in Google AI Studio',
+    tier: 'Google Skill Badge',
+    imageUrl: '/Badges/develop-ai-powered-prototypes-in-google-ai-studio.png',
+  },
+  {
+    issuer: 'Google Cloud',
+    code: 'Vertex AI Prompts',
+    name: 'Prompt Design in Vertex AI',
+    tier: 'Google Skill Badge',
+    imageUrl: '/Badges/prompt-design-in-vertex-ai-skill-badge.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'PMI Agentic AI Lab',
+    name: 'Agentic AI Build Lab for Project Managers',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/pmi-essentials-agentic-ai-build-lab-for-project-man.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'PMI GenAI Overview',
+    name: 'Generative AI Overview for Project Managers',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/generative-ai-overview-for-project-managers.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'PMI Prompt Eng.',
+    name: 'Talking to AI: Prompt Engineering for Project Managers',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/talking-to-ai-prompt-engineering-for-project-manage.png',
+  },
+  {
+    issuer: 'OPSWAT',
+    code: 'OPSWAT ICIP',
+    name: 'Introduction to Critical Infrastructure Protection',
+    tier: 'Security Certification',
+    imageUrl: '/Badges/opswat-introduction-to-critical-infrastructure-protection-icip.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'AHPP',
+    name: 'Agile Hybrid Project Pro',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/agile-hybrid-project-pro.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'GenAI Applied',
+    name: 'Practical Application of GenAI for Project Managers',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/practical-application-of-gen-ai-for-project-manager.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'GenAI Data Landscape',
+    name: 'Data Landscape of GenAI for Project Managers',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/data-landscape-of-genai-for-project-managers.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'Agentic Foundations',
+    name: 'Foundations: Agentic AI for Project Managers',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/pmi-foundations-agentic-ai-for-project-managers.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'AI Project Patterns',
+    name: 'Seven AI Project Patterns',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/pmi-essentials-seven-ai-project-patterns.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'AI in Agile',
+    name: 'AI in Agile Delivery',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/ai-in-agile-delivery.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'AI Infrastructure',
+    name: 'AI in Infrastructure & Construction Projects',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/ai-in-infrastructure-construction-projects.png',
+  },
+  {
+    issuer: 'Google Cloud',
+    code: 'Gemini & Streamlit',
+    name: 'Develop GenAI Apps with Gemini & Streamlit',
+    tier: 'Google Skill Badge',
+    imageUrl: '/Badges/develop-genai-apps-with-gemini-and-streamlit-skill-.png',
+  },
+  {
+    issuer: 'Microsoft',
+    code: 'SC-900',
+    name: 'Security, Compliance & Identity Fundamentals',
+    tier: 'Microsoft Fundamentals',
+    imageUrl: '/Badges/microsoft-certified-security-compliance-and-identity-fundamentals.png',
+  },
+  {
+    issuer: 'Microsoft',
+    code: 'AI-900',
+    name: 'Azure AI Fundamentals',
+    tier: 'Microsoft Fundamentals',
+    imageUrl: '/Badges/microsoft-certified-azure-ai-fundamentals.png',
+  },
+  {
+    issuer: 'Microsoft',
+    code: 'AZ-900',
+    name: 'Azure Fundamentals',
+    tier: 'Microsoft Fundamentals',
+    imageUrl: '/Badges/microsoft-certified-azure-fundamentals.png',
+  },
+  {
+    issuer: 'AWS Educate',
+    code: 'AWS GenAI',
+    name: 'Introduction to Generative AI Training',
+    tier: 'Cloud Training Badge',
+    imageUrl: '/Badges/aws-educate-introduction-to-generative-ai-training-.png',
+  },
+  {
+    issuer: 'Automation',
+    code: 'AI Agent Builder',
+    name: 'AI Agent Builder',
+    tier: 'Agentic Workflow Badge',
+    imageUrl: '/Badges/ai-agent-builder.1.png',
+  },
+  {
+    issuer: 'Automation',
+    code: 'AI Automation Explorer',
+    name: 'AI Automation Explorer',
+    tier: 'Workflow Badge',
+    imageUrl: '/Badges/ai-automation-explorer.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'DA Essentials',
+    name: 'Disciplined Agile Essentials',
+    tier: 'Agile Competency',
+    imageUrl: '/Badges/disciplined-agile-essentials.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'Agile Metrics',
+    name: 'Agile Metrics for Success',
+    tier: 'Agile Competency',
+    imageUrl: '/Badges/agile-metrics-for-success.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'Value Stream Mgmt',
+    name: 'Value Stream Management',
+    tier: 'Agile Competency',
+    imageUrl: '/Badges/value-stream-management.1.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'Product & Project',
+    name: 'Product & Project Collaboration',
+    tier: 'Agile Competency',
+    imageUrl: '/Badges/product-and-project-collaboration.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'M.O.R.E.',
+    name: 'Maximizing Project Success',
+    tier: 'Delivery Competency',
+    imageUrl: '/Badges/pmi-essentials-m-o-r-e-maximizing-project-success.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'Citizen Dev Arch.',
+    name: 'Citizen Developer Business Architect',
+    tier: 'Low-Code Architecture',
+    imageUrl: '/Badges/pmi-citizen-developer-business-architect-skills.png',
+  },
+  {
+    issuer: 'PMI',
+    code: 'Citizen Dev Prac.',
+    name: 'Citizen Developer Practitioner',
+    tier: 'Low-Code Delivery',
+    imageUrl: '/Badges/pmi-citizen-developer-practitioner-skills.png',
+  },
+  {
+    issuer: 'Make',
+    code: 'Make Advanced',
+    name: 'Make Advanced Automation',
+    tier: 'Workflow Automation',
+    imageUrl: '/Badges/make-advanced.png',
+  },
+  {
+    issuer: 'Make',
+    code: 'Make Intermediate',
+    name: 'Make Intermediate Automation',
+    tier: 'Workflow Automation',
+    imageUrl: '/Badges/make-intermediate.png',
+  },
+  {
+    issuer: 'Make',
+    code: 'Make Basics',
+    name: 'Make Basics & Foundation',
+    tier: 'Workflow Automation',
+    imageUrl: '/Badges/make-basics.png',
   },
 ];
-
-function BadgeIssuerEmblem({ issuer }: { issuer: string }) {
-  if (issuer === 'Microsoft') {
-    return (
-      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="2" width="5" height="5" fill="#94A3B8" />
-        <rect x="9" y="2" width="5" height="5" fill="#38BDF8" />
-        <rect x="2" y="9" width="5" height="5" fill="#64748B" />
-        <rect x="9" y="9" width="5" height="5" fill="#FFFFFF" />
-      </svg>
-    );
-  }
-  if (issuer === 'PMI') {
-    return (
-      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M8 1.5L13.5 4.2V8.2C13.5 11.4 11.1 13.8 8 14.5C4.9 13.8 2.5 11.4 2.5 8.2V4.2L8 1.5Z"
-          stroke="#38BDF8"
-          strokeWidth="1.5"
-        />
-        <path d="M5.8 8L7.4 9.6L10.5 6.4" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    );
-  }
-  if (issuer === 'Google Skills') {
-    return (
-      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="8" cy="4" r="2" fill="#38BDF8" />
-        <circle cx="4" cy="11.5" r="2" fill="#94A3B8" />
-        <circle cx="12" cy="11.5" r="2" fill="#FFFFFF" />
-        <path d="M8 6L4.8 9.8M8 6L11.2 9.8M6 11.5H10" stroke="#64748B" strokeWidth="1.2" />
-      </svg>
-    );
-  }
-  return (
-    <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#38BDF8" strokeWidth="1.5" />
-      <path d="M5.5 8H10.5M8 5.5V10.5" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
 
 function formatScenarioBullets(text: string): string[] {
   const parts: string[] = [];
