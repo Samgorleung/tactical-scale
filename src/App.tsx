@@ -189,7 +189,7 @@ export function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 sm:pt-36 pb-20 px-6 bg-white border-b border-slate-200">
+      <section className="pt-36 sm:pt-40 pb-24 sm:pb-28 px-6 bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-md bg-slate-100 border border-slate-200 text-slate-800 text-xs font-semibold mb-6">
             <span>Greater London, United Kingdom</span>
@@ -197,33 +197,45 @@ export function App() {
             <span className="text-sky-700">Digital Transformation, Agile Delivery & Applied AI</span>
           </div>
 
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-950 leading-[1.12] mb-6 max-w-4xl">
+          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-950 leading-[1.12] mb-5 max-w-4xl">
             Pragmatic Project Delivery &{' '}
             <span className="text-sky-700">Applied AI Engineering.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-slate-700 font-medium max-w-3xl mb-5 leading-relaxed">
-            Bridging enterprise governance with rapid technical execution across cloud
-            transformation, agentic AI workflows, and regulatory delivery.
+          <p className="text-lg sm:text-xl text-slate-700 font-medium max-w-3xl mb-6 leading-relaxed">
+            Enterprise programme governance paired with rapid cloud and agentic AI execution.
           </p>
 
-          <p className="text-sm sm:text-base text-slate-600 max-w-3xl mb-10 leading-relaxed">
-            Tactical Scale is an independent consultancy based in London combining{' '}
-            <strong className="text-slate-900 font-semibold">
-              14+ years of tier-one financial services and IT programme management
-            </strong>{' '}
-            with hands-on cloud architecture and multi-agent AI engineering. Whether migrating legacy
-            actuarial and claims systems to Azure, navigating complex UK regulatory licensing, or
-            architecting schema-enforced AI systems on Google Cloud and Cloudflare Workers, every
-            engagement delivers measurable operational outcomes without agency bloat.
-          </p>
+          <ul className="grid sm:grid-cols-3 gap-4 max-w-4xl mb-10 text-sm text-slate-700 border-t border-b border-slate-200 py-5">
+            <li className="flex items-start space-x-2.5">
+              <span className="text-sky-700 font-extrabold shrink-0">01.</span>
+              <span>
+                <strong className="text-slate-950">14+ Years & 40+ Mandates:</strong> Tier-1 UK
+                clearing, global insurance, and Microsoft Partner/GSI transformations.
+              </span>
+            </li>
+            <li className="flex items-start space-x-2.5">
+              <span className="text-sky-700 font-extrabold shrink-0">02.</span>
+              <span>
+                <strong className="text-slate-950">Production AI Builds:</strong> Schema-enforced
+                Gemini, ADK 2.0, and Gemma 4 agents on Cloud Run and Cloudflare.
+              </span>
+            </li>
+            <li className="flex items-start space-x-2.5">
+              <span className="text-sky-700 font-extrabold shrink-0">03.</span>
+              <span>
+                <strong className="text-slate-950">Zero Agency Bloat:</strong> Principal-led
+                SteerCo governance, UK statutory compliance (HMRC AWRS), and rapid delivery.
+              </span>
+            </li>
+          </ul>
 
-          <div className="flex flex-wrap items-center gap-4 mb-14">
+          <div className="flex flex-wrap items-center gap-4 mb-16">
             <a
               href="mailto:sam@tactical-scale.com?subject=Consultation%20Enquiry%3A%20Tactical%20Scale"
               className="px-6 py-3.5 rounded-lg bg-slate-950 hover:bg-slate-800 text-white font-semibold text-sm transition-all duration-250 ease-out hover:-translate-y-0.5 flex items-center space-x-2"
             >
-              <span>Book a Consultation / Get in Touch</span>
+              <span>Book a Consultation</span>
               <ArrowUpRight className="w-4 h-4 text-sky-400" />
             </a>
             <a
@@ -241,10 +253,10 @@ export function App() {
             </a>
           </div>
 
-          {/* Proven Track Record Architectural Grid (Replaces Floating Hero Cards) */}
+          {/* Proven Track Record Architectural Grid */}
           <div className="pt-8 border-t border-slate-200">
             <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">
-              Verified Principal Track Record Across Enterprise Delivery & Applied AI Systems
+              Verified Track Record Across Enterprise Delivery & Applied AI
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-b border-slate-200 divide-y sm:divide-y-0 sm:divide-x divide-slate-200 bg-slate-50/50">
               <a
@@ -259,7 +271,7 @@ export function App() {
                   Tier-1 UK Market Infrastructure
                 </div>
                 <div className="text-xs text-slate-600 mt-1">
-                  Market infrastructure governance, risk controls, and clearing transformation.
+                  300+ EOL servers hardened and 100% audit gate clearance.
                 </div>
               </a>
 
@@ -275,7 +287,7 @@ export function App() {
                   Global Health & Pan-Asian Life Insurers
                 </div>
                 <div className="text-xs text-slate-600 mt-1">
-                  Claims workflow modernization and 18-office actuarial migration to Azure.
+                  80% claims automation (1.5M+ records) and 18-office Azure migration.
                 </div>
               </a>
 
@@ -291,7 +303,7 @@ export function App() {
                   HMRC AWRS & GuardianAI
                 </div>
                 <div className="text-xs text-slate-600 mt-1">
-                  UK statutory licensing approvals and autonomous Cloud Run compliance auditing.
+                  Full UK licensing approvals and Cloud Run security compliance auditing.
                 </div>
               </a>
 
@@ -307,7 +319,7 @@ export function App() {
                   SprintClarify, EchoHire & CineFact
                 </div>
                 <div className="text-xs text-slate-600 mt-1">
-                  Schema-enforced Gemini systems, live voice agents, and video verification.
+                  Schema-enforced Gemini apps, live voice agents, and video claim verification.
                 </div>
               </a>
             </div>
@@ -316,69 +328,69 @@ export function App() {
       </section>
 
       {/* Executive Positioning: The Consulting Gap & Target Client Segments */}
-      <section id="positioning" className="py-20 px-6 bg-slate-50 border-b border-slate-200">
+      <section id="positioning" className="py-24 sm:py-28 px-6 bg-slate-50 border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl mb-12">
             <h2 className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">
-              Executive Positioning & Value Proposition
+              Executive Positioning
             </h2>
             <h3 className="text-3xl font-extrabold text-slate-950 mb-3">
               Closing the Divide Between Strategy & Production Code
             </h3>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Many organizations struggle with a divide between high-level strategy consultants who
-              do not build, and technical developers who lack enterprise risk, compliance, and
-              delivery governance. Tactical Scale bridges both worlds.
+            <p className="text-sm sm:text-base text-slate-600">
+              Principal governance paired with hands-on production engineering.
             </p>
           </div>
 
           {/* 3-Column Consulting Gap Architectural Grid */}
-          <div className="grid md:grid-cols-3 border-t border-b border-slate-200 divide-y md:divide-y-0 md:divide-x divide-slate-200 bg-white mb-14">
+          <div className="grid md:grid-cols-3 border-t border-b border-slate-200 divide-y md:divide-y-0 md:divide-x divide-slate-200 bg-white mb-16">
             <div className="p-6 sm:p-8">
               <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-                Traditional Strategy Consultancies
+                Traditional Consultancies
               </div>
-              <h4 className="text-lg font-bold text-slate-900 mb-2">
+              <h4 className="text-lg font-bold text-slate-900 mb-3">
                 High Overhead, Slideware Output
               </h4>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Expensive strategy decks handed off to junior analysts who lack hands-on cloud
-                security, schema-enforced AI engineering, or production deployment capability.
-              </p>
+              <ul className="text-xs sm:text-sm text-slate-600 space-y-2">
+                <li>Strategy decks without code execution</li>
+                <li>Junior handoffs lacking cloud security depth</li>
+                <li>Slow procurement and agency bloat</li>
+              </ul>
             </div>
 
             <div className="p-6 sm:p-8">
               <div className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
-                Pure-Play Dev Shops & Freelancers
+                Pure-Play Dev Shops
               </div>
-              <h4 className="text-lg font-bold text-slate-900 mb-2">
-                Code Without Enterprise Governance
+              <h4 className="text-lg font-bold text-slate-900 mb-3">
+                Code Without Governance
               </h4>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Fragile AI prototypes that fail enterprise stage-gates, regulatory compliance
-                audits, SteerCo scrutiny, and staging-to-production synchronization.
-              </p>
+              <ul className="text-xs sm:text-sm text-slate-600 space-y-2">
+                <li>Fragile prototypes failing audit gates</li>
+                <li>No SteerCo or RAID control frameworks</li>
+                <li>Staging-to-production deployment drift</li>
+              </ul>
             </div>
 
             <div className="p-6 sm:p-8 bg-slate-950 text-white">
               <div className="text-xs font-bold uppercase tracking-wider text-sky-400 mb-2">
                 The Tactical Scale Model
               </div>
-              <h4 className="text-lg font-bold text-white mb-2">
-                Principal Governance + Rapid Execution
+              <h4 className="text-lg font-bold text-white mb-3">
+                Principal Governance + Rapid Code
               </h4>
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Led directly by Sam Leung (PMP, DASSM, SC-100, AI-102) supported by specialized
-                Technical Engineering Partners, combining tier-one RAID governance with production AI
-                systems.
-              </p>
+              <ul className="text-xs sm:text-sm text-slate-300 space-y-2">
+                <li>Led by Sam Leung (PMP, DASSM, SC-100, AI-102)</li>
+                <li>Backed by specialized Engineering Partners</li>
+                <li>Boardroom rigour to shipped production code</li>
+              </ul>
             </div>
           </div>
 
           {/* Target Client Segments Architectural Grid */}
           <div>
             <div className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-4">
-              Target Client Segments We Serve
+              Target Client Segments
             </div>
             <div className="grid md:grid-cols-3 border-t border-b border-slate-200 divide-y md:divide-y-0 md:divide-x divide-slate-200 bg-white">
               <div className="p-6 sm:p-8 flex flex-col justify-between">
@@ -386,16 +398,17 @@ export function App() {
                   <div className="text-xs font-bold uppercase tracking-wider text-sky-700 mb-1">
                     Segment 01
                   </div>
-                  <h4 className="text-base font-bold text-slate-950 mb-2">
-                    Financial Services & Enterprise Ops
+                  <h4 className="text-base font-bold text-slate-950 mb-3">
+                    Financial Services & Solution Partners
                   </h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Banks, insurers, and market infrastructure providers requiring seasoned PMP and
-                    Agile delivery leadership for cloud, security, and AI transformation programmes.
-                  </p>
+                  <ul className="text-xs sm:text-sm text-slate-600 space-y-2">
+                    <li>Banks, insurers, and clearing houses</li>
+                    <li>UK Contract & SOW programme leadership</li>
+                    <li>Microsoft, Google & AWS partner subcontracting</li>
+                  </ul>
                 </div>
-                <div className="mt-4 pt-3 border-t border-slate-200 text-xs font-semibold text-slate-500">
-                  Clearing, Insurance Claims, Actuarial Cloud, Cyber Risk
+                <div className="mt-5 pt-3 border-t border-slate-200 text-xs font-semibold text-slate-500">
+                  Clearing, Claims, Azure Cloud, Cyber Risk
                 </div>
               </div>
 
@@ -404,17 +417,17 @@ export function App() {
                   <div className="text-xs font-bold uppercase tracking-wider text-sky-700 mb-1">
                     Segment 02
                   </div>
-                  <h4 className="text-base font-bold text-slate-950 mb-2">
-                    SMEs & Commercial Operators
+                  <h4 className="text-base font-bold text-slate-950 mb-3">
+                    UK SMEs & Commercial Operators
                   </h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    UK businesses requiring digital workflow modernization, compliance automation,
-                    and statutory regulatory application management (HMRC AWRS & local authority
-                    licensing).
-                  </p>
+                  <ul className="text-xs sm:text-sm text-slate-600 space-y-2">
+                    <li>Digital workflow and Copilot modernization</li>
+                    <li>HMRC AWRS & UK premises licensing</li>
+                    <li>Compliance due diligence and audit trails</li>
+                  </ul>
                 </div>
-                <div className="mt-4 pt-3 border-t border-slate-200 text-xs font-semibold text-slate-500">
-                  UK Statutory Licensing, Workflow Automation, M365 Copilot
+                <div className="mt-5 pt-3 border-t border-slate-200 text-xs font-semibold text-slate-500">
+                  UK Statutory Licensing, Automation, M365
                 </div>
               </div>
 
@@ -423,17 +436,17 @@ export function App() {
                   <div className="text-xs font-bold uppercase tracking-wider text-sky-700 mb-1">
                     Segment 03
                   </div>
-                  <h4 className="text-base font-bold text-slate-950 mb-2">
+                  <h4 className="text-base font-bold text-slate-950 mb-3">
                     Founders & Product Teams
                   </h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Technical and non-technical founders seeking rapid MVP development, multi-agent
-                    AI integration, and Google AI Studio to production environment deployment
-                    support.
-                  </p>
+                  <ul className="text-xs sm:text-sm text-slate-600 space-y-2">
+                    <li>Rapid schema-enforced AI MVP builds</li>
+                    <li>Multi-agent ADK 2.0 and Gemini pipelines</li>
+                    <li>AI Studio-to-production deployment sync</li>
+                  </ul>
                 </div>
-                <div className="mt-4 pt-3 border-t border-slate-200 text-xs font-semibold text-slate-500">
-                  AI Studio Sync, Cloud Run CI/CD, Schema-Enforced MVPs
+                <div className="mt-5 pt-3 border-t border-slate-200 text-xs font-semibold text-slate-500">
+                  AI Studio Sync, Cloud Run CI/CD, MVPs
                 </div>
               </div>
             </div>
@@ -442,7 +455,7 @@ export function App() {
       </section>
 
       {/* Core Service Pillars (Border-Divided Architectural Grid) */}
-      <section id="pillars" className="py-20 px-6 bg-white border-b border-slate-200">
+      <section id="pillars" className="py-24 sm:py-28 px-6 bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-2xl mb-12">
             <h2 className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">
@@ -454,101 +467,101 @@ export function App() {
           </div>
 
           <div className="grid md:grid-cols-3 border-t border-b border-slate-200 divide-y md:divide-y-0 md:divide-x divide-slate-200">
-            {/* Pillar 1: Enterprise Programme & Agile Delivery */}
+            {/* Pillar 1 */}
             <div className="py-8 md:px-6 first:md:pl-0 last:md:pr-0 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider text-sky-700 mb-2">
                   Pillar 01
                 </div>
-                <h4 className="text-xl font-bold text-slate-950 mb-3">
+                <h4 className="text-xl font-bold text-slate-950 mb-2">
                   Enterprise Programme & Agile Delivery
                 </h4>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                  Structured project and programme management for complex IT transformations, cloud
-                  migrations, and regulatory compliance initiatives. Drawing on deep experience
-                  across banking, insurance, and financial market infrastructure, Tactical Scale
-                  establishes clear governance, RAID management, and agile delivery rhythms that
-                  bring high-stakes initiatives from initiation to production release.
+                <p className="text-slate-600 text-sm mb-6">
+                  Regulated IT transformation, cloud migration, and audit-ready governance.
                 </p>
               </div>
-              <ul className="text-xs font-semibold text-slate-700 space-y-2.5 pt-6 border-t border-slate-200">
+              <ul className="text-xs font-semibold text-slate-700 space-y-3 pt-6 border-t border-slate-200">
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">01.</span>
                   <span>SteerCo Governance, RAID Control & Service Transition</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">02.</span>
-                  <span>Core Insurance, Clearing & Multi-Market Cloud Migrations</span>
+                  <span>Core Insurance, Clearing & Multi-Region Azure Migrations</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">03.</span>
-                  <span>UK Statutory Licensing (HMRC AWRS) & Regulatory Audits</span>
+                  <span>300+ EOL Server Hardening & Vendor Security Audits</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-sky-700 font-bold">04.</span>
+                  <span>UK Statutory Licensing (HMRC AWRS) & Risk Clearance</span>
                 </li>
               </ul>
             </div>
 
-            {/* Pillar 2: Applied AI & Agentic Systems Architecture */}
+            {/* Pillar 2 */}
             <div className="py-8 md:px-6 first:md:pl-0 last:md:pr-0 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider text-sky-700 mb-2">
                   Pillar 02
                 </div>
-                <h4 className="text-xl font-bold text-slate-950 mb-3">
+                <h4 className="text-xl font-bold text-slate-950 mb-2">
                   Applied AI & Agentic Systems Architecture
                 </h4>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                  End-to-end design and rapid prototyping of production-grade AI applications and
-                  autonomous multi-agent workflows. Utilizing modern frameworks including Google
-                  Gemini, ADK 2.0, Gemma, Microsoft Azure AI, React 19, TypeScript, and Cloudflare
-                  Workers, Tactical Scale turns operational bottlenecks into streamlined,
-                  schema-enforced software tools.
+                <p className="text-slate-600 text-sm mb-6">
+                  Production multi-agent workflows built with typed, deterministic outputs.
                 </p>
               </div>
-              <ul className="text-xs font-semibold text-slate-700 space-y-2.5 pt-6 border-t border-slate-200">
+              <ul className="text-xs font-semibold text-slate-700 space-y-3 pt-6 border-t border-slate-200">
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">01.</span>
-                  <span>Google Gemini, ADK 2.0, Gemma 4 & Azure AI Orchestration</span>
+                  <span>Google Gemini, ADK 2.0, A2A & Gemma 4 Orchestration</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">02.</span>
-                  <span>Strict Typed JSON Schema Outputs & Autonomous Auditing</span>
+                  <span>Strict Typed JSON Schemas & Autonomous Compliance Audits</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">03.</span>
+                  <span>Azure AI & Enterprise Hybrid Cloud Integrations</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-sky-700 font-bold">04.</span>
                   <span>React 19, TypeScript, Cloud Run & Cloudflare Workers</span>
                 </li>
               </ul>
             </div>
 
-            {/* Pillar 3: AI Coaching, Technical Advisory & Troubleshooting */}
+            {/* Pillar 3 */}
             <div className="py-8 md:px-6 first:md:pl-0 last:md:pr-0 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-bold uppercase tracking-wider text-sky-700 mb-2">
                   Pillar 03
                 </div>
-                <h4 className="text-xl font-bold text-slate-950 mb-3">
-                  AI Coaching, Technical Advisory & Troubleshooting
+                <h4 className="text-xl font-bold text-slate-950 mb-2">
+                  AI Coaching, Advisory & Troubleshooting
                 </h4>
-                <p className="text-slate-600 text-sm leading-relaxed mb-6">
-                  Hands-on advisory and technical troubleshooting for leadership teams and builders
-                  adopting generative AI. Services include Google AI Studio to production
-                  environment synchronization, prompt and context engineering governance, Microsoft
-                  365 Copilot adoption, and rescuing stalled technical prototypes into stable
-                  deployments.
+                <p className="text-slate-600 text-sm mb-6">
+                  Stabilizing stalled AI prototypes and upskilling internal delivery teams.
                 </p>
               </div>
-              <ul className="text-xs font-semibold text-slate-700 space-y-2.5 pt-6 border-t border-slate-200">
+              <ul className="text-xs font-semibold text-slate-700 space-y-3 pt-6 border-t border-slate-200">
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">01.</span>
                   <span>Google AI Studio to Cloud Run Production Synchronization</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">02.</span>
-                  <span>Prompt & Context Engineering Governance & CI/CD Fixes</span>
+                  <span>Prompt Engineering Governance & CI/CD Pipeline Fixes</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">03.</span>
-                  <span>M365 Copilot Enablement & Stalled Prototype Rescue</span>
+                  <span>Microsoft 365 Copilot Adoption & Security Controls</span>
+                </li>
+                <li className="flex items-start space-x-2">
+                  <span className="text-sky-700 font-bold">04.</span>
+                  <span>Stakeholder Coaching & Self-Service Operational Handover</span>
                 </li>
               </ul>
             </div>
@@ -557,20 +570,19 @@ export function App() {
       </section>
 
       {/* Featured Portfolio & Delivery Track Record with Category Filter Tabs */}
-      <section id="portfolio" className="py-20 px-6 bg-slate-50 border-b border-slate-200">
+      <section id="portfolio" className="py-24 sm:py-28 px-6 bg-slate-50 border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-4">
             <div>
               <h2 className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">
-                Project Portfolio & Delivery Track Record
+                Project Portfolio & Track Record
               </h2>
               <h3 className="text-3xl font-extrabold text-slate-950">
-                Applied AI Builds & Enterprise Transformation Mandates
+                Applied AI Builds & Enterprise Mandates
               </h3>
               <p className="text-sm text-slate-600 mt-2 max-w-2xl">
-                Filter across our 8 production AI engineering builds and coaching mandates (Part A)
-                and 6 flagship enterprise and UK regulatory transformation deliveries (Part B).
-                Select "Watch Demo" on featured AI builds to view a video walkthrough.
+                Filter across 8 production AI engineering builds (Part A) and 6 enterprise
+                transformation mandates (Part B). Click "Watch Demo" on featured AI builds.
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-3 shrink-0">
@@ -726,7 +738,7 @@ export function App() {
       )}
 
       {/* Interactive 30-60-90 Day B2B Solution Scoper */}
-      <section id="scoper" className="py-20 px-6 bg-white border-b border-slate-200">
+      <section id="scoper" className="py-24 sm:py-28 px-6 bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
             <div>
@@ -738,7 +750,7 @@ export function App() {
               </h3>
             </div>
             <p className="text-sm text-slate-500 mt-2 md:mt-0">
-              Inspect our 30-60-90 day execution roadmap and verified delivery proof points.
+              30-60-90 day execution roadmap and verified proof points.
             </p>
           </div>
 
@@ -784,28 +796,49 @@ export function App() {
 
             <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-200">
               <div className="p-6">
-                <div className="text-xs font-bold uppercase text-sky-700 mb-2">
+                <div className="text-xs font-bold uppercase text-sky-700 mb-3">
                   Days 1 to 30: Diagnose & Stabilise
                 </div>
-                <p className="text-sm text-slate-600 leading-relaxed">{activeScenario.days30}</p>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  {formatScenarioBullets(activeScenario.days30).map((point) => (
+                    <li key={point} className="flex items-start space-x-2">
+                      <span className="text-sky-700 font-bold shrink-0">/</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
               <div className="p-6">
-                <div className="text-xs font-bold uppercase text-sky-700 mb-2">
+                <div className="text-xs font-bold uppercase text-sky-700 mb-3">
                   Days 31 to 60: Architect & Execute
                 </div>
-                <p className="text-sm text-slate-600 leading-relaxed">{activeScenario.days60}</p>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  {formatScenarioBullets(activeScenario.days60).map((point) => (
+                    <li key={point} className="flex items-start space-x-2">
+                      <span className="text-sky-700 font-bold shrink-0">/</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
               <div className="p-6">
-                <div className="text-xs font-bold uppercase text-sky-700 mb-2">
+                <div className="text-xs font-bold uppercase text-sky-700 mb-3">
                   Days 61 to 90: Transition & Scale
                 </div>
-                <p className="text-sm text-slate-600 leading-relaxed">{activeScenario.days90}</p>
+                <ul className="text-sm text-slate-600 space-y-2">
+                  {formatScenarioBullets(activeScenario.days90).map((point) => (
+                    <li key={point} className="flex items-start space-x-2">
+                      <span className="text-sky-700 font-bold shrink-0">/</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
             <div className="px-6 py-4 bg-slate-950 text-slate-200 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="leading-relaxed">
-                <strong className="text-sky-400">Verified Track Record: </strong>
+                <strong className="text-sky-400">Verified Proof: </strong>
                 {activeScenario.proof}
               </div>
               <a
@@ -822,7 +855,7 @@ export function App() {
       </section>
 
       {/* Productized Commercial Engagement Models */}
-      <section className="py-20 px-6 bg-slate-50 border-b border-slate-200">
+      <section className="py-24 sm:py-28 px-6 bg-slate-50 border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-2xl mb-12">
             <h2 className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-2">
@@ -839,14 +872,23 @@ export function App() {
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
                   Fixed-Scope Diagnostic (2 to 4 Weeks)
                 </div>
-                <h4 className="text-xl font-bold text-slate-950 mb-3">
+                <h4 className="text-xl font-bold text-slate-950 mb-4">
                   Readiness, Risk & AI Studio Audit
                 </h4>
-                <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-                  Independent health-check of stalled IT programmes, Google AI Studio-to-production
-                  pipeline bottlenecks, or UK statutory compliance readiness with an actionable
-                  recovery blueprint.
-                </p>
+                <ul className="text-sm text-slate-600 mb-6 space-y-2">
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>Stalled IT programme RAID & critical-path audit</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>AI Studio-to-production CI/CD bottleneck triage</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>UK statutory & security control recovery blueprint</span>
+                  </li>
+                </ul>
               </div>
               <a
                 href="mailto:sam@tactical-scale.com?subject=Enquiry%3A%20Readiness%20%26%20Risk%20Audit"
@@ -862,13 +904,23 @@ export function App() {
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
                   Accelerator Sprint (4 to 8 Weeks)
                 </div>
-                <h4 className="text-xl font-bold text-slate-950 mb-3">
+                <h4 className="text-xl font-bold text-slate-950 mb-4">
                   Applied AI & Agentic Pilot
                 </h4>
-                <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-                  End-to-end architecture and deployment of a schema-enforced multi-agent workflow
-                  (Gemini, ADK 2.0, Gemma 4) on Google Cloud Run, Azure, or Cloudflare Workers.
-                </p>
+                <ul className="text-sm text-slate-600 mb-6 space-y-2">
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>Schema-enforced Gemini, ADK 2.0 & Gemma 4 workflows</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>Cloud Run, Azure AI, or Cloudflare Workers builds</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>Production release, QA & team handover included</span>
+                  </li>
+                </ul>
               </div>
               <a
                 href="mailto:sam@tactical-scale.com?subject=Enquiry%3A%20Applied%20AI%20%26%20Agentic%20Pilot"
@@ -884,15 +936,23 @@ export function App() {
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
                   UK Contracting & Cloud Partner Subcontracting
                 </div>
-                <h4 className="text-xl font-bold text-slate-950 mb-3">
+                <h4 className="text-xl font-bold text-slate-950 mb-4">
                   Retained SOW & Interim Leadership
                 </h4>
-                <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-                  Available for UK Contract Programme Leadership, Fixed-Scope B2B Statements of
-                  Work (SOW), and White-Label Associate Subcontracting for Microsoft, Google Cloud,
-                  and AWS Partners to steer critical-path execution, vendor alignment, and
-                  production AI adoption.
-                </p>
+                <ul className="text-sm text-slate-600 mb-6 space-y-2">
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>UK Contract Programme Leadership</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>Fixed-Scope B2B Statements of Work (SOW)</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-700 font-bold">/</span>
+                    <span>White-Label Associate Subcontracting for Microsoft, Google Cloud & AWS Partners</span>
+                  </li>
+                </ul>
               </div>
               <a
                 href="mailto:sam@tactical-scale.com?subject=Enquiry%3A%20UK%20Contract%2C%20SOW%20Delivery%20%26%20Partner%20Subcontracting"
@@ -907,17 +967,17 @@ export function App() {
       </section>
 
       {/* Credentials, Governance & Principal Leadership */}
-      <section id="credentials" className="py-20 px-6 bg-white border-b border-slate-200">
+      <section id="credentials" className="py-24 sm:py-28 px-6 bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
-          {/* Verified Certifications Architectural Grid */}
-          <div className="mb-12">
-            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+          {/* Verified Certifications & Partner Provenance */}
+          <div className="mb-14">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
               <div>
                 <div className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-1">
                   10+ Years of Microsoft Partner & GSI Delivery Provenance
                 </div>
-                <h3 className="text-2xl font-extrabold text-slate-950">
-                  Industry-Standard Governance & Multi-Cloud Partner Ecosystem
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-950">
+                  Verified Accreditations & Multi-Cloud Ecosystem
                 </h3>
               </div>
               <div className="text-xs font-semibold text-slate-600">
@@ -925,48 +985,97 @@ export function App() {
               </div>
             </div>
 
+            {/* Verified Certification Badge Showcase Grid */}
+            <div className="mb-8">
+              <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500 mb-3">
+                Verified Certification & Skills Badges
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 border-t border-l border-slate-200 bg-white">
+                {CERTIFICATION_BADGES.map((badge) => (
+                  <div
+                    key={badge.code}
+                    className="p-5 border-r border-b border-slate-200 flex flex-col justify-between hover:bg-slate-50 transition-colors duration-250 ease-out"
+                  >
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+                        {badge.issuer}
+                      </span>
+                      <span className="w-7 h-7 rounded bg-slate-950 flex items-center justify-center shrink-0">
+                        <BadgeIssuerEmblem issuer={badge.issuer} />
+                      </span>
+                    </div>
+                    <div>
+                      <div className="text-sm font-extrabold text-slate-950">{badge.code}</div>
+                      <div className="text-xs text-slate-600 mt-0.5 leading-snug">{badge.name}</div>
+                    </div>
+                    <div className="mt-3 pt-2.5 border-t border-slate-100 text-[10px] font-bold uppercase tracking-wider text-sky-700">
+                      {badge.tier}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 3-Column Ecosystem Provenance Summary Grid */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-b border-slate-200 divide-y sm:divide-y-0 sm:divide-x divide-slate-200 bg-slate-50/60">
               <div className="p-6">
-                <div className="text-xs font-bold uppercase text-sky-700 mb-1">
-                  PMI Governance
+                <div className="text-xs font-bold uppercase text-sky-700 mb-2">
+                  PMI Governance & Delivery Frameworks
                 </div>
-                <div className="font-bold text-sm text-slate-950">
-                  PMP | DASSM | PMI GenAI | LSS
-                </div>
-                <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                  Project Management Professional (PMI), Disciplined Agile Senior Scrum Master (PMI),
-                  and PMI GenAI & Prompt Engineering certifications, with verified enterprise
-                  competencies in Lean Six Sigma (LSS), DevSecOps & CI/CD, Business Continuity
-                  Management, ITSM, and Data Privacy Compliance.
-                </div>
+                <ul className="text-xs text-slate-600 space-y-1.5 leading-relaxed">
+                  <li>
+                    <strong className="text-slate-950">PMI Credentials:</strong> PMP, DASSM & PMI
+                    GenAI
+                  </li>
+                  <li>
+                    <strong className="text-slate-950">Process & Ops:</strong> Lean Six Sigma (LSS)
+                    & ITSM
+                  </li>
+                  <li>
+                    <strong className="text-slate-950">Resilience:</strong> DevSecOps CI/CD, BCM &
+                    Data Privacy
+                  </li>
+                </ul>
               </div>
 
               <div className="p-6">
-                <div className="text-xs font-bold uppercase text-sky-700 mb-1">
-                  Microsoft Partner & GSI Delivery Provenance
+                <div className="text-xs font-bold uppercase text-sky-700 mb-2">
+                  Microsoft Partner & GSI Provenance
                 </div>
-                <div className="font-bold text-sm text-slate-950">
-                  SC-100 | AI-102 | AZ-104 | 40+ Deployments
-                </div>
-                <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                  Over 40 end-to-end Microsoft stack deployments delivered within certified Microsoft
-                  Gold Partners, Microsoft Cloud Partners, and Global System Integrators (spanning
-                  Azure, SC-100, AI-102, AZ-104, M365/O365 Cloud PBX, Exchange, SharePoint, Active
-                  Directory, SCCM/SCOM, and System Center Orchestrator).
-                </div>
+                <ul className="text-xs text-slate-600 space-y-1.5 leading-relaxed">
+                  <li>
+                    <strong className="text-slate-950">40+ Deployments:</strong> Microsoft Gold,
+                    Cloud Partners & GSIs
+                  </li>
+                  <li>
+                    <strong className="text-slate-950">Certified Stack:</strong> SC-100 Expert,
+                    AI-102 & AZ-104
+                  </li>
+                  <li>
+                    <strong className="text-slate-950">Infrastructure:</strong> Azure, M365/O365
+                    CCE, Exchange, AD, SharePoint & SCCM/SCOM
+                  </li>
+                </ul>
               </div>
 
               <div className="p-6 sm:col-span-2 lg:col-span-1">
-                <div className="text-xs font-bold uppercase text-sky-700 mb-1">
+                <div className="text-xs font-bold uppercase text-sky-700 mb-2">
                   Google Cloud & Multi-Cloud AI Ecosystem
                 </div>
-                <div className="font-bold text-sm text-slate-950">
-                  Gemini | ADK 2.0 | A2A | Gemma 4 | Cloud Run
-                </div>
-                <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                  Google Cloud (Gemini Enterprise API, ADK 2.0, A2A Multi-Agent Protocol, Gemma 4,
-                  Cloud Run, Firebase) alongside AWS and cross-cloud architecture governance.
-                </div>
+                <ul className="text-xs text-slate-600 space-y-1.5 leading-relaxed">
+                  <li>
+                    <strong className="text-slate-950">Agentic Stack:</strong> Gemini Enterprise API,
+                    ADK 2.0 & A2A Protocol
+                  </li>
+                  <li>
+                    <strong className="text-slate-950">Runtime & Models:</strong> Gemma 4, Cloud
+                    Run & Firebase
+                  </li>
+                  <li>
+                    <strong className="text-slate-950">Cross-Cloud:</strong> AWS & Cloudflare
+                    Workers governance
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -981,55 +1090,54 @@ export function App() {
                 <h3 className="text-3xl font-extrabold mb-1">
                   Sam Leung, PMP, DASSM
                 </h3>
-                <p className="text-xs text-slate-400 font-medium mb-5">
+                <p className="text-xs text-slate-400 font-medium mb-6">
                   Trading as: Sam Leung T/A Tactical Scale (Sole Trader transitioning to UK Limited
                   Company)
                 </p>
 
-                <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-                  With over 14 years leading complex operational transformations, regional cloud
-                  migrations, and regulatory workstreams across Tier-1 UK Financial Market Infrastructure
-                  and Clearing House operations, as well as global multinational and life insurers, Sam founded
-                  Tactical Scale in London to bridge boardroom governance with hands-on cloud and
-                  agentic AI engineering.
-                </p>
-
-                <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                  Backed by 10+ years of Microsoft Partner and Global System Integrator (GSI)
-                  delivery provenance, he began hands-on in software development before delivering
-                  over 40 end-to-end Microsoft stack deployments within certified Microsoft Gold
-                  Partners, Cloud Partners, and GSIs, including 18 concurrent hybrid cloud voice
-                  transformations, 1,000+ server global Azure assessments, System Center
-                  (SCCM/SCOM & Orchestrator), Exchange, SharePoint, and Active Directory programmes
-                  across banking, utilities, higher education, listed property groups, and public
-                  sector agencies.
-                </p>
+                <ul className="space-y-3 text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+                  <li className="flex items-start space-x-2.5">
+                    <span className="text-sky-400 font-bold shrink-0">01.</span>
+                    <span>
+                      <strong className="text-white">Regulated BFSI Leadership:</strong> 14+ years
+                      directing clearing, claims, cyber remediation, and Azure programmes across
+                      Tier-1 UK capital markets and global insurers.
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <span className="text-sky-400 font-bold shrink-0">02.</span>
+                    <span>
+                      <strong className="text-white">Microsoft Partner & GSI Lineage:</strong> 40+
+                      Microsoft stack deployments spanning 18 concurrent UC/Cloud PBX mandates,
+                      1,000+ server Azure assessments, SCCM/SCOM, Exchange, SharePoint, and AD.
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-2.5">
+                    <span className="text-sky-400 font-bold shrink-0">03.</span>
+                    <span>
+                      <strong className="text-white">Hands-On Applied AI:</strong> Software
+                      engineering roots building production Gemini, ADK 2.0, and Gemma 4 systems
+                      in London (bilingual EN / ZH).
+                    </span>
+                  </li>
+                </ul>
 
                 {/* Technical Engineering Partner Callout */}
                 <div className="p-5 rounded-lg bg-slate-900 border border-slate-800 mb-8">
-                  <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
+                  <div className="flex items-center justify-between flex-wrap gap-2 mb-1.5">
                     <span className="text-xs font-bold uppercase tracking-wider text-sky-400">
                       Technical Engineering Partner Network
                     </span>
                     <span className="text-xs font-semibold text-slate-400">
-                      Collaborative Delivery Across Flagship AI Systems
+                      Joint Full-Stack & AI Delivery
                     </span>
-                  </div>
-                  <div className="font-bold text-base text-white mb-1">
-                    Specialized Full-Stack & AI Engineering Partners
                   </div>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Collaborating across applied AI architecture, rapid prototyping, and production
-                    troubleshooting, supporting builds including{' '}
+                    Co-architecting flagship builds including{' '}
                     <span className="text-white font-semibold">SprintClarify</span>,{' '}
                     <span className="text-white font-semibold">EchoHire</span>,{' '}
-                    <span className="text-white font-semibold">CineFact AI</span>,{' '}
-                    <span className="text-white font-semibold">AI Festival Card Maker</span>, and
-                    client{' '}
-                    <span className="text-white font-semibold">
-                      Production AI Coaching & Environment Synchronization
-                    </span>
-                    .
+                    <span className="text-white font-semibold">CineFact AI</span>, and{' '}
+                    <span className="text-white font-semibold">Production AI Coaching</span>.
                   </p>
                 </div>
 
@@ -1261,6 +1369,130 @@ function PortfolioCard({
       </div>
     </div>
   );
+}
+
+const CERTIFICATION_BADGES: {
+  issuer: string;
+  code: string;
+  name: string;
+  tier: string;
+}[] = [
+  {
+    issuer: 'PMI',
+    code: 'PMP',
+    name: 'Project Management Professional',
+    tier: 'Verified Credential',
+  },
+  {
+    issuer: 'PMI',
+    code: 'DASSM',
+    name: 'Disciplined Agile Senior Scrum Master',
+    tier: 'Verified Credential',
+  },
+  {
+    issuer: 'PMI',
+    code: 'PMI GenAI',
+    name: 'GenAI & Prompt Engineering for PMs',
+    tier: 'Verified Credential',
+  },
+  {
+    issuer: 'Microsoft',
+    code: 'SC-100 Expert',
+    name: 'Cybersecurity Architect Expert',
+    tier: 'Microsoft Certified Expert',
+  },
+  {
+    issuer: 'Microsoft',
+    code: 'AI-102',
+    name: 'Azure AI Engineer Associate',
+    tier: 'Microsoft Certified Associate',
+  },
+  {
+    issuer: 'Microsoft',
+    code: 'AZ-104',
+    name: 'Azure Administrator Associate',
+    tier: 'Microsoft Certified Associate',
+  },
+  {
+    issuer: 'Google Skills',
+    code: 'Gemini & ADK 2.0',
+    name: 'Google GenAI, Gemma 4 & Cloud Run',
+    tier: 'Cloud & AI Badge',
+  },
+  {
+    issuer: 'Enterprise',
+    code: 'LSS & DevSecOps',
+    name: 'Lean Six Sigma, ITSM, BCM & Privacy',
+    tier: 'Governance Competency',
+  },
+];
+
+function BadgeIssuerEmblem({ issuer }: { issuer: string }) {
+  if (issuer === 'Microsoft') {
+    return (
+      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="5" height="5" fill="#94A3B8" />
+        <rect x="9" y="2" width="5" height="5" fill="#38BDF8" />
+        <rect x="2" y="9" width="5" height="5" fill="#64748B" />
+        <rect x="9" y="9" width="5" height="5" fill="#FFFFFF" />
+      </svg>
+    );
+  }
+  if (issuer === 'PMI') {
+    return (
+      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M8 1.5L13.5 4.2V8.2C13.5 11.4 11.1 13.8 8 14.5C4.9 13.8 2.5 11.4 2.5 8.2V4.2L8 1.5Z"
+          stroke="#38BDF8"
+          strokeWidth="1.5"
+        />
+        <path d="M5.8 8L7.4 9.6L10.5 6.4" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    );
+  }
+  if (issuer === 'Google Skills') {
+    return (
+      <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="8" cy="4" r="2" fill="#38BDF8" />
+        <circle cx="4" cy="11.5" r="2" fill="#94A3B8" />
+        <circle cx="12" cy="11.5" r="2" fill="#FFFFFF" />
+        <path d="M8 6L4.8 9.8M8 6L11.2 9.8M6 11.5H10" stroke="#64748B" strokeWidth="1.2" />
+      </svg>
+    );
+  }
+  return (
+    <svg className="w-3.5 h-3.5" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="2.5" y="2.5" width="11" height="11" rx="1.5" stroke="#38BDF8" strokeWidth="1.5" />
+      <path d="M5.5 8H10.5M8 5.5V10.5" stroke="#FFFFFF" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function formatScenarioBullets(text: string): string[] {
+  const parts: string[] = [];
+  let current = '';
+  let depth = 0;
+
+  for (let i = 0; i < text.length; i += 1) {
+    const ch = text[i];
+    if (ch === '(') depth += 1;
+    if (ch === ')' && depth > 0) depth -= 1;
+
+    if (ch === ',' && depth === 0) {
+      parts.push(current);
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+  if (current.trim()) {
+    parts.push(current);
+  }
+
+  return parts
+    .map((part) => part.trim().replace(/^and\s+/i, '').replace(/\.$/, '').trim())
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1));
 }
 
 function getYouTubeEmbedUrl(url?: string): string {
