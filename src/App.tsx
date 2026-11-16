@@ -230,7 +230,7 @@ export function App() {
               href="#portfolio"
               className="px-6 py-3.5 rounded-lg bg-white hover:bg-slate-50 text-slate-900 font-semibold text-sm border border-slate-300 hover:border-sky-700 transition-all duration-250 ease-out hover:-translate-y-0.5 flex items-center space-x-2"
             >
-              <span>Explore Delivered Projects (12)</span>
+              <span>Explore Delivered Projects (14)</span>
               <ArrowRight className="w-4 h-4 text-sky-700" />
             </a>
             <a
@@ -569,7 +569,7 @@ export function App() {
               </h3>
               <p className="text-sm text-slate-600 mt-2 max-w-2xl">
                 Filter across our 8 production AI engineering builds and coaching mandates (Part A)
-                and 4 flagship enterprise and UK regulatory transformation deliveries (Part B).
+                and 6 flagship enterprise and UK regulatory transformation deliveries (Part B).
                 Select "Watch Demo" on featured AI builds to view a video walkthrough.
               </p>
             </div>
@@ -882,15 +882,15 @@ export function App() {
             <div className="p-6 sm:p-8 flex flex-col justify-between">
               <div>
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
-                  Retained SOW / Interim Leadership
+                  UK Contracting & Cloud Partner Subcontracting
                 </div>
                 <h4 className="text-xl font-bold text-slate-950 mb-3">
-                  Programme Delivery & AI Coaching
+                  Retained SOW & Interim Leadership
                 </h4>
                 <p className="text-sm text-slate-600 mb-6 leading-relaxed">
-                  Available for UK Contract Programme Leadership, B2B Statement of Work (SOW)
-                  Delivery, and White-Label Associate Subcontracting for Microsoft, Google Cloud,
-                  and AWS Solution Partners to steer critical-path execution, vendor alignment, and
+                  Available for UK Contract Programme Leadership, Fixed-Scope B2B Statements of
+                  Work (SOW), and White-Label Associate Subcontracting for Microsoft, Google Cloud,
+                  and AWS Partners to steer critical-path execution, vendor alignment, and
                   production AI adoption.
                 </p>
               </div>
@@ -914,14 +914,14 @@ export function App() {
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
               <div>
                 <div className="text-xs font-bold uppercase tracking-widest text-sky-700 mb-1">
-                  Verified Governance & Technical Credentials
+                  10+ Years of Microsoft Partner & GSI Delivery Provenance
                 </div>
                 <h3 className="text-2xl font-extrabold text-slate-950">
-                  Industry-Standard Delivery & Multi-Cloud Partner Ecosystem
+                  Industry-Standard Governance & Multi-Cloud Partner Ecosystem
                 </h3>
               </div>
               <div className="text-xs font-semibold text-slate-600">
-                PMI | Microsoft Partner Ecosystem | Google Cloud & Multi-Cloud AI
+                PMI | Microsoft Gold Partner & GSI Lineage | Google Cloud AI
               </div>
             </div>
 
@@ -942,15 +942,16 @@ export function App() {
 
               <div className="p-6">
                 <div className="text-xs font-bold uppercase text-sky-700 mb-1">
-                  Microsoft Partner Ecosystem
+                  Microsoft Partner & GSI Delivery Provenance
                 </div>
                 <div className="font-bold text-sm text-slate-950">
-                  SC-100 Expert | AI-102 | AZ-104 | M365 Copilot
+                  SC-100 | AI-102 | AZ-104 | 40+ Deployments
                 </div>
                 <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                  SC-100 Cybersecurity Architect Expert, AI-102 Azure AI Engineer, AZ-104 Azure
-                  Administrator, and M365 Copilot, plus 14+ years delivering Azure migrations,
-                  Exchange, Active Directory, SCCM/SCOM, and SharePoint transformations.
+                  Over 40 end-to-end Microsoft stack deployments delivered within certified Microsoft
+                  Gold Partners, Microsoft Cloud Partners, and Global System Integrators (spanning
+                  Azure, SC-100, AI-102, AZ-104, M365/O365 Cloud PBX, Exchange, SharePoint, Active
+                  Directory, SCCM/SCOM, and System Center Orchestrator).
                 </div>
               </div>
 
@@ -959,11 +960,11 @@ export function App() {
                   Google Cloud & Multi-Cloud AI Ecosystem
                 </div>
                 <div className="font-bold text-sm text-slate-950">
-                  Gemini Enterprise | ADK 2.0 | A2A | Gemma 4
+                  Gemini | ADK 2.0 | A2A | Gemma 4 | Cloud Run
                 </div>
                 <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                  Gemini Enterprise API, ADK 2.0, A2A Multi-Agent Protocol, Gemma 4, Cloud Run,
-                  Firebase, and cross-cloud architecture governance.
+                  Google Cloud (Gemini Enterprise API, ADK 2.0, A2A Multi-Agent Protocol, Gemma 4,
+                  Cloud Run, Firebase) alongside AWS and cross-cloud architecture governance.
                 </div>
               </div>
             </div>
@@ -993,11 +994,14 @@ export function App() {
                 </p>
 
                 <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6">
-                  Prior to his recent cloud and AI transformation leadership, his foundation
-                  includes starting hands-on in software development before managing over 20
-                  enterprise infrastructure, Microsoft System Center (SCCM/SCOM), Exchange,
-                  SharePoint, and network migration projects across tier-one banking, energy
-                  utilities, listed property groups, higher education, and public sector agencies.
+                  Backed by 10+ years of Microsoft Partner and Global System Integrator (GSI)
+                  delivery provenance, he began hands-on in software development before delivering
+                  over 40 end-to-end Microsoft stack deployments within certified Microsoft Gold
+                  Partners, Cloud Partners, and GSIs, including 18 concurrent hybrid cloud voice
+                  transformations, 1,000+ server global Azure assessments, System Center
+                  (SCCM/SCOM & Orchestrator), Exchange, SharePoint, and Active Directory programmes
+                  across banking, utilities, higher education, listed property groups, and public
+                  sector agencies.
                 </p>
 
                 {/* Technical Engineering Partner Callout */}

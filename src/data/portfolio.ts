@@ -11,7 +11,9 @@ export type PortfolioCategoryTag =
   | 'Financial Market Infrastructure & Clearing Operations'
   | 'Insurance & Healthcare Financial Services'
   | 'Actuarial Systems & Cloud Infrastructure'
-  | 'UK Retail, Wholesale & Regulatory Compliance';
+  | 'UK Retail, Wholesale & Regulatory Compliance'
+  | 'Global Cloud Readiness & Infrastructure Assessment'
+  | 'Microsoft Hybrid Cloud & Enterprise Voice (18 Mandates)';
 
 export type FilterTabId =
   | 'all'
@@ -48,7 +50,7 @@ export const FILTER_TABS: {
   {
     id: 'all',
     label: 'All Portfolio & Mandates',
-    shortLabel: 'All (12)',
+    shortLabel: 'All (14)',
     description: 'Complete track record across applied AI systems and tier-one enterprise transformation.',
   },
   {
@@ -60,7 +62,7 @@ export const FILTER_TABS: {
   {
     id: 'enterprise-delivery',
     label: 'Enterprise Transformation & Regulatory',
-    shortLabel: 'Part B: Enterprise & Reg (4)',
+    shortLabel: 'Part B: Enterprise & Reg (6)',
     description: 'High-stakes IT programme delivery across capital markets, insurance, cloud, and UK statutory licensing.',
   },
   {
@@ -305,6 +307,51 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     organizationOrEvent: 'Greater London, UK, Confidential UK Commercial & Hospitality Operator',
     highlightMetric: 'Full UK Local Authority & HMRC AWRS Regulatory Approval Secured',
   },
+  {
+    id: 'global-media-cloud-assessment',
+    title: 'Global Media & Digital Communications Network (UK)',
+    subtitle: 'Global Azure Cloud Readiness & Capacity Right-Sizing Assessment',
+    track: 'enterprise-delivery',
+    trackLabel: 'Part B: Enterprise Delivery',
+    role: 'Project Manager, Cloud Assessment',
+    category: 'Global Cloud Readiness & Infrastructure Assessment',
+    filterGroups: ['all', 'enterprise-delivery', 'agile-advisory'],
+    techOrSectorLabel: 'Sector & Mandate',
+    techStack: [
+      'Microsoft Azure',
+      '65 Global Offices',
+      '6 Cloud Regions',
+      '1,000+ Servers',
+      'Capacity Right-Sizing',
+    ],
+    overview:
+      'Directed a global Azure cloud readiness and capacity right-sizing assessment across 65 offices and 6 cloud regions covering 1,000+ servers for a Global Media & Digital Communications Network (UK). Evaluated workload dependencies, infrastructure utilization, and migration readiness to establish an executive cloud transformation roadmap.',
+    organizationOrEvent: 'London, UK & 6 Global Cloud Regions',
+    highlightMetric: '1,000+ Servers Assessed Across 65 Offices & 6 Cloud Regions',
+  },
+  {
+    id: 'microsoft-partner-hybrid-voice',
+    title: 'Microsoft Gold Partner Hybrid Cloud & Enterprise Voice Programme (18 Global Mandates)',
+    subtitle:
+      'O365 Cloud PBX (CCE), High Availability Skype for Business Pools & Global MPLS Voice Rollouts',
+    track: 'enterprise-delivery',
+    trackLabel: 'Part B: Enterprise Delivery',
+    role: 'Project Manager (18 Concurrent Mandates)',
+    category: 'Microsoft Hybrid Cloud & Enterprise Voice (18 Mandates)',
+    filterGroups: ['all', 'enterprise-delivery', 'agile-advisory'],
+    techOrSectorLabel: 'Sector & Mandate',
+    techStack: [
+      'O365 Cloud PBX (CCE)',
+      'HA SfB / Teams Precursor Pools',
+      'SQL Mirroring & F5 Load Balancers',
+      'AudioCodes / Sonus / Cisco / Avaya / Mitel / ShoreTel SIP',
+      'Global MPLS Voice',
+    ],
+    overview:
+      'Concurrently led 18 enterprise Microsoft Unified Communications, Office 365 Cloud PBX (CCE), High Availability Skype for Business/Teams precursor pools, SQL Mirroring, F5/Cisco/Avaya/Mitel/ShoreTel SIP integrations, and global MPLS voice rollouts delivered across Big-4 accounting, premier real estate, utilities (jointly with Microsoft Enterprise Services), banking, higher education, and global manufacturing.',
+    organizationOrEvent: 'APAC, Greater China, Europe & Americas',
+    highlightMetric: '18 Concurrent Enterprise Hybrid Cloud & Global Voice Transformations',
+  },
 ];
 
 export interface DiagnosticScenario {
@@ -333,7 +380,7 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     days90:
       'Stabilised production cutover, service transition sign-off, and measurable operational turnaround.',
     proof:
-      'Track Record Proof: Directed complex transformation and cloud migration workstreams across Tier-1 UK Financial Market Infrastructure & Clearing House, Global Multinational Health & General Insurer, and Pan-Asian Life Insurance Group (18 Regional Markets) 18-office Prophet Professional migration to Microsoft Azure.',
+      'Track Record Proof: Directed complex transformation and cloud migration workstreams across Tier-1 UK Financial Market Infrastructure & Clearing House, Global Multinational Health & General Insurer, Pan-Asian Life Insurance Group (18-office Prophet Professional migration to Azure), Global Media & Digital Communications Network (65 offices, 6 regions, 1,000+ servers), and 18 concurrent Microsoft Gold Partner hybrid cloud & enterprise voice mandates.',
   },
   {
     id: 'ai-poc-to-prod',

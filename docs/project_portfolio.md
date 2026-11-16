@@ -74,6 +74,16 @@
 * **Sector:** UK Retail, Wholesale & Regulatory Compliance
 * **Overview & Business Value:** Successfully managed complex UK statutory applications, including local authority Premises Licenses and HMRC Alcohol Wholesaler Registration Scheme (AWRS) compliance for a Confidential UK Commercial & Hospitality Operator. Prepared comprehensive operating schedules, due diligence frameworks, and audit trails to secure full regulatory approval.
 
-### Enterprise Delivery Foundation
-Prior to recent cloud and AI transformation leadership, Sam Leung's foundation includes starting hands-on in software development before managing over 20 enterprise infrastructure, Microsoft System Center (SCCM/SCOM), Exchange, SharePoint, and network migration projects across tier-one banking, energy utilities, listed property groups, higher education, and public sector agencies.
+### 5. Global Media & Digital Communications Network (UK)
+* **Role:** Project Manager, Cloud Assessment
+* **Sector:** Global Cloud Readiness & Infrastructure Assessment
+* **Overview & Business Value:** Directed a global Azure cloud readiness and capacity right-sizing assessment across 65 offices and 6 cloud regions covering 1,000+ servers for a Global Media & Digital Communications Network (UK).
+
+### 6. Microsoft Gold Partner Hybrid Cloud & Enterprise Voice Programme (18 Global Mandates)
+* **Role:** Project Manager (18 Concurrent Mandates)
+* **Sector:** Microsoft Hybrid Cloud & Enterprise Voice (18 Mandates)
+* **Overview & Business Value:** Concurrently led 18 enterprise Office 365 Cloud PBX (CCE), High Availability Skype for Business/Teams precursor pools, SQL Mirroring, F5/Cisco/Avaya/Mitel/ShoreTel SIP integrations, and global MPLS voice rollouts delivered across Big-4 accounting, premier real estate, utilities (jointly with Microsoft Enterprise Services), banking, higher education, and global manufacturing.
+
+### Enterprise Delivery Foundation & Partner Provenance
+Backed by 10+ years of Microsoft Partner and Global System Integrator (GSI) delivery provenance, encompassing over 40 end-to-end Microsoft stack deployments delivered within certified Microsoft Gold Partners, Microsoft Cloud Partners, and GSIs (spanning Azure, SC-100, AI-102, AZ-104, M365/O365 Cloud PBX, Exchange, SharePoint, Active Directory, SCCM/SCOM, and System Center Orchestrator), alongside Google Cloud (Gemini, ADK 2.0, Gemma 4, Cloud Run), across tier-one banking, energy utilities, listed property groups, higher education, and public sector agencies.
 
