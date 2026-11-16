@@ -931,12 +931,13 @@ export function App() {
                   PMI Governance
                 </div>
                 <div className="font-bold text-sm text-slate-950">
-                  PMP | DASSM | PMI GenAI
+                  PMP | DASSM | PMI GenAI | LSS
                 </div>
                 <div className="text-xs text-slate-600 mt-1.5 leading-relaxed">
                   Project Management Professional (PMI), Disciplined Agile Senior Scrum Master (PMI),
-                  PMI Generative AI Overview for Project Managers, and Prompt Engineering for Project
-                  Managers.
+                  and PMI GenAI & Prompt Engineering certifications, with verified enterprise
+                  competencies in Lean Six Sigma (LSS), DevSecOps & CI/CD, Business Continuity
+                  Management, ITSM, and Data Privacy Compliance.
                 </div>
               </div>
 
@@ -1075,27 +1076,27 @@ export function App() {
                   Practice Metrics & Stack
                 </div>
                 <div>
-                  <div className="text-3xl font-extrabold text-white">14+ Years</div>
+                  <div className="text-2xl font-extrabold text-white">14+ Years | 40+ Mandates</div>
                   <div className="text-xs text-slate-400 mt-0.5">
-                    Tier-1 Financial Services & IT Programme Delivery
+                    Regulated BFSI, Microsoft Partner & GSI Delivery
                   </div>
                 </div>
                 <div className="pt-4 border-t border-slate-800">
-                  <div className="text-3xl font-extrabold text-sky-400">UK + APAC</div>
+                  <div className="text-3xl font-extrabold text-sky-400">1,300+ Servers</div>
                   <div className="text-xs text-slate-400 mt-0.5">
-                    Delivery Across Cloud, Clearing & Claims (incl. 18-Office Azure Migration)
+                    Assessed, Migrated or Hardened Across 65+ Global Sites
                   </div>
                 </div>
                 <div className="pt-4 border-t border-slate-800">
-                  <div className="text-3xl font-extrabold text-white">Gemini & Gemma</div>
+                  <div className="text-3xl font-extrabold text-white">80% Automation</div>
                   <div className="text-xs text-slate-400 mt-0.5">
-                    ADK 2.0, Cloud Run, React 19, Cloudflare Workers
+                    Delivered Across 1.5M+ Policy Records & 1,000+ User Cutovers
                   </div>
                 </div>
                 <div className="pt-4 border-t border-slate-800">
-                  <div className="text-2xl font-extrabold text-sky-400">Greater London</div>
+                  <div className="text-2xl font-extrabold text-sky-400">8 AI & RegTech Builds</div>
                   <div className="text-xs text-slate-400 mt-0.5">
-                    UK & Global Bilingual Execution (EN / ZH)
+                    Gemini, ADK 2.0, Gemma 4, Cloud Run & Cloudflare
                   </div>
                 </div>
               </div>

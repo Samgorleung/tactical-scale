@@ -57,12 +57,12 @@
 ### 1. Tier-1 UK Financial Market Infrastructure & Clearing House
 * **Role:** Senior IT Project Manager
 * **Sector:** Financial Market Infrastructure & Clearing Operations
-* **Overview & Business Value:** Led complex operational transformation and IT delivery workstreams within a highly regulated financial market infrastructure environment for a Tier-1 UK Financial Market Infrastructure & Clearing House. Managed cross-functional engineering and operations stakeholders, ensuring strict adherence to governance gates, risk controls, and service transition standards.
+* **Overview & Business Value:** Chaired weekly executive risk forums with Senior Operations and Risk Directors and directed multi-path remediation across 300+ end-of-life (EOL) servers, firewall rule hardening, and vendor security controls for a Tier-1 UK Financial Market Infrastructure & Clearing House, clearing 100% of audit milestones on schedule.
 
 ### 2. Global Multinational Health & General Insurer
 * **Role:** Project Manager
 * **Sector:** Insurance & Healthcare Financial Services
-* **Overview & Business Value:** Directed end-to-end delivery for a major health claims processing transformation initiative for a Global Multinational Health & General Insurer. Coordinated business analysts, technical vendors, and operations teams to modernize legacy claims workflows, improving turnaround accuracy and digital self-service capabilities.
+* **Overview & Business Value:** Directed 4 workstreams across 40+ specialists and 1.5M+ policy records for a Global Multinational Health & General Insurer. Introduced DevSecOps and pre-production staging, migrated core workloads to Microsoft Azure, launched co-branded bancassurance API portals, and achieved an approximate 30% IT operational cost reduction and 80% automation of manual claims processing.
 
 ### 3. Pan-Asian Life Insurance Group (18 Regional Markets)
 * **Role:** IT Project Manager
@@ -82,7 +82,7 @@
 ### 6. Microsoft Gold Partner Hybrid Cloud & Enterprise Voice Programme (18 Global Mandates)
 * **Role:** Project Manager (18 Concurrent Mandates)
 * **Sector:** Microsoft Hybrid Cloud & Enterprise Voice (18 Mandates)
-* **Overview & Business Value:** Concurrently led 18 enterprise Office 365 Cloud PBX (CCE), High Availability Skype for Business/Teams precursor pools, SQL Mirroring, F5/Cisco/Avaya/Mitel/ShoreTel SIP integrations, and global MPLS voice rollouts delivered across Big-4 accounting, premier real estate, utilities (jointly with Microsoft Enterprise Services), banking, higher education, and global manufacturing.
+* **Overview & Business Value:** Concurrently led 18 enterprise Office 365 Cloud PBX (CCE), High Availability Skype for Business/Teams precursor pools, SQL Mirroring, F5/Cisco/Avaya/Mitel/ShoreTel SIP integrations, and global MPLS voice rollouts across Big-4 accounting, premier real estate, utilities (jointly with Microsoft Enterprise Services), banking, higher education, and global manufacturing. Delivered a 10-country WAN/MPLS optimization and Edge PoC achieving a 20% media performance improvement with an automated QoS diagnostic robot; a 163-day Big-4 legacy PABX decommission across 12 Greater China cities; a 1,000+ user factory relocation with an 11-server HA pool, custom IM/SMS broadcast server, and 40 training sessions; custom 10-port VXML Auto-Attendant IVR software development; and an 11-server VMware/F5/Cisco UCS campus integration.
 
 ### Enterprise Delivery Foundation & Partner Provenance
 Backed by 10+ years of Microsoft Partner and Global System Integrator (GSI) delivery provenance, encompassing over 40 end-to-end Microsoft stack deployments delivered within certified Microsoft Gold Partners, Microsoft Cloud Partners, and GSIs (spanning Azure, SC-100, AI-102, AZ-104, M365/O365 Cloud PBX, Exchange, SharePoint, Active Directory, SCCM/SCOM, and System Center Orchestrator), alongside Google Cloud (Gemini, ADK 2.0, Gemma 4, Cloud Run), across tier-one banking, energy utilities, listed property groups, higher education, and public sector agencies.
