@@ -595,15 +595,15 @@ export function App() {
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
-                      Layer 01
+                      01. Principal Governance & Security
                     </span>
                     <ArrowRight className="hidden lg:block w-4 h-4 text-sky-400" />
                   </div>
                   <h5 className="text-base font-extrabold text-white mb-2">
-                    Principal Governance & Architecture
+                    PMP, DASSM, SC-100
                   </h5>
                   <div className="text-xs font-semibold text-slate-300 mb-4">
-                    Sam Leung, PMP, DASSM, SC-100
+                    Sam Leung | Principal Architect
                   </div>
                 </div>
                 <ul className="text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
@@ -617,7 +617,7 @@ export function App() {
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="text-sky-400 font-bold">/</span>
-                    <span>Strict Schema & Architecture Blueprints</span>
+                    <span>Architecture Blueprints & Governance</span>
                   </li>
                 </ul>
               </div>
@@ -627,12 +627,12 @@ export function App() {
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
-                      Layer 02
+                      02. Multi-Cloud & Agentic Execution
                     </span>
                     <ArrowRight className="hidden lg:block w-4 h-4 text-sky-400" />
                   </div>
                   <h5 className="text-base font-extrabold text-white mb-2">
-                    Multi-Cloud & Agentic Execution Engine
+                    MS Foundry, Azure AI, Gemini, ADK 2.0, Cloud Run
                   </h5>
                   <div className="text-xs font-semibold text-slate-300 mb-4">
                     Microsoft + Google Cloud + Partner Network
@@ -659,14 +659,14 @@ export function App() {
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
-                      Layer 03
+                      03. Production Release & Handover
                     </span>
                     <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-800 text-sky-400">
-                      Production
+                      Live
                     </span>
                   </div>
                   <h5 className="text-base font-extrabold text-white mb-2">
-                    Production Release & Handover
+                    Typed JSON Schemas, CI/CD, Self-Service Enablement
                   </h5>
                   <div className="text-xs font-semibold text-slate-300 mb-4">
                     Deterministic Delivery & Enablement
@@ -675,11 +675,11 @@ export function App() {
                 <ul className="text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
                   <li className="flex items-start space-x-2">
                     <span className="text-sky-400 font-bold">/</span>
-                    <span>Typed JSON Outputs & Automated QA</span>
+                    <span>Typed JSON Schemas & Automated QA</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="text-sky-400 font-bold">/</span>
-                    <span>CI/CD & Zero-Downtime Cutover</span>
+                    <span>CI/CD Pipelines & Zero-Downtime Cutover</span>
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="text-sky-400 font-bold">/</span>
@@ -1185,20 +1185,20 @@ export function App() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-b border-slate-200 divide-y sm:divide-y-0 sm:divide-x divide-slate-200 bg-slate-50/60">
               <div className="p-6">
                 <div className="text-xs font-bold uppercase text-sky-700 mb-2">
-                  PMI Governance & Delivery Frameworks
+                  PMI Governance & Sector Accreditations
                 </div>
                 <ul className="text-xs text-slate-600 space-y-1.5 leading-relaxed">
                   <li>
-                    <strong className="text-slate-950">PMI Credentials:</strong> PMP, DASSM & PMI
-                    GenAI
+                    <strong className="text-slate-950">PMI & Agile:</strong> PMP, DASSM, Agile
+                    Hybrid Pro & CSM (Certified Scrum Master)
                   </li>
                   <li>
-                    <strong className="text-slate-950">Process & Ops:</strong> Lean Six Sigma (LSS)
-                    & ITSM
+                    <strong className="text-slate-950">Sector & ITSM:</strong> LOMA FLMI Level 1
+                    (Insurance) & EXIN ISO/IEC 20000 (ITSM)
                   </li>
                   <li>
-                    <strong className="text-slate-950">Resilience:</strong> DevSecOps CI/CD, BCM &
-                    Data Privacy
+                    <strong className="text-slate-950">Quality & Risk:</strong> Lean Six Sigma
+                    (LSS), DevSecOps CI/CD, BCM & Data Privacy
                   </li>
                 </ul>
               </div>
@@ -1213,8 +1213,8 @@ export function App() {
                     Cloud Partners & GSIs
                   </li>
                   <li>
-                    <strong className="text-slate-950">Certified Stack:</strong> SC-100 Expert,
-                    AI-102, AZ-104 & MS Foundry SDK
+                    <strong className="text-slate-950">5-Credential Suite:</strong> SC-100 Expert,
+                    AI-102, DP-100, AZ-104 & Microsoft Foundry SDK
                   </li>
                   <li>
                     <strong className="text-slate-950">Infrastructure:</strong> Azure, M365/O365
@@ -1225,20 +1225,20 @@ export function App() {
 
               <div className="p-6 sm:col-span-2 lg:col-span-1">
                 <div className="text-xs font-bold uppercase text-sky-700 mb-2">
-                  Google Cloud & Multi-Cloud AI Ecosystem
+                  Google Cloud, Multi-Model AI & Enterprise Tooling
                 </div>
                 <ul className="text-xs text-slate-600 space-y-1.5 leading-relaxed">
                   <li>
-                    <strong className="text-slate-950">Agentic Stack:</strong> Gemini Enterprise API,
-                    ADK 2.0 & A2A Protocol
+                    <strong className="text-slate-950">Google Cloud AI:</strong> Google Gemini
+                    Enterprise, ADK 2.0, Gemma 4 & Cloud Run
                   </li>
                   <li>
-                    <strong className="text-slate-950">Runtime & Models:</strong> Gemma 4, Cloud
-                    Run & Firebase
+                    <strong className="text-slate-950">Multi-Model & Dev:</strong> Anthropic Claude
+                    Platform & GitHub Copilot
                   </li>
                   <li>
-                    <strong className="text-slate-950">Cross-Cloud:</strong> AWS & Cloudflare
-                    Workers governance
+                    <strong className="text-slate-950">Enterprise Tooling:</strong> ServiceNow IT
+                    Leadership, Atlassian ITSM/Agile & Aha! Product Management
                   </li>
                 </ul>
               </div>
@@ -1250,7 +1250,7 @@ export function App() {
             <div className="grid lg:grid-cols-3 gap-10 items-start">
               <div className="lg:col-span-2">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-6 pb-6 border-b border-slate-800">
-                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden border-2 border-slate-700 bg-slate-900 shrink-0 flex items-center justify-center">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden border border-slate-700 bg-slate-900 shrink-0 flex items-center justify-center">
                     {!portraitError ? (
                       <img
                         src="/sam-leung.jpg"
@@ -1582,6 +1582,13 @@ const CERTIFICATION_BADGES: {
     imageUrl: '/Badges/disciplined-agile-senior-scrum-master-dassm.png',
   },
   {
+    issuer: 'PMI',
+    code: 'Agile Hybrid Pro',
+    name: 'Agile Hybrid Project Pro',
+    tier: 'Verified Micro-Credential',
+    imageUrl: '/Badges/agile-hybrid-project-pro.png',
+  },
+  {
     issuer: 'Microsoft',
     code: 'SC-100 Expert',
     name: 'Cybersecurity Architect Expert',
@@ -1592,6 +1599,13 @@ const CERTIFICATION_BADGES: {
     issuer: 'Microsoft',
     code: 'AI-102 Associate',
     name: 'Azure AI Engineer Associate',
+    tier: 'Microsoft Certified Associate',
+    imageUrl: '/Badges/microsoft-certified-associate-badge.svg',
+  },
+  {
+    issuer: 'Microsoft',
+    code: 'DP-100 Associate',
+    name: 'Azure Data Scientist Associate',
     tier: 'Microsoft Certified Associate',
     imageUrl: '/Badges/microsoft-certified-associate-badge.svg',
   },
@@ -1617,25 +1631,11 @@ const CERTIFICATION_BADGES: {
     imageUrl: '/Badges/orchestrate-multi-agent-workflows-with-gemini-enter.png',
   },
   {
-    issuer: 'Google Cloud',
-    code: 'Google AI Studio',
-    name: 'Develop AI-Powered Prototypes in Google AI Studio',
-    tier: 'Google Skill Badge',
-    imageUrl: '/Badges/develop-ai-powered-prototypes-in-google-ai-studio.png',
-  },
-  {
     issuer: 'PMI',
     code: 'PMI Agentic AI Lab',
     name: 'Agentic AI Build Lab for Project Managers',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/pmi-essentials-agentic-ai-build-lab-for-project-man.png',
-  },
-  {
-    issuer: 'PMI',
-    code: 'Agile Hybrid Pro',
-    name: 'Agile Hybrid Project Pro',
-    tier: 'Verified Micro-Credential',
-    imageUrl: '/Badges/agile-hybrid-project-pro.png',
   },
   {
     issuer: 'Make Academy',
@@ -1650,6 +1650,13 @@ const CERTIFICATION_BADGES: {
     name: 'Advanced Enterprise Workflow & API Automation',
     tier: 'Advanced Certification',
     imageUrl: '/Badges/make-advanced.png',
+  },
+  {
+    issuer: 'Google Cloud',
+    code: 'Google AI Studio',
+    name: 'Develop AI-Powered Prototypes in Google AI Studio',
+    tier: 'Google Skill Badge',
+    imageUrl: '/Badges/develop-ai-powered-prototypes-in-google-ai-studio.png',
   },
   {
     issuer: 'Google Cloud',

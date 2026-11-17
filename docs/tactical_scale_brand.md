@@ -55,14 +55,14 @@ Hands-on engineering advisory to stabilize AI prototypes and upskill internal te
    * **CTAs:** Book a Consultation (`mailto:sam@tactical-scale.com`), Explore Delivered Projects (14), and 30-60-90 Solution Scoper.
 2. **Service Pillars Grid & Executive Architecture Blueprint:**
    * Three border-divided pillars presenting concise scope statements and numbered bulleted deliverables, followed by the 3-layer **Tactical Scale Architecture & Delivery Blueprint**:
-     * **Layer 01:** Principal Governance & Architecture (Sam Leung, PMP, DASSM, SC-100 | SteerCo, RAID, Security & Schema Design)
-     * **Layer 02:** Multi-Cloud & Agentic Execution Engine (Microsoft Foundry SDK & Azure AI + Google Gemini, ADK 2.0 & Cloud Run + Specialist Engineering Partner Network)
-     * **Layer 03:** Production Release & Handover (Typed JSON Outputs, CI/CD & Zero-Downtime Cutover, Self-Service Team Enablement)
+     * **01. Principal Governance & Security:** PMP, DASSM, SC-100 (SteerCo, RAID, Zero-Trust Security & Schema Design)
+     * **02. Multi-Cloud & Agentic Execution:** MS Foundry, Azure AI, Gemini, ADK 2.0, Cloud Run (+ Specialist Engineering Partner Network)
+     * **03. Production Release & Handover:** Typed JSON Schemas, CI/CD, Self-Service Enablement
 3. **Featured Portfolio & 30-60-90 Solution Scoper:**
    * Interactive category tabs across Part A (8 AI builds) and Part B (6 enterprise mandates), paired with bulleted 30-60-90 day diagnostic roadmaps.
 4. **Verified Certification Badge Grid, Ecosystem Provenance & Principal Portrait:**
-   * **Verified Certification Badge Grid:** 12-badge Core showcase featuring official badge images including PMI (`PMP`, `DASSM`, `PMI Agentic AI Lab`, `Agile Hybrid Pro`), Microsoft (`SC-100 Expert`, `AI-102 Associate`, `AZ-104 Associate`, `MS Foundry SDK` Applied Skills via `/Badges/applied-skill.svg`), Google Cloud (`Gemini Multi-Agent`, `Google AI Studio`), and Make Academy (`AI Agent Builder`, `Make Advanced ★★★★`), expandable to 30 total curated credentials.
-   * **Ecosystem Provenance & Principal Portrait:** Three architectural columns covering PMI Governance (Lean Six Sigma, DevSecOps & CI/CD, BCM, ITSM, Data Privacy), Microsoft Partner & GSI Provenance (40+ deployments), and Google Cloud & Multi-Cloud AI Ecosystem, paired with Sam Leung's Principal Consultant portrait frame (`/sam-leung.jpg`).
+   * **Verified Certification Badge Grid:** 12-badge Core showcase featuring `PMP`, `DASSM`, `Agile Hybrid Pro`, `SC-100 Expert`, `AI-102 Associate`, `DP-100 Associate`, `AZ-104 Associate`, `MS Foundry SDK` Applied Skills (`/Badges/applied-skill.svg`), `Gemini Multi-Agent`, `PMI Agentic AI Lab`, `AI Agent Builder`, and `Make Advanced ★★★★`, expandable to 31 curated credentials.
+   * **Ecosystem Provenance & Principal Portrait:** Three architectural columns covering PMI Governance & Sector Accreditations (`PMP`, `DASSM`, `Agile Hybrid Pro`, `CSM`, `LOMA FLMI Level 1`, `EXIN ISO/IEC 20000`, `Lean Six Sigma`), Microsoft Partner & GSI Provenance (40+ deployments + 5-credential Microsoft suite: `SC-100 Expert`, `AI-102`, `DP-100`, `AZ-104`, `Microsoft Foundry SDK`), and Google Cloud, Multi-Model AI & Enterprise Tooling (`Google Gemini Enterprise`, `ADK 2.0`, `Gemma 4`, `Cloud Run`, `Anthropic Claude Platform`, `GitHub Copilot`, `ServiceNow IT Leadership`, `Atlassian ITSM/Agile`, `Aha! Product Management`), paired with Sam Leung's Principal Consultant portrait frame (`/sam-leung.jpg`).
 5. **Commercial Engagement Models:**
    * Three bulleted columns covering Fixed-Scope Diagnostic, Accelerator Sprint, and UK Contracting & Cloud Partner Subcontracting (UK Contract Programme Leadership, Fixed-Scope B2B SOW, and White-Label Associate Subcontracting for Microsoft, Google Cloud, and AWS Partners).
 6. **Footer & Contact:**
