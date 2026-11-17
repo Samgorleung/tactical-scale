@@ -390,9 +390,9 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     title: 'Moving Generative AI from Fragile Prototype to Schema-Enforced Production',
     badge: 'Applied AI & Agentic Systems',
     days30:
-      'Architecture & security review (SC-100 aligned), typed JSON schema design, and model routing selection (Gemini, ADK 2.0, Gemma).',
+      'Architecture & security review (SC-100 aligned), typed JSON schema design, and model routing selection (Microsoft Foundry SDK, Gemini, ADK 2.0, Gemma).',
     days60:
-      'Build and containerize multi-agent workflows on Google Cloud Run, Firebase, or Cloudflare Workers with deterministic validation.',
+      'Build and containerize multi-agent workflows on Azure AI, Google Cloud Run, Firebase, or Cloudflare Workers with deterministic validation.',
     days90:
       'Full integration into operational workflows with automated compliance auditing, CI/CD pipelines, and team handover.',
     proof:

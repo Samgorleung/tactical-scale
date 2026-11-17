@@ -20,6 +20,7 @@ export function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [activeVideoItem, setActiveVideoItem] = useState<PortfolioItem | null>(null);
   const [showAllBadges, setShowAllBadges] = useState<boolean>(false);
+  const [portraitError, setPortraitError] = useState<boolean>(false);
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -525,7 +526,7 @@ export function App() {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">03.</span>
-                  <span>Azure AI & Enterprise Hybrid Cloud Integrations</span>
+                  <span>Microsoft Foundry SDK, Azure AI & Hybrid Cloud Integrations</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-sky-700 font-bold">04.</span>
@@ -565,6 +566,127 @@ export function App() {
                   <span>Stakeholder Coaching & Self-Service Operational Handover</span>
                 </li>
               </ul>
+            </div>
+          </div>
+
+          {/* Executive Architecture & Operating Model Diagram */}
+          <div className="mt-16 border border-slate-200 rounded-lg bg-slate-950 text-white p-6 sm:p-8">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-6 border-b border-slate-800">
+              <div>
+                <div className="text-xs font-bold uppercase tracking-widest text-sky-400 mb-1">
+                  Executive Operating Model & Engineering Flow
+                </div>
+                <h4 className="text-xl sm:text-2xl font-extrabold text-white">
+                  Tactical Scale Architecture & Delivery Blueprint
+                </h4>
+              </div>
+              <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-slate-400 shrink-0">
+                <span>Governance</span>
+                <ArrowRight className="w-3.5 h-3.5 text-sky-400" />
+                <span>Execution</span>
+                <ArrowRight className="w-3.5 h-3.5 text-sky-400" />
+                <span>Handover</span>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-0 mt-6 border border-slate-800 rounded-lg divide-y lg:divide-y-0 lg:divide-x divide-slate-800 bg-slate-900/60">
+              {/* Layer 01 */}
+              <div className="p-6 relative flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
+                      Layer 01
+                    </span>
+                    <ArrowRight className="hidden lg:block w-4 h-4 text-sky-400" />
+                  </div>
+                  <h5 className="text-base font-extrabold text-white mb-2">
+                    Principal Governance & Architecture
+                  </h5>
+                  <div className="text-xs font-semibold text-slate-300 mb-4">
+                    Sam Leung, PMP, DASSM, SC-100
+                  </div>
+                </div>
+                <ul className="text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>SteerCo Alignment & RAID Controls</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>Cybersecurity & Zero-Trust Gate Design</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>Strict Schema & Architecture Blueprints</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Layer 02 */}
+              <div className="p-6 relative flex flex-col justify-between bg-slate-900">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
+                      Layer 02
+                    </span>
+                    <ArrowRight className="hidden lg:block w-4 h-4 text-sky-400" />
+                  </div>
+                  <h5 className="text-base font-extrabold text-white mb-2">
+                    Multi-Cloud & Agentic Execution Engine
+                  </h5>
+                  <div className="text-xs font-semibold text-slate-300 mb-4">
+                    Microsoft + Google Cloud + Partner Network
+                  </div>
+                </div>
+                <ul className="text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>Microsoft Foundry SDK & Azure AI</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>Google Gemini, ADK 2.0 & Cloud Run</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>Specialist Engineering Partner Network</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Layer 03 */}
+              <div className="p-6 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-3">
+                    <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
+                      Layer 03
+                    </span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-800 text-sky-400">
+                      Production
+                    </span>
+                  </div>
+                  <h5 className="text-base font-extrabold text-white mb-2">
+                    Production Release & Handover
+                  </h5>
+                  <div className="text-xs font-semibold text-slate-300 mb-4">
+                    Deterministic Delivery & Enablement
+                  </div>
+                </div>
+                <ul className="text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>Typed JSON Outputs & Automated QA</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>CI/CD & Zero-Downtime Cutover</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span className="text-sky-400 font-bold">/</span>
+                    <span>Self-Service Team Enablement</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1092,7 +1214,7 @@ export function App() {
                   </li>
                   <li>
                     <strong className="text-slate-950">Certified Stack:</strong> SC-100 Expert,
-                    AI-102 & AZ-104
+                    AI-102, AZ-104 & MS Foundry SDK
                   </li>
                   <li>
                     <strong className="text-slate-950">Infrastructure:</strong> Azure, M365/O365
@@ -1127,16 +1249,39 @@ export function App() {
           <div className="bg-slate-950 text-white rounded-lg p-8 sm:p-10 border border-slate-800">
             <div className="grid lg:grid-cols-3 gap-10 items-start">
               <div className="lg:col-span-2">
-                <div className="text-xs font-bold uppercase tracking-widest text-sky-400 mb-2">
-                  Principal Consultant & Founder | Greater London, UK
+                <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-6 pb-6 border-b border-slate-800">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden border-2 border-slate-700 bg-slate-900 shrink-0 flex items-center justify-center">
+                    {!portraitError ? (
+                      <img
+                        src="/sam-leung.jpg"
+                        alt="Sam Leung, PMP, DASSM"
+                        className="w-full h-full object-cover object-top"
+                        onError={() => setPortraitError(true)}
+                      />
+                    ) : (
+                      <div className="text-center">
+                        <div className="text-2xl font-extrabold tracking-tight text-sky-400">
+                          SL
+                        </div>
+                        <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mt-0.5">
+                          Principal
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold uppercase tracking-widest text-sky-400 mb-1.5">
+                      Principal Consultant & Founder | Greater London, UK
+                    </div>
+                    <h3 className="text-3xl font-extrabold mb-1">
+                      Sam Leung, PMP, DASSM
+                    </h3>
+                    <p className="text-xs text-slate-400 font-medium">
+                      Trading as: Sam Leung T/A Tactical Scale (Sole Trader transitioning to UK
+                      Limited Company)
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-3xl font-extrabold mb-1">
-                  Sam Leung, PMP, DASSM
-                </h3>
-                <p className="text-xs text-slate-400 font-medium mb-6">
-                  Trading as: Sam Leung T/A Tactical Scale (Sole Trader transitioning to UK Limited
-                  Company)
-                </p>
 
                 <ul className="space-y-3 text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
                   <li className="flex items-start space-x-2.5">
@@ -1458,6 +1603,13 @@ const CERTIFICATION_BADGES: {
     imageUrl: '/Badges/microsoft-certified-associate-badge.svg',
   },
   {
+    issuer: 'Microsoft',
+    code: 'MS Foundry SDK',
+    name: 'Generative AI Chat Apps with Microsoft Foundry SDK',
+    tier: 'Microsoft Applied Skills',
+    imageUrl: '/Badges/applied-skill.svg',
+  },
+  {
     issuer: 'Google Cloud',
     code: 'Gemini Multi-Agent',
     name: 'Orchestrate Multi-Agent Workflows with Gemini Enterprise',
@@ -1470,13 +1622,6 @@ const CERTIFICATION_BADGES: {
     name: 'Develop AI-Powered Prototypes in Google AI Studio',
     tier: 'Google Skill Badge',
     imageUrl: '/Badges/develop-ai-powered-prototypes-in-google-ai-studio.png',
-  },
-  {
-    issuer: 'Google Cloud',
-    code: 'Vertex AI Prompts',
-    name: 'Prompt Design in Vertex AI',
-    tier: 'Google Skill Badge',
-    imageUrl: '/Badges/prompt-design-in-vertex-ai-skill-badge.png',
   },
   {
     issuer: 'PMI',
@@ -1505,6 +1650,13 @@ const CERTIFICATION_BADGES: {
     name: 'Advanced Enterprise Workflow & API Automation',
     tier: 'Advanced Certification',
     imageUrl: '/Badges/make-advanced.png',
+  },
+  {
+    issuer: 'Google Cloud',
+    code: 'Vertex AI Prompts',
+    name: 'Prompt Design in Vertex AI',
+    tier: 'Google Skill Badge',
+    imageUrl: '/Badges/prompt-design-in-vertex-ai-skill-badge.png',
   },
   {
     issuer: 'PMI',

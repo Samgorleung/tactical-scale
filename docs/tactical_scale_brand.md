@@ -24,7 +24,7 @@ Executive delivery leadership across regulated cloud, security, and UK statutory
 
 ### Pillar 2: Applied AI & Agentic Systems Architecture
 Production-grade multi-agent applications engineered with deterministic reliability:
-* **Multi-Cloud Orchestration:** Google Gemini, ADK 2.0, A2A protocol, Gemma 4, and Azure AI Studio pipelines.
+* **Multi-Cloud Orchestration:** Microsoft Foundry SDK, Azure AI Studio, Google Gemini, ADK 2.0, A2A protocol, and Gemma 4 pipelines.
 * **Schema-Enforced Outputs:** Strict typed JSON schemas eliminating fragile prompt chains in production.
 * **Full-Stack Deployment:** React 19, TypeScript, Google Cloud Run, Firebase, and Cloudflare Workers.
 
@@ -53,13 +53,16 @@ Hands-on engineering advisory to stabilize AI prototypes and upskill internal te
    * **Sub-headline:** Enterprise programme governance paired with rapid cloud and agentic AI execution.
    * **KISS Highlights:** Three sharp bulleted proof points covering 14+ years / 40+ mandates, schema-enforced AI builds, and zero agency bloat.
    * **CTAs:** Book a Consultation (`mailto:sam@tactical-scale.com`), Explore Delivered Projects (14), and 30-60-90 Solution Scoper.
-2. **Service Pillars Grid:**
-   * Three border-divided pillars presenting concise scope statements and numbered bulleted deliverables.
+2. **Service Pillars Grid & Executive Architecture Blueprint:**
+   * Three border-divided pillars presenting concise scope statements and numbered bulleted deliverables, followed by the 3-layer **Tactical Scale Architecture & Delivery Blueprint**:
+     * **Layer 01:** Principal Governance & Architecture (Sam Leung, PMP, DASSM, SC-100 | SteerCo, RAID, Security & Schema Design)
+     * **Layer 02:** Multi-Cloud & Agentic Execution Engine (Microsoft Foundry SDK & Azure AI + Google Gemini, ADK 2.0 & Cloud Run + Specialist Engineering Partner Network)
+     * **Layer 03:** Production Release & Handover (Typed JSON Outputs, CI/CD & Zero-Downtime Cutover, Self-Service Team Enablement)
 3. **Featured Portfolio & 30-60-90 Solution Scoper:**
    * Interactive category tabs across Part A (8 AI builds) and Part B (6 enterprise mandates), paired with bulleted 30-60-90 day diagnostic roadmaps.
-4. **Verified Certification Badge Grid & Ecosystem Provenance:**
-   * **Verified Certification Badge Grid:** Clean 8-container responsive badge showcase featuring PMI (`PMP`, `DASSM`, `PMI GenAI`), Microsoft (`SC-100 Expert`, `AI-102`, `AZ-104`), Google Skills / GenAI (`Gemini & ADK 2.0`), and Enterprise Governance (`LSS & DevSecOps`) badges.
-   * **Ecosystem Provenance Grid:** Three architectural columns covering PMI Governance (including Lean Six Sigma, DevSecOps & CI/CD, Business Continuity Management, ITSM, and Data Privacy Compliance), 10+ Years of Microsoft Partner & GSI Delivery Provenance (40+ deployments), and Google Cloud & Multi-Cloud AI Ecosystem.
+4. **Verified Certification Badge Grid, Ecosystem Provenance & Principal Portrait:**
+   * **Verified Certification Badge Grid:** 12-badge Core showcase featuring official badge images including PMI (`PMP`, `DASSM`, `PMI Agentic AI Lab`, `Agile Hybrid Pro`), Microsoft (`SC-100 Expert`, `AI-102 Associate`, `AZ-104 Associate`, `MS Foundry SDK` Applied Skills via `/Badges/applied-skill.svg`), Google Cloud (`Gemini Multi-Agent`, `Google AI Studio`), and Make Academy (`AI Agent Builder`, `Make Advanced ★★★★`), expandable to 30 total curated credentials.
+   * **Ecosystem Provenance & Principal Portrait:** Three architectural columns covering PMI Governance (Lean Six Sigma, DevSecOps & CI/CD, BCM, ITSM, Data Privacy), Microsoft Partner & GSI Provenance (40+ deployments), and Google Cloud & Multi-Cloud AI Ecosystem, paired with Sam Leung's Principal Consultant portrait frame (`/sam-leung.jpg`).
 5. **Commercial Engagement Models:**
    * Three bulleted columns covering Fixed-Scope Diagnostic, Accelerator Sprint, and UK Contracting & Cloud Partner Subcontracting (UK Contract Programme Leadership, Fixed-Scope B2B SOW, and White-Label Associate Subcontracting for Microsoft, Google Cloud, and AWS Partners).
 6. **Footer & Contact:**
