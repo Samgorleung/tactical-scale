@@ -1563,34 +1563,6 @@ const CERTIFICATION_BADGES: {
     imageUrl: '/Badges/develop-genai-apps-with-gemini-and-streamlit-skill-.png',
   },
   {
-    issuer: 'Microsoft',
-    code: 'SC-900',
-    name: 'Security, Compliance & Identity Fundamentals',
-    tier: 'Microsoft Fundamentals',
-    imageUrl: '/Badges/microsoft-certified-security-compliance-and-identity-fundamentals.png',
-  },
-  {
-    issuer: 'Microsoft',
-    code: 'AI-900',
-    name: 'Azure AI Fundamentals',
-    tier: 'Microsoft Fundamentals',
-    imageUrl: '/Badges/microsoft-certified-azure-ai-fundamentals.png',
-  },
-  {
-    issuer: 'Microsoft',
-    code: 'AZ-900',
-    name: 'Azure Fundamentals',
-    tier: 'Microsoft Fundamentals',
-    imageUrl: '/Badges/microsoft-certified-azure-fundamentals.png',
-  },
-  {
-    issuer: 'AWS Educate',
-    code: 'AWS GenAI',
-    name: 'Introduction to Generative AI Training',
-    tier: 'Cloud Training Badge',
-    imageUrl: '/Badges/aws-educate-introduction-to-generative-ai-training-.png',
-  },
-  {
     issuer: 'PMI',
     code: 'PMI Prompt Eng.',
     name: 'Talking to AI: Prompt Engineering for Project Managers',
@@ -1652,27 +1624,6 @@ const CERTIFICATION_BADGES: {
     name: 'Citizen Developer Practitioner',
     tier: 'Low-Code Delivery',
     imageUrl: '/Badges/pmi-citizen-developer-practitioner-skills.png',
-  },
-  {
-    issuer: 'OPSWAT',
-    code: 'OPSWAT ICIP',
-    name: 'Introduction to Critical Infrastructure Protection',
-    tier: 'Security Certification',
-    imageUrl: '/Badges/opswat-introduction-to-critical-infrastructure-protection-icip.png',
-  },
-  {
-    issuer: 'Make',
-    code: 'Make Intermediate',
-    name: 'Make Intermediate Automation',
-    tier: 'Workflow Automation',
-    imageUrl: '/Badges/make-intermediate.png',
-  },
-  {
-    issuer: 'Make',
-    code: 'Make Basics',
-    name: 'Make Basics & Foundation',
-    tier: 'Workflow Automation',
-    imageUrl: '/Badges/make-basics.png',
   },
 ];
 
