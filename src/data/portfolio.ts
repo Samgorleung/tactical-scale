@@ -405,6 +405,55 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 
   // Part B: Enterprise Transformation & Regulatory Delivery
   {
+    id: 'multinational-health-insurer',
+    title: 'Global Multinational Health & General Insurer',
+    subtitle: '~HKD$ 100M Multi-Workstream Core Claims Turnaround, AWS/Azure Hybrid Cloud & API Ecosystem',
+    track: 'enterprise-delivery',
+    trackLabel: 'Part B: Enterprise Delivery',
+    role: 'Project Manager / Delivery Lead',
+    category: 'Insurance & Healthcare Financial Services',
+    filterGroups: ['all', 'enterprise-delivery', 'agile-advisory'],
+    techOrSectorLabel: 'Sector & Mandate',
+    techStack: [
+      'AWS Pre-Prod CI/CD',
+      'Microsoft Azure Migration',
+      '1.55M+ Policy Records',
+      'Bancassurance TPA & Mobile APIs',
+      'Power BI & DevSecOps',
+      '80% Claims Automation',
+    ],
+    overview:
+      'Turned around a 4-workstream core claims transformation (40+ specialists, 1.55M+ records), burning down 1,500+ issues in 6 months. Built AWS Pre-Prod CI/CD staging, migrated UAT/Prod to Azure, launched VHIS and bancassurance TPA portals, mitigated 200+ vulnerabilities, and automated 80% of manual claims.',
+    architectureFlow: [
+      {
+        step: '01',
+        title: '4-Workstream Core Reset',
+        detail:
+          'Stabilised Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ issues in 6 months.',
+      },
+      {
+        step: '02',
+        title: 'AWS Pre-Prod & DevSecOps',
+        detail:
+          'Built an AWS Pre-Production staging environment for CI/CD quality gates and overhauled JIRA/ServiceNow change governance.',
+      },
+      {
+        step: '03',
+        title: 'Azure Prod & Regulatory Portals',
+        detail:
+          'Migrated UAT/Prod claims and Active Directory from on-prem to Azure, launched VHIS regulatory products, bancassurance TPA portals, and Power BI.',
+      },
+      {
+        step: '04',
+        title: 'Cyber Remediation & 80% Scale',
+        detail:
+          'Mitigated 200+ security vulnerabilities, transitioned L1 Scrum operations, cut IT run-costs ~30%, and automated 80% of manual claims.',
+      },
+    ],
+    organizationOrEvent: 'Hong Kong / APAC',
+    highlightMetric: '~30% IT Cost Reduction & 80% Claims Workflow Automation (1.55M+ Records)',
+  },
+  {
     id: 'uk-market-infrastructure',
     title: 'Tier-1 UK Financial Market Infrastructure & Clearing House',
     subtitle: 'Financial Market Infrastructure & Clearing Transformation',
@@ -447,50 +496,6 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     organizationOrEvent: 'United Kingdom',
     highlightMetric: '100% On-Schedule Governance Gate & Audit Control Compliance',
-  },
-  {
-    id: 'multinational-health-insurer',
-    title: 'Global Multinational Health & General Insurer',
-    subtitle: 'End-to-End Legacy Claims Modernization & Digital Self-Service',
-    track: 'enterprise-delivery',
-    trackLabel: 'Part B: Enterprise Delivery',
-    role: 'Project Manager',
-    category: 'Insurance & Healthcare Financial Services',
-    filterGroups: ['all', 'enterprise-delivery', 'agile-advisory'],
-    techOrSectorLabel: 'Sector & Mandate',
-    techStack: [
-      'Microsoft Azure Migration',
-      '1.5M+ Policy Records',
-      'DevSecOps & Pre-Prod Staging',
-      'Bancassurance API Portals',
-      '80% Workflow Automation',
-    ],
-    overview:
-      'Directed 4 workstreams (40+ specialists, 1.5M+ records) migrating core claims to Azure with DevSecOps staging and bancassurance APIs. Achieved ~30% IT cost reduction and 80% claims automation.',
-    architectureFlow: [
-      {
-        step: '01',
-        title: '4-Workstream Reset',
-        detail: 'Aligned 40+ specialists and 1.5M+ policy records onto unified plan.',
-      },
-      {
-        step: '02',
-        title: 'DevSecOps Pre-Prod',
-        detail: 'Introduced pre-production staging gates and automated QA.',
-      },
-      {
-        step: '03',
-        title: 'Azure & API Portals',
-        detail: 'Migrated core claims workloads to Azure with bancassurance APIs.',
-      },
-      {
-        step: '04',
-        title: '80% Claims Automation',
-        detail: 'Cut IT operational costs ~30% and automated 80% of manual claims.',
-      },
-    ],
-    organizationOrEvent: 'Hong Kong / APAC',
-    highlightMetric: '~30% IT Cost Reduction & 80% Claims Workflow Automation (1.5M+ Records)',
   },
   {
     id: 'pan-asian-life-insurer',

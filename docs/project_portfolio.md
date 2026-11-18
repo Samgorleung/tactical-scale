@@ -54,15 +54,16 @@
 
 ## Part B: Enterprise Transformation & Regulatory Delivery
 
-### 1. Tier-1 UK Financial Market Infrastructure & Clearing House
+### 1. Global Multinational Health & General Insurer
+* **Role:** Project Manager / Delivery Lead
+* **Sector:** Insurance & Healthcare Financial Services
+* **Budget & Scale:** ~HKD$ 100M | 4 Workstreams | 40+ Specialists | 1.55M+ Policy Records
+* **Overview & Business Value:** Turned around a 4-workstream core claims transformation (40+ specialists, 1.55M+ records), burning down 1,500+ issues in 6 months. Built AWS Pre-Prod CI/CD staging, migrated UAT/Prod claims and Active Directory to Microsoft Azure, launched VHIS regulatory products, bancassurance TPA portals, and Power BI reporting, mitigated 200+ security vulnerabilities, cut IT run-costs ~30%, and automated 80% of manual claims.
+
+### 2. Tier-1 UK Financial Market Infrastructure & Clearing House
 * **Role:** Senior IT Project Manager
 * **Sector:** Financial Market Infrastructure & Clearing Operations
 * **Overview & Business Value:** Chaired weekly executive risk forums with Senior Operations and Risk Directors and directed multi-path remediation across 300+ end-of-life (EOL) servers, firewall rule hardening, and vendor security controls for a Tier-1 UK Financial Market Infrastructure & Clearing House, clearing 100% of audit milestones on schedule.
-
-### 2. Global Multinational Health & General Insurer
-* **Role:** Project Manager
-* **Sector:** Insurance & Healthcare Financial Services
-* **Overview & Business Value:** Directed 4 workstreams across 40+ specialists and 1.5M+ policy records for a Global Multinational Health & General Insurer. Introduced DevSecOps and pre-production staging, migrated core workloads to Microsoft Azure, launched co-branded bancassurance API portals, and achieved an approximate 30% IT operational cost reduction and 80% automation of manual claims processing.
 
 ### 3. Pan-Asian Life Insurance Group (18 Regional Markets)
 * **Role:** IT Project Manager
