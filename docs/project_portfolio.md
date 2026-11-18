@@ -58,7 +58,7 @@
 * **Role:** Project Manager / Delivery Lead
 * **Sector:** Insurance & Healthcare Financial Services
 * **Budget & Scale:** ~HKD$ 100M | 4 Workstreams | 40+ Specialists | 1.55M+ Policy Records
-* **Overview & Business Value:** Turned around a 4-workstream core claims transformation (40+ specialists, 1.55M+ records), burning down 1,500+ issues in 6 months. Built AWS Pre-Prod CI/CD staging, migrated UAT/Prod claims and Active Directory to Microsoft Azure, launched VHIS regulatory products, bancassurance TPA portals, and Power BI reporting, mitigated 200+ security vulnerabilities, cut IT run-costs ~30%, and automated 80% of manual claims.
+* **Overview & Business Value:** Rescued a 4-workstream core claims transformation in 4 chronological phases: (1) Life & General Insurance stabilization (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ issues in 6 months; (2) AWS Pre-Prod CI/CD staging, VHIS Phase 2, change governance overhaul, and L1 Scrum transition; (3) mitigation of 200+ cybersecurity vulnerabilities, VHIS Revamp, and interim bancassurance TPA portals prior to full core integration; and (4) UAT/Prod claims and Active Directory migration to Microsoft Azure with Power BI reporting, cutting IT costs ~30% and achieving 80% claims automation.
 
 ### 2. Tier-1 UK Financial Market Infrastructure & Clearing House
 * **Role:** Senior IT Project Manager

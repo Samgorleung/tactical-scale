@@ -407,7 +407,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'multinational-health-insurer',
     title: 'Global Multinational Health & General Insurer',
-    subtitle: '~HKD$ 100M Multi-Workstream Core Claims Turnaround, AWS/Azure Hybrid Cloud & API Ecosystem',
+    subtitle: '~HKD$ 100M 4-Phase Core Claims Turnaround, AWS/Azure Hybrid Cloud & Regulatory Portals',
     track: 'enterprise-delivery',
     trackLabel: 'Part B: Enterprise Delivery',
     role: 'Project Manager / Delivery Lead',
@@ -418,36 +418,36 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'AWS Pre-Prod CI/CD',
       'Microsoft Azure Migration',
       '1.55M+ Policy Records',
-      'Bancassurance TPA & Mobile APIs',
+      'VHIS & Interim TPA Portals',
       'Power BI & DevSecOps',
       '80% Claims Automation',
     ],
     overview:
-      'Turned around a 4-workstream core claims transformation (40+ specialists, 1.55M+ records), burning down 1,500+ issues in 6 months. Built AWS Pre-Prod CI/CD staging, migrated UAT/Prod to Azure, launched VHIS and bancassurance TPA portals, mitigated 200+ vulnerabilities, and automated 80% of manual claims.',
+      'Rescued a 4-workstream core claims transformation (40+ specialists, 1.55M+ records), burning down 1,500+ issues in 6 months. Built AWS Pre-Prod CI/CD, delivered VHIS releases, interim partner TPA portals, and 200+ security fixes, and migrated UAT/Prod to Azure with Power BI (80% automation).',
     architectureFlow: [
       {
         step: '01',
-        title: '4-Workstream Core Reset',
+        title: 'Phase 1: 4-Workstream Reset',
         detail:
           'Stabilised Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ issues in 6 months.',
       },
       {
         step: '02',
-        title: 'AWS Pre-Prod & DevSecOps',
+        title: 'Phase 2: AWS Staging, VHIS & L1',
         detail:
-          'Built an AWS Pre-Production staging environment for CI/CD quality gates and overhauled JIRA/ServiceNow change governance.',
+          'Built AWS Pre-Prod CI/CD staging, delivered VHIS Phase 2, overhauled change governance, and transitioned ongoing fixes into L1 Scrum ops.',
       },
       {
         step: '03',
-        title: 'Azure Prod & Regulatory Portals',
+        title: 'Phase 3: Cyber, VHIS Revamp & TPA',
         detail:
-          'Migrated UAT/Prod claims and Active Directory from on-prem to Azure, launched VHIS regulatory products, bancassurance TPA portals, and Power BI.',
+          'Mitigated 200+ security vulnerabilities, launched VHIS Revamp products, and deployed interim TPA portals prior to full core integration.',
       },
       {
         step: '04',
-        title: 'Cyber Remediation & 80% Scale',
+        title: 'Phase 4: Azure & Power BI',
         detail:
-          'Mitigated 200+ security vulnerabilities, transitioned L1 Scrum operations, cut IT run-costs ~30%, and automated 80% of manual claims.',
+          'Migrated UAT/Prod claims and Active Directory from on-prem to Azure and launched Power BI, cutting IT costs ~30% with 80% automation.',
       },
     ],
     organizationOrEvent: 'Hong Kong / APAC',
