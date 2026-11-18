@@ -19,6 +19,7 @@ export function App() {
   const [activeScenarioIdx, setActiveScenarioIdx] = useState<number>(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [activeVideoItem, setActiveVideoItem] = useState<PortfolioItem | null>(null);
+  const [activeBlueprintItem, setActiveBlueprintItem] = useState<PortfolioItem | null>(null);
   const [showAllBadges, setShowAllBadges] = useState<boolean>(false);
   const [portraitError, setPortraitError] = useState<boolean>(false);
 
@@ -26,6 +27,7 @@ export function App() {
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === 'Escape') {
         setActiveVideoItem(null);
+        setActiveBlueprintItem(null);
       }
     }
     window.addEventListener('keydown', handleKeyDown);
@@ -705,7 +707,8 @@ export function App() {
               </h3>
               <p className="text-sm text-slate-600 mt-2 max-w-2xl">
                 Filter across 8 production AI engineering builds (Part A) and 6 enterprise
-                transformation mandates (Part B). Click "Watch Demo" on featured AI builds.
+                transformation mandates (Part B). Click "View Blueprint" on any card or "Watch
+                Demo" on featured AI builds.
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-3 shrink-0">
@@ -786,6 +789,7 @@ export function App() {
                 key={item.id}
                 item={item}
                 onWatchDemo={(selected) => setActiveVideoItem(selected)}
+                onViewBlueprint={(selected) => setActiveBlueprintItem(selected)}
               />
             ))}
           </div>
@@ -853,6 +857,161 @@ export function App() {
                 >
                   <span>Request Custom Briefing</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* System Architecture & Workflow Blueprint Modal */}
+      {activeBlueprintItem && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm transition-opacity duration-250 ease-out"
+          onClick={() => setActiveBlueprintItem(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div
+            className="relative w-full max-w-5xl bg-white border border-slate-300 rounded-lg overflow-hidden shadow-2xl animate-modal-enter max-h-[90vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Blueprint Modal Header */}
+            <div className="flex items-start justify-between gap-4 px-6 py-5 border-b border-slate-800 bg-slate-950 text-white shrink-0">
+              <div>
+                <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                  <span className="px-2 py-0.5 rounded bg-slate-800 text-sky-400 text-[10px] font-bold uppercase tracking-wider">
+                    System Architecture & Workflow Blueprint
+                  </span>
+                  <span className="text-[11px] font-semibold text-slate-400">
+                    {activeBlueprintItem.trackLabel}
+                  </span>
+                </div>
+                <h4 className="text-lg sm:text-xl font-extrabold text-white leading-tight">
+                  {activeBlueprintItem.title}
+                </h4>
+                {activeBlueprintItem.subtitle && (
+                  <p className="text-slate-400 text-xs mt-1">{activeBlueprintItem.subtitle}</p>
+                )}
+              </div>
+              <button
+                type="button"
+                onClick={() => setActiveBlueprintItem(null)}
+                className="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors duration-250 ease-out shrink-0"
+                aria-label="Close architecture blueprint"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Blueprint Schematic Body */}
+            <div className="p-6 sm:p-8 bg-slate-100 overflow-y-auto space-y-6">
+              <div>
+                <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700 mb-3">
+                  4-Stage Execution & System Topology Flow
+                </div>
+
+                {/* Desktop & Tablet 4-Stage Connected Vector Flow */}
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {activeBlueprintItem.architectureFlow.map((stage, idx) => (
+                    <div
+                      key={stage.step}
+                      className="relative bg-white border border-slate-300 rounded-lg p-5 flex flex-col justify-between"
+                    >
+                      <div>
+                        <div className="flex items-center justify-between gap-2 mb-3">
+                          <span className="px-2.5 py-1 rounded bg-slate-950 text-sky-400 text-[11px] font-extrabold tracking-wider">
+                            {stage.step}
+                          </span>
+                          {idx < activeBlueprintItem.architectureFlow.length - 1 ? (
+                            <span className="inline-flex items-center space-x-1 text-sky-700 text-[10px] font-bold uppercase">
+                              <ArrowRight className="w-4 h-4" />
+                            </span>
+                          ) : (
+                            <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-sky-700 text-[10px] font-bold uppercase">
+                              Output
+                            </span>
+                          )}
+                        </div>
+                        <h5 className="text-sm font-extrabold text-slate-950 mb-2 leading-snug">
+                          {stage.title}
+                        </h5>
+                        <p className="text-xs text-slate-600 leading-relaxed">{stage.detail}</p>
+                      </div>
+                      <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                        <span>Stage {idx + 1} of 4</span>
+                        <span className="text-sky-700">Verified</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Architecture Stack Nodes & Outcome Metric */}
+              <div className="grid md:grid-cols-3 gap-4 border-t border-slate-200 pt-6">
+                <div className="md:col-span-2 bg-white border border-slate-200 rounded-lg p-5">
+                  <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-3">
+                    {activeBlueprintItem.techOrSectorLabel} & Architecture Nodes
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {activeBlueprintItem.techStack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1.5 rounded bg-slate-100 border border-slate-200 text-xs font-bold text-slate-900"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-slate-950 text-white border border-slate-800 rounded-lg p-5 flex flex-col justify-between">
+                  <div>
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-sky-400 mb-2">
+                      Key Outcome Metric
+                    </div>
+                    <div className="text-sm font-bold text-white leading-snug">
+                      {activeBlueprintItem.highlightMetric || activeBlueprintItem.category}
+                    </div>
+                  </div>
+                  <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+                    Role: <span className="text-slate-200 font-semibold">{activeBlueprintItem.role}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Blueprint Modal Footer */}
+            <div className="px-6 py-4 bg-white border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shrink-0">
+              <div className="text-xs text-slate-600">
+                <span className="font-bold text-slate-950">{activeBlueprintItem.category}</span>
+                {activeBlueprintItem.organizationOrEvent && (
+                  <span> | {activeBlueprintItem.organizationOrEvent}</span>
+                )}
+              </div>
+              <div className="flex flex-wrap items-center gap-3">
+                {activeBlueprintItem.videoUrl && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const target = activeBlueprintItem;
+                      setActiveBlueprintItem(null);
+                      setActiveVideoItem(target);
+                    }}
+                    className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-950 border border-slate-300 text-xs font-bold transition-colors duration-250 ease-out inline-flex items-center space-x-1.5"
+                  >
+                    <Play className="w-3.5 h-3.5 text-sky-700 fill-sky-700" />
+                    <span>Watch Demo</span>
+                  </button>
+                )}
+                <a
+                  href={`mailto:sam@tactical-scale.com?subject=${encodeURIComponent(
+                    `Architecture Blueprint Walkthrough: ${activeBlueprintItem.title}`
+                  )}`}
+                  className="px-4 py-2 rounded-lg bg-slate-950 hover:bg-sky-700 text-white text-xs font-bold transition-colors duration-250 ease-out inline-flex items-center space-x-1.5"
+                >
+                  <span>Discuss This Architecture</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-sky-400" />
                 </a>
               </div>
             </div>
@@ -1470,9 +1629,11 @@ export function App() {
 function PortfolioCard({
   item,
   onWatchDemo,
+  onViewBlueprint,
 }: {
   item: PortfolioItem;
   onWatchDemo: (item: PortfolioItem) => void;
+  onViewBlueprint: (item: PortfolioItem) => void;
 }) {
   return (
     <div className="bg-white p-6 sm:p-7 rounded-lg border border-slate-200 hover:border-sky-700 hover:-translate-y-0.5 transition-all duration-250 ease-out flex flex-col justify-between">
@@ -1526,22 +1687,32 @@ function PortfolioCard({
           </div>
         )}
 
-        {/* Tech Stack Pills & Watch Demo Button */}
+        {/* Tech Stack Pills & Action Buttons */}
         <div className="pt-3 border-t border-slate-200">
-          <div className="flex items-center justify-between gap-2 mb-2.5">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-2.5">
             <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
               {item.techOrSectorLabel}
             </span>
-            {item.videoUrl && (
+            <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
-                onClick={() => onWatchDemo(item)}
-                className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg bg-slate-950 hover:bg-sky-700 text-white text-[11px] font-bold transition-colors duration-250 ease-out"
+                onClick={() => onViewBlueprint(item)}
+                className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg bg-slate-100 hover:bg-slate-950 text-slate-900 hover:text-white border border-slate-300 hover:border-slate-950 text-[11px] font-bold transition-colors duration-250 ease-out"
               >
-                <Play className="w-3 h-3 text-sky-400 fill-sky-400" />
-                <span>Watch Demo</span>
+                <span>View Blueprint</span>
+                <ArrowUpRight className="w-3 h-3 text-sky-700" />
               </button>
-            )}
+              {item.videoUrl && (
+                <button
+                  type="button"
+                  onClick={() => onWatchDemo(item)}
+                  className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg bg-slate-950 hover:bg-sky-700 text-white text-[11px] font-bold transition-colors duration-250 ease-out"
+                >
+                  <Play className="w-3 h-3 text-sky-400 fill-sky-400" />
+                  <span>Watch Demo</span>
+                </button>
+              )}
+            </div>
           </div>
           <div className="flex flex-wrap gap-1.5">
             {item.techStack.map((tech) => (
