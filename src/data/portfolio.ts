@@ -131,6 +131,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini 3.8 Flash', 'React 19', 'TypeScript', 'Tailwind CSS', 'Typed JSON Schemas'],
     overview:
       'Decomposes product requirements into sprint-ready stories, acceptance criteria, dependency graphs, and risk flags. Enforces strict Gemini JSON schemas to eliminate vague backlogs.',
+    blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
@@ -169,6 +170,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemma 4', 'Gemini 3.7 Flash', 'Google Cloud Run', 'Containerized Microservices'],
     overview:
       'Autonomous Cloud Run auditing agent combining Gemma 4 and Gemini 3.7 Flash. Evaluates system configurations against cybersecurity frameworks and generates automated remediation logs.',
+    blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
@@ -209,6 +211,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini 3.1 Pro', 'Gemini 2.5 Live', 'Firebase', 'React', 'Tailwind CSS'],
     overview:
       'Low-latency voice and text interview simulator built for the Google Gemini Live Agent Challenge. Pairs adaptive interviewing with structured rubric coaching analytics.',
+    blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
@@ -248,6 +251,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini API', 'React', 'TypeScript', 'Tailwind CSS'],
     overview:
       'Cross-references corporate governance disclosures across dual-market jurisdictions using Gemini APIs. Extracts statutory obligations and flags regulatory filing discrepancies automatically.',
+    blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
@@ -287,6 +291,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini API', 'Serverless Video Intelligence', 'Firestore', 'React', 'TypeScript'],
     overview:
       'Serverless video intelligence pipeline extracting factual assertions from live streams. Cross-references claims in parallel against authoritative knowledge bases for media compliance.',
+    blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
@@ -325,6 +330,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Google GenMedia APIs', 'Multi-Agent Workflow', 'GitHub', 'WSL'],
     overview:
       'Multi-agent orchestration pipeline automating scriptwriting, character-consistent storyboarding, and video generation. Separates planning, prompt enforcement, and QA across specialized agent roles.',
+    blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
@@ -363,6 +369,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Google AI Studio', 'Cloud Run', 'Production CI/CD Workflows'],
     overview:
       'Principal advisory transitioning fragile Google AI Studio prototypes into stable Cloud Run production pipelines. Resolves staging drift and enables internal self-service maintenance.',
+    blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
@@ -401,6 +408,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: ['Gemini 2.5 Flash', 'HTML5 Canvas', 'Tailwind CSS'],
     overview:
       'High-speed web application generating culturally tailored greeting cards across global festivals while preserving subject likeness. Uses automated HTML5 canvas compositing.',
+    blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
