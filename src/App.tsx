@@ -906,79 +906,402 @@ export function App() {
 
             {/* Blueprint Schematic Body */}
             <div className="p-6 sm:p-8 bg-slate-100 overflow-y-auto space-y-6">
-              <div>
-                <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700 mb-3">
-                  4-Stage Execution & System Topology Flow
-                </div>
-
-                {/* Desktop & Tablet 4-Stage Connected Vector Flow */}
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {activeBlueprintItem.architectureFlow.map((stage, idx) => (
-                    <div
-                      key={stage.step}
-                      className="relative bg-white border border-slate-300 rounded-lg p-5 flex flex-col justify-between"
-                    >
-                      <div>
-                        <div className="flex items-center justify-between gap-2 mb-3">
-                          <span className="px-2.5 py-1 rounded bg-slate-950 text-sky-400 text-[11px] font-extrabold tracking-wider">
-                            {stage.step}
-                          </span>
-                          {idx < activeBlueprintItem.architectureFlow.length - 1 ? (
-                            <span className="inline-flex items-center space-x-1 text-sky-700 text-[10px] font-bold uppercase">
-                              <ArrowRight className="w-4 h-4" />
-                            </span>
-                          ) : (
-                            <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 text-sky-700 text-[10px] font-bold uppercase">
-                              Output
-                            </span>
-                          )}
+              {activeBlueprintItem.blueprintVariant === 'flagship-hybrid-cloud' && (
+                <>
+                  {/* Top 4-Column Executive KPI Bar */}
+                  {activeBlueprintItem.impactStats && (
+                    <div className="grid grid-cols-2 lg:grid-cols-4 border border-slate-300 rounded-lg divide-y sm:divide-y-0 sm:divide-x divide-slate-200 bg-white overflow-hidden">
+                      {activeBlueprintItem.impactStats.map((stat) => (
+                        <div key={stat.label} className="p-4 sm:p-5">
+                          <div className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight">
+                            {stat.value}
+                          </div>
+                          <div className="text-[11px] font-semibold text-slate-600 mt-1 leading-snug">
+                            {stat.label}
+                          </div>
                         </div>
-                        <h5 className="text-sm font-extrabold text-slate-950 mb-2 leading-snug">
-                          {stage.title}
-                        </h5>
-                        <p className="text-xs text-slate-600 leading-relaxed">{stage.detail}</p>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Stacked 3-Tier Hybrid Multi-Cloud System Topology Diagram */}
+                  {activeBlueprintItem.topologyLayers && (
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700 mb-3">
+                        3-Tier Hybrid Multi-Cloud System Topology (AWS Pre-Prod + Azure Prod)
                       </div>
-                      <div className="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider text-slate-400">
-                        <span>Stage {idx + 1} of 4</span>
-                        <span className="text-sky-700">Verified</span>
+                      <div className="space-y-0">
+                        {activeBlueprintItem.topologyLayers.map((tier, idx) => {
+                          const isDark = tier.emphasis === 'dark';
+                          return (
+                            <React.Fragment key={tier.layer}>
+                              <div
+                                className={`rounded-lg border p-5 ${
+                                  isDark
+                                    ? 'bg-slate-950 text-white border-slate-800'
+                                    : 'bg-white text-slate-950 border-slate-300'
+                                }`}
+                              >
+                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                  <div className="md:w-1/3 shrink-0">
+                                    <div
+                                      className={`text-[10px] font-extrabold uppercase tracking-widest mb-1 ${
+                                        isDark ? 'text-sky-400' : 'text-sky-700'
+                                      }`}
+                                    >
+                                      {tier.layer}
+                                    </div>
+                                    <div
+                                      className={`text-sm font-extrabold leading-snug ${
+                                        isDark ? 'text-white' : 'text-slate-950'
+                                      }`}
+                                    >
+                                      {tier.label}
+                                    </div>
+                                  </div>
+                                  <div className="flex flex-wrap gap-2 md:justify-end">
+                                    {tier.nodes.map((node) => (
+                                      <span
+                                        key={node}
+                                        className={`px-3 py-1.5 rounded text-xs font-bold border ${
+                                          isDark
+                                            ? 'bg-slate-900 border-slate-700 text-slate-100'
+                                            : 'bg-slate-100 border-slate-200 text-slate-900'
+                                        }`}
+                                      >
+                                        {node}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+                              </div>
+                              {idx < activeBlueprintItem.topologyLayers!.length - 1 && (
+                                <div className="flex justify-center py-1" aria-hidden="true">
+                                  <svg
+                                    className="w-5 h-6 text-sky-700"
+                                    viewBox="0 0 20 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M10 1V19M10 19L5 14M10 19L15 14"
+                                      stroke="currentColor"
+                                      strokeWidth="1.75"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                  </svg>
+                                </div>
+                              )}
+                            </React.Fragment>
+                          );
+                        })}
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
+                  )}
 
-              {/* Architecture Stack Nodes & Outcome Metric */}
-              <div className="grid md:grid-cols-3 gap-4 border-t border-slate-200 pt-6">
-                <div className="md:col-span-2 bg-white border border-slate-200 rounded-lg p-5">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-3">
-                    {activeBlueprintItem.techOrSectorLabel} & Architecture Nodes
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {activeBlueprintItem.techStack.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1.5 rounded bg-slate-100 border border-slate-200 text-xs font-bold text-slate-900"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="bg-slate-950 text-white border border-slate-800 rounded-lg p-5 flex flex-col justify-between">
+                  {/* Compact 4-Phase Chronological Delivery Timeline */}
                   <div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-sky-400 mb-2">
-                      Key Outcome Metric
+                    <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500 mb-3">
+                      4-Phase Chronological Delivery Timeline
                     </div>
-                    <div className="text-sm font-bold text-white leading-snug">
-                      {activeBlueprintItem.highlightMetric || activeBlueprintItem.category}
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 border border-slate-300 rounded-lg divide-y sm:divide-y-0 sm:divide-x divide-slate-200 bg-white overflow-hidden">
+                      {activeBlueprintItem.architectureFlow.map((stage) => (
+                        <div key={stage.step} className="p-4 flex flex-col justify-between">
+                          <div>
+                            <div className="flex items-center justify-between gap-2 mb-2">
+                              <span className="px-2 py-0.5 rounded bg-slate-950 text-sky-400 text-[10px] font-extrabold tracking-wider">
+                                PHASE {stage.step}
+                              </span>
+                            </div>
+                            <h5 className="text-xs font-extrabold text-slate-950 mb-1.5 leading-snug">
+                              {stage.title}
+                            </h5>
+                            <p className="text-[11px] text-slate-600 leading-relaxed">
+                              {stage.detail}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
-                  <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
-                    Role: <span className="text-slate-200 font-semibold">{activeBlueprintItem.role}</span>
+
+                  {/* Verified Client Endorsements Strip */}
+                  {activeBlueprintItem.testimonials && (
+                    <div className="grid md:grid-cols-2 gap-4 pt-2 border-t border-slate-200">
+                      {activeBlueprintItem.testimonials.map((t) => (
+                        <div
+                          key={t.authorRole}
+                          className="bg-white border border-slate-200 border-l-2 border-l-sky-700 rounded-lg p-4 flex flex-col justify-between"
+                        >
+                          <p className="text-xs text-slate-700 italic leading-relaxed mb-3">
+                            "{t.quote}"
+                          </p>
+                          <div className="text-[11px] font-bold text-slate-950">
+                            {t.authorRole}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </>
+              )}
+
+              {activeBlueprintItem.blueprintVariant === 'ai-pipeline' && (
+                <>
+                  <div>
+                    <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700 mb-3">
+                      Engineering Pipeline Telemetry & Model Execution Flow
+                    </div>
+
+                    {/* Dot-Grid Node-and-Edge Engineering Pipeline */}
+                    <div className="bg-slate-50 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:16px_16px] border border-slate-300 rounded-lg p-5 sm:p-6">
+                      <div className="flex flex-col lg:flex-row lg:items-stretch gap-3 lg:gap-0">
+                        {activeBlueprintItem.architectureFlow.map((stage, idx) => {
+                          const nodeRoles = [
+                            'INGESTION',
+                            'MODEL & SCHEMA CORE',
+                            'CLOUD RUNTIME',
+                            'DETERMINISTIC OUTPUT',
+                          ];
+                          const roleLabel = nodeRoles[idx] || `STAGE ${stage.step}`;
+                          const isCore = idx === 1;
+                          const isOutput = idx === 3;
+
+                          return (
+                            <React.Fragment key={stage.step}>
+                              <div
+                                className={`flex-1 rounded-lg p-4 border flex flex-col justify-between ${
+                                  isCore
+                                    ? 'bg-slate-950 text-white border-slate-800'
+                                    : isOutput
+                                      ? 'bg-white text-slate-950 border-2 border-sky-700'
+                                      : 'bg-white text-slate-950 border-slate-300'
+                                }`}
+                              >
+                                <div>
+                                  <div className="flex items-center justify-between gap-2 mb-2.5">
+                                    <span
+                                      className={`text-[10px] font-extrabold uppercase tracking-wider ${
+                                        isCore ? 'text-sky-400' : 'text-sky-700'
+                                      }`}
+                                    >
+                                      {roleLabel}
+                                    </span>
+                                    <span
+                                      className={`px-1.5 py-0.5 rounded text-[10px] font-bold ${
+                                        isCore
+                                          ? 'bg-slate-800 text-slate-200'
+                                          : 'bg-slate-100 text-slate-700'
+                                      }`}
+                                    >
+                                      {stage.step}
+                                    </span>
+                                  </div>
+                                  <h5
+                                    className={`text-sm font-extrabold mb-1.5 leading-snug ${
+                                      isCore ? 'text-white' : 'text-slate-950'
+                                    }`}
+                                  >
+                                    {stage.title}
+                                  </h5>
+                                  <p
+                                    className={`text-xs leading-relaxed ${
+                                      isCore ? 'text-slate-300' : 'text-slate-600'
+                                    }`}
+                                  >
+                                    {stage.detail}
+                                  </p>
+                                </div>
+                              </div>
+
+                              {idx < activeBlueprintItem.architectureFlow.length - 1 && (
+                                <>
+                                  <div
+                                    className="hidden lg:flex items-center justify-center px-1.5 shrink-0 text-sky-700"
+                                    aria-hidden="true"
+                                  >
+                                    <svg
+                                      className="w-6 h-5"
+                                      viewBox="0 0 24 20"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M1 10H20M20 10L15 5M20 10L15 15"
+                                        stroke="currentColor"
+                                        strokeWidth="1.75"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                      />
+                                    </svg>
+                                  </div>
+                                  <div
+                                    className="flex lg:hidden items-center justify-center py-0.5 text-sky-700"
+                                    aria-hidden="true"
+                                  >
+                                    <svg
+                                      className="w-5 h-5"
+                                      viewBox="0 0 20 20"
+                                      fill="none"
+                                      xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                      <path
+                                        d="M10 2V16M10 16L5 11M10 16L15 11"
+                                        stroke="currentColor"
+                                        strokeWidth="1.75"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                      />
+                                    </svg>
+                                  </div>
+                                </>
+                              )}
+                            </React.Fragment>
+                          );
+                        })}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+
+                  {/* Architecture Stack Nodes & Outcome Metric */}
+                  <div className="grid md:grid-cols-3 gap-4 border-t border-slate-200 pt-6">
+                    <div className="md:col-span-2 bg-white border border-slate-200 rounded-lg p-5">
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-3">
+                        {activeBlueprintItem.techOrSectorLabel} & Architecture Nodes
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {activeBlueprintItem.techStack.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-3 py-1.5 rounded bg-slate-100 border border-slate-200 text-xs font-bold text-slate-900"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="bg-slate-950 text-white border border-slate-800 rounded-lg p-5 flex flex-col justify-between">
+                      <div>
+                        <div className="text-[10px] font-bold uppercase tracking-widest text-sky-400 mb-2">
+                          Key Outcome Metric
+                        </div>
+                        <div className="text-sm font-bold text-white leading-snug">
+                          {activeBlueprintItem.highlightMetric || activeBlueprintItem.category}
+                        </div>
+                      </div>
+                      <div className="mt-4 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+                        Role:{' '}
+                        <span className="text-slate-200 font-semibold">
+                          {activeBlueprintItem.role}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+
+              {activeBlueprintItem.blueprintVariant === 'infra-stack' && (
+                <>
+                  {/* Layered Enterprise Architecture & Governance Zones */}
+                  {activeBlueprintItem.topologyLayers && (
+                    <div>
+                      <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700 mb-3">
+                        Enterprise Architecture Zones & Delivery Stack
+                      </div>
+                      <div className="space-y-3">
+                        {activeBlueprintItem.topologyLayers.map((zone) => {
+                          const isDark = zone.emphasis === 'dark';
+                          return (
+                            <div
+                              key={zone.layer}
+                              className={`rounded-lg border p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 ${
+                                isDark
+                                  ? 'bg-slate-950 text-white border-slate-800'
+                                  : 'bg-white text-slate-950 border-slate-300'
+                              }`}
+                            >
+                              <div className="md:w-1/3 shrink-0">
+                                <span
+                                  className={`inline-block px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider mb-1.5 ${
+                                    isDark
+                                      ? 'bg-slate-800 text-sky-400'
+                                      : 'bg-slate-100 text-sky-700 border border-slate-200'
+                                  }`}
+                                >
+                                  {zone.layer}
+                                </span>
+                                <div
+                                  className={`text-sm font-extrabold leading-snug ${
+                                    isDark ? 'text-white' : 'text-slate-950'
+                                  }`}
+                                >
+                                  {zone.label}
+                                </div>
+                              </div>
+                              <div className="flex flex-wrap gap-2 md:justify-end">
+                                {zone.nodes.map((node) => (
+                                  <span
+                                    key={node}
+                                    className={`px-3 py-1.5 rounded text-xs font-bold border ${
+                                      isDark
+                                        ? 'bg-slate-900 border-slate-700 text-slate-100'
+                                        : 'bg-slate-100 border-slate-200 text-slate-900'
+                                    }`}
+                                  >
+                                    {node}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 4-Step Delivery Governance Bar */}
+                  <div>
+                    <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500 mb-3">
+                      Delivery Governance & Execution Sequence
+                    </div>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 border border-slate-300 rounded-lg divide-y sm:divide-y-0 sm:divide-x divide-slate-200 bg-white overflow-hidden">
+                      {activeBlueprintItem.architectureFlow.map((stage) => (
+                        <div key={stage.step} className="p-4">
+                          <div className="text-[10px] font-extrabold uppercase tracking-wider text-sky-700 mb-1">
+                            Step {stage.step}
+                          </div>
+                          <h5 className="text-xs font-extrabold text-slate-950 mb-1 leading-snug">
+                            {stage.title}
+                          </h5>
+                          <p className="text-[11px] text-slate-600 leading-relaxed">
+                            {stage.detail}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Outcome & Role Callout */}
+                  <div className="bg-slate-950 text-white border border-slate-800 rounded-lg p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div>
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-sky-400 mb-1">
+                        Verified Outcome Metric
+                      </div>
+                      <div className="text-sm font-bold text-white">
+                        {activeBlueprintItem.highlightMetric || activeBlueprintItem.category}
+                      </div>
+                    </div>
+                    <div className="text-xs text-slate-400 shrink-0">
+                      Role:{' '}
+                      <span className="text-slate-200 font-semibold">
+                        {activeBlueprintItem.role}
+                      </span>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
 
             {/* Blueprint Modal Footer */}

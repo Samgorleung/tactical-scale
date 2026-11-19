@@ -23,10 +23,29 @@ export type FilterTabId =
   | 'agile-advisory'
   | 'multimodal-web';
 
+export type BlueprintVariant = 'flagship-hybrid-cloud' | 'ai-pipeline' | 'infra-stack';
+
 export interface ArchitectureStage {
   step: string;
   title: string;
   detail: string;
+}
+
+export interface ImpactStat {
+  value: string;
+  label: string;
+}
+
+export interface TopologyLayer {
+  layer: string;
+  label: string;
+  nodes: string[];
+  emphasis?: 'dark' | 'light';
+}
+
+export interface ClientTestimonial {
+  quote: string;
+  authorRole: string;
 }
 
 export interface PortfolioItem {
@@ -42,7 +61,11 @@ export interface PortfolioItem {
   techOrSectorLabel: string;
   techStack: string[];
   overview: string;
+  blueprintVariant: BlueprintVariant;
   architectureFlow: ArchitectureStage[];
+  impactStats?: ImpactStat[];
+  topologyLayers?: TopologyLayer[];
+  testimonials?: ClientTestimonial[];
   highlightMetric?: string;
   organizationOrEvent?: string;
   videoUrl?: string;

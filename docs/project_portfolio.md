@@ -57,8 +57,8 @@
 ### 1. Global Multinational Health & General Insurer
 * **Role:** Project Manager / Delivery Lead
 * **Sector:** Insurance & Healthcare Financial Services
-* **Budget & Scale:** ~HKD$ 100M | 4 Workstreams | 40+ Specialists | 1.55M+ Policy Records
-* **Overview & Business Value:** Rescued a 4-workstream core claims transformation in 4 chronological phases: (1) Life & General Insurance stabilization (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ issues in 6 months; (2) AWS Pre-Prod CI/CD staging, VHIS Phase 2, change governance overhaul, and L1 Scrum transition; (3) mitigation of 200+ cybersecurity vulnerabilities, VHIS Revamp, and interim bancassurance TPA portals prior to full core integration; and (4) UAT/Prod claims and Active Directory migration to Microsoft Azure with Power BI reporting, cutting IT costs ~30% and achieving 80% claims automation.
+* **Budget & Scale:** ~HKD$ 100M RFP & Vendor Turnaround | 4 Workstreams | 40+ Specialists | 1.55M+ Policy Records
+* **Overview & Business Value:** Rescued a troubled offshore-delivered core claims transformation under ~HKD$ 100M RFP and supplier transition governance across 4 chronological phases: (1) stabilized Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ post-live issues in 6 months; (2) architected AWS Pre-Prod CI/CD staging from scratch, delivered VHIS Phase 2, embedded MoSCoW Scrum via Azure DevOps, JIRA, and ServiceNow, and transitioned L1 Support; (3) mitigated 200+ cybersecurity vulnerabilities, strengthened Fraud, Waste, and Abuse (FWA) controls, launched VHIS Revamp, and deployed an interim bancassurance TPA portal prior to full core integration; and (4) migrated UAT/Prod core claims and Active Directory (2016 to 2019) from on-prem to Microsoft Azure alongside Power BI reporting, reducing infrastructure costs 20%, achieving 99.9% production uptime, speeding reporting 80%, cutting IT operational costs ~30%, and automating 80% of manual claims processing.
 
 ### 2. Tier-1 UK Financial Market Infrastructure & Clearing House
 * **Role:** Senior IT Project Manager
