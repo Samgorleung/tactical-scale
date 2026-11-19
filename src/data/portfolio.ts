@@ -438,7 +438,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'multinational-health-insurer',
     title: 'Global Multinational Health & General Insurer',
-    subtitle: '~HKD$ 100M 4-Phase Core Claims Turnaround, AWS/Azure Hybrid Cloud & Regulatory Portals',
+    subtitle: '~HKD$ 100M Offshore Turnaround, 4-Phase Core Claims Modernization & AWS/Azure Hybrid Cloud',
     track: 'enterprise-delivery',
     trackLabel: 'Part B: Enterprise Delivery',
     role: 'Project Manager / Delivery Lead',
@@ -447,42 +447,96 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Sector & Mandate',
     techStack: [
       'AWS Pre-Prod CI/CD',
-      'Microsoft Azure Migration',
-      '1.55M+ Policy Records',
+      'Azure UAT/Prod Migration',
+      'AD 2016 to 2019 Upgrade',
       'VHIS & Interim TPA Portals',
-      'Power BI & DevSecOps',
-      '80% Claims Automation',
+      'Azure DevOps / JIRA / ServiceNow',
+      'Power BI & FWA Controls',
     ],
     overview:
-      'Rescued a 4-workstream core claims transformation (40+ specialists, 1.55M+ records), burning down 1,500+ issues in 6 months. Built AWS Pre-Prod CI/CD, delivered VHIS releases, interim partner TPA portals, and 200+ security fixes, and migrated UAT/Prod to Azure with Power BI (80% automation).',
+      'Rescued a troubled offshore-delivered claims transformation (4 workstreams, 40+ specialists, 1.55M+ records) under ~HKD$ 100M RFP and vendor governance, burning down 1,500+ issues in 6 months. Built AWS Pre-Prod CI/CD, closed 200+ security vulnerabilities, launched VHIS and interim bancassurance TPA portals, and migrated UAT/Prod to Azure with Power BI (99.9% uptime, ~30% IT cost savings, 80% claims automation).',
+    blueprintVariant: 'flagship-hybrid-cloud',
+    impactStats: [
+      { value: '1,500+', label: 'Post-Live Issues Cleared in 6 Months' },
+      { value: '80%', label: 'Manual Claims Automated & Faster BI Reporting' },
+      { value: '99.9%', label: 'Azure Prod Uptime (20% Lower Infra Cost)' },
+      { value: '~30%', label: 'IT Cost Cut & 200+ Vulnerabilities Closed' },
+    ],
+    topologyLayers: [
+      {
+        layer: 'TIER 01',
+        label: 'Digital Channels & Partner Ecosystems',
+        nodes: [
+          'Customer Mobile Claims App',
+          'Salesforce CRM API',
+          'Hospital Provider Portal',
+          'Interim Bancassurance TPA Portal',
+        ],
+        emphasis: 'light',
+      },
+      {
+        layer: 'TIER 02',
+        label: 'AWS Pre-Prod CI/CD, Identity & Governance',
+        nodes: [
+          'AWS Pre-Production Staging',
+          'CI/CD & Change Forums',
+          'Active Directory (2016 to 2019)',
+          'Azure DevOps / JIRA / ServiceNow',
+        ],
+        emphasis: 'light',
+      },
+      {
+        layer: 'TIER 03',
+        label: 'Azure Production Core, Risk & Analytics',
+        nodes: [
+          'Azure Core Claims & DB (1.55M+ Records)',
+          'FWA & Security Controls (200+ Fixes)',
+          'Power BI Reporting (80% Faster)',
+          '99.9% Production SLA',
+        ],
+        emphasis: 'dark',
+      },
+    ],
     architectureFlow: [
       {
         step: '01',
-        title: 'Phase 1: 4-Workstream Reset',
+        title: 'Phase 1: Offshore Reset & 4 Workstreams',
         detail:
-          'Stabilised Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ issues in 6 months.',
+          'Stabilised Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ post-live issues in 6 months.',
       },
       {
         step: '02',
-        title: 'Phase 2: AWS Staging, VHIS & L1',
+        title: 'Phase 2: AWS CI/CD, VHIS & L1 Scrum',
         detail:
-          'Built AWS Pre-Prod CI/CD staging, delivered VHIS Phase 2, overhauled change governance, and transitioned ongoing fixes into L1 Scrum ops.',
+          'Built AWS Pre-Prod CI/CD staging from scratch, delivered VHIS Phase 2, embedded MoSCoW Scrum (Azure DevOps/JIRA/ServiceNow), and transitioned L1 Support.',
       },
       {
         step: '03',
-        title: 'Phase 3: Cyber, VHIS Revamp & TPA',
+        title: 'Phase 3: Cyber, FWA, VHIS Revamp & TPA',
         detail:
-          'Mitigated 200+ security vulnerabilities, launched VHIS Revamp products, and deployed interim TPA portals prior to full core integration.',
+          'Mitigated 200+ security vulnerabilities, strengthened Fraud, Waste, and Abuse (FWA) controls, launched VHIS Revamp, and built an interim bancassurance TPA portal prior to core integration.',
       },
       {
         step: '04',
-        title: 'Phase 4: Azure & Power BI',
+        title: 'Phase 4: Azure Cloud & Power BI',
         detail:
-          'Migrated UAT/Prod claims and Active Directory from on-prem to Azure and launched Power BI, cutting IT costs ~30% with 80% automation.',
+          'Migrated UAT/Prod claims and Active Directory (2016 to 2019) from on-prem to Azure and launched Power BI, cutting infra costs 20%, hitting 99.9% uptime, and speeding reporting 80%.',
+      },
+    ],
+    testimonials: [
+      {
+        quote:
+          'Overcame numerous offshore delivery difficulties on a strategic health claims solution and completed the programme with high business satisfaction.',
+        authorRole: 'Client IT Transformation Lead',
+      },
+      {
+        quote:
+          'Adeptly facilitated the security vulnerability remediation process, meticulously attending to every detail and ensuring prompt resolution.',
+        authorRole: 'Enterprise Cyber Security Manager (CISSP, Azure Solutions Architect Expert)',
       },
     ],
     organizationOrEvent: 'Hong Kong / APAC',
-    highlightMetric: '~30% IT Cost Reduction & 80% Claims Workflow Automation (1.55M+ Records)',
+    highlightMetric: '~30% IT Cost Cut, 20% Infra Savings, 99.9% Uptime & 80% Claims Automation (1.55M+ Records)',
   },
   {
     id: 'uk-market-infrastructure',
@@ -503,6 +557,32 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Chaired weekly executive risk forums across 300+ EOL servers for a Tier-1 UK Financial Market Infrastructure & Clearing House. Directed firewall hardening and security controls to clear 100% of audit milestones.',
+    blueprintVariant: 'infra-stack',
+    topologyLayers: [
+      {
+        layer: 'ZONE 01',
+        label: 'Legacy Estate & Exposure Baseline',
+        nodes: ['300+ EOL Servers', 'Legacy Clearing Dependencies', 'Third-Party Vendor Interfaces'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 02',
+        label: 'Risk Governance & Hardening Controls',
+        nodes: [
+          'Weekly Executive Risk Forums',
+          'Firewall Rule Hardening',
+          'Multi-Path Server Remediation',
+          'Vendor Security Gates',
+        ],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 03',
+        label: 'Audit Assurance & Clearing Service Transition',
+        nodes: ['100% Audit Milestone Clearance', 'Zero-Breach Cutover', 'Operational Runbook Sign-Off'],
+        emphasis: 'dark',
+      },
+    ],
     architectureFlow: [
       {
         step: '01',
@@ -547,6 +627,27 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Led regional migration of Prophet Professional actuarial systems across 18 offices onto Microsoft Azure. Coordinated security compliance, UAT, and multi-market cutovers.',
+    blueprintVariant: 'infra-stack',
+    topologyLayers: [
+      {
+        layer: 'ZONE 01',
+        label: '18-Market On-Premises Actuarial Estate',
+        nodes: ['18 Regional Offices', 'Prophet Professional Workloads', 'Local Valuation Datasets'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 02',
+        label: 'Microsoft Azure Landing Zone & Security',
+        nodes: ['Azure Compute Pools', 'Security Compliance Controls', 'Cross-Market UAT & Parity'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 03',
+        label: 'Synchronized Regional Cloud Production',
+        nodes: ['18-Office Azure Cutover', 'Centralized Actuarial Modeling', 'Audit-Ready Governance'],
+        emphasis: 'dark',
+      },
+    ],
     architectureFlow: [
       {
         step: '01',
@@ -590,6 +691,27 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Managed UK local authority Premises Licenses and HMRC AWRS statutory applications for a Confidential UK Operator. Delivered operating schedules, due diligence, and audit trails.',
+    blueprintVariant: 'infra-stack',
+    topologyLayers: [
+      {
+        layer: 'ZONE 01',
+        label: 'Statutory & Regulatory Baseline',
+        nodes: ['Licensing Act 2003', 'HMRC AWRS Criteria', 'Wholesale Supply-Chain Mapping'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 02',
+        label: 'Control Framework & Operating Schedules',
+        nodes: ['Due Diligence Policies', 'Premises Operating Schedules', 'Audit Evidence Vault'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 03',
+        label: 'Regulatory Submission & Statutory Sign-Off',
+        nodes: ['Local Council Filings', 'HMRC Inspection Clearance', 'Unconditional Licences Granted'],
+        emphasis: 'dark',
+      },
+    ],
     architectureFlow: [
       {
         step: '01',
@@ -634,6 +756,27 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Directed a global Azure cloud readiness and right-sizing assessment across 65 offices and 6 regions covering 1,000+ servers. Delivered an executive migration roadmap.',
+    blueprintVariant: 'infra-stack',
+    topologyLayers: [
+      {
+        layer: 'ZONE 01',
+        label: '65-Site Telemetry & Estate Discovery',
+        nodes: ['65 Global Offices', '1,000+ Server Inventory', 'Workload Utilization Baselines'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 02',
+        label: 'Dependency & FinOps Capacity Modelling',
+        nodes: ['Application Coupling Matrix', 'Latency & Region Mapping', 'Azure SKU Right-Sizing'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 03',
+        label: '6-Region Azure Migration Roadmap',
+        nodes: ['6 Cloud Regions', 'Wave Execution Sequencing', 'Board-Approved TCO Blueprint'],
+        emphasis: 'dark',
+      },
+    ],
     architectureFlow: [
       {
         step: '01',
@@ -679,6 +822,31 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     ],
     overview:
       'Led 18 concurrent O365 Cloud PBX and HA Skype for Business mandates across Big-4, utilities, and banking. Delivered 10-country MPLS (+20% QoS), 163-day 12-city PABX decommissions, 1,000+ user pools, and VXML IVRs.',
+    blueprintVariant: 'infra-stack',
+    topologyLayers: [
+      {
+        layer: 'ZONE 01',
+        label: 'DMZ F5, Edge & Global MPLS Perimeter',
+        nodes: ['Dual F5 Reverse Proxy NAT', 'SfB Edge Server Pools', '10-Country MPLS QoS (+20%)'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 02',
+        label: 'HA Front-End, Cloud PBX & SQL Mirroring',
+        nodes: ['11-Server HA Pools', 'O365 Cloud PBX (CCE x2)', 'SQL 2014 Mirroring + Witness'],
+        emphasis: 'light',
+      },
+      {
+        layer: 'ZONE 03',
+        label: 'SBC / SIP Trunking & Global Cutovers',
+        nodes: [
+          'AudioCodes / Sonus E1/T1 SBC',
+          'Cisco / Avaya / Mitel / ShoreTel',
+          '10-Port VXML IVR & 18 Mandates',
+        ],
+        emphasis: 'dark',
+      },
+    ],
     architectureFlow: [
       {
         step: '01',
