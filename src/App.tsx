@@ -1915,11 +1915,12 @@ export function App() {
                   <li className="flex items-start space-x-2.5">
                     <span className="text-sky-400 font-bold shrink-0">04.</span>
                     <span>
-                      <strong className="text-white">PMI UK Chapter Leadership & Mentoring:</strong> Key
+                      <strong className="text-white">PMI UK Chapter Leadership & Mentoring:</strong> Volunteer
                       contributor to PMI UK flagship events (Sustainability Summit 2023/2025/2026,
-                      PM4THEWORLD 2024, PMI Synergy 2026) and PMI UK 6-Month Programme Mentor
-                      coaching practitioners on PMBOK portfolio oversight and practical AI
-                      adoption for UK SMEs.
+                      PM4THEWORLD 2024, PMI Synergy 2026) supporting event websites, planning
+                      chatbots, and Gemini Gem/NotebookLM survey analysis, plus PMI UK 6-Month
+                      Programme Mentor coaching practitioners on PMBOK portfolio oversight and
+                      practical AI adoption for UK SMEs.
                     </span>
                   </li>
                 </ul>

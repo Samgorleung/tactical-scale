@@ -120,6 +120,61 @@ export const FILTER_TABS: {
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   // Part A: Applied AI Systems & Technical Builds
   {
+    id: 'production-ai-coaching',
+    title: 'Commercial AI SaaS Engineering & Advisory',
+    subtitle: 'AI Architecture Partner for BetterPresenting.ai (AskMerv: Speech Evaluator & PIA) & UK SME Advisory',
+    track: 'ai-systems',
+    trackLabel: 'Part A: Technical Advisory',
+    role: 'Principal Consultant & Technical Advisor',
+    collaborator: 'Technical Engineering Partner',
+    category: 'Technical Advisory & Production Support',
+    filterGroups: ['all', 'ai-systems', 'agile-advisory'],
+    techOrSectorLabel: 'Tech Stack',
+    techStack: [
+      'Gemini Fallback Chains',
+      'FinOps Token Caps',
+      'React 19 & TypeScript',
+      'Firebase Auth & Share Gates',
+      'Automated PPTX Export',
+      'UK SME AI Advisory',
+    ],
+    overview:
+      'Co-architected and stabilized production B2B AI SaaS tools powering BetterPresenting.ai (AskMerv), including Presentation Impact Analyst (PIA) and AI Speech Evaluator, with model fallback chains, FinOps token caps, and automated PPTX exports, alongside executive PMBOK and AI coaching for UK SMEs.',
+    blueprintVariant: 'ai-pipeline',
+    architectureFlow: [
+      {
+        step: '01',
+        title: 'Speech & Deck Intake',
+        detail: 'Captures speaker audio, transcripts, and slide decks behind staff auth gates or public share links.',
+      },
+      {
+        step: '02',
+        title: 'Guarded Gemini Engine',
+        detail: 'Enforces strict model allowlists, automatic fallback chains, and output token caps for FinOps cost control.',
+      },
+      {
+        step: '03',
+        title: 'UK Cloud & Observability',
+        detail: 'Runs containerized TypeScript APIs in UK cloud regions with per-request model telemetry and state sync.',
+      },
+      {
+        step: '04',
+        title: 'Branded PPTX & Coaching',
+        detail: 'Exports unified themed PowerPoint decks, Q&A coaching cards, and actionable operational AI playbooks.',
+      },
+    ],
+    testimonials: [
+      {
+        quote:
+          'A truly transformational 6-month mentoring journey from task execution to PMBOK portfolio oversight and leadership, exploring practical AI workflows that led directly to an introduction to our senior management team for operational automation.',
+        authorRole: 'PMI UK Mentoring Programme Mentee (UK Design Studio)',
+      },
+    ],
+    highlightMetric: 'Production B2B AI SaaS Delivery with FinOps Guardrails & UK SME AI Coaching',
+    liveUrl: 'https://www.betterpresenting.ai/home?ref=tactical-scale',
+    liveLabel: 'Live: BetterPresenting.ai',
+  },
+  {
     id: 'sprint-clarify',
     title: 'SprintClarify',
     subtitle: 'Agile Backlog & Dependency Decomposition Engine',
@@ -358,67 +413,12 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     highlightMetric: 'Role-Separated Multi-Agent Narrative & Visual QA Orchestration',
   },
   {
-    id: 'production-ai-coaching',
-    title: 'Commercial AI SaaS Engineering & Advisory',
-    subtitle: 'AI Architecture Partner for BetterPresenting.ai (AskMerv: Speech Evaluator & PIA) & UK SME Advisory',
-    track: 'ai-systems',
-    trackLabel: 'Part A: Technical Advisory',
-    role: 'Principal Consultant & Technical Advisor',
-    collaborator: 'Technical Engineering Partner',
-    category: 'Technical Advisory & Production Support',
-    filterGroups: ['all', 'ai-systems', 'agile-advisory'],
-    techOrSectorLabel: 'Tech Stack',
-    techStack: [
-      'Gemini Fallback Chains',
-      'FinOps Token Caps',
-      'React 19 & TypeScript',
-      'Firebase Auth & Share Gates',
-      'Automated PPTX Export',
-      'UK SME AI Advisory',
-    ],
-    overview:
-      'Co-architected and stabilized production B2B AI SaaS tools powering BetterPresenting.ai (AskMerv), including Presentation Impact Analyst (PIA) and AI Speech Evaluator, with model fallback chains, FinOps token caps, and automated PPTX exports, alongside executive PMBOK and AI coaching for UK SMEs.',
-    blueprintVariant: 'ai-pipeline',
-    architectureFlow: [
-      {
-        step: '01',
-        title: 'Speech & Deck Intake',
-        detail: 'Captures speaker audio, transcripts, and slide decks behind staff auth gates or public share links.',
-      },
-      {
-        step: '02',
-        title: 'Guarded Gemini Engine',
-        detail: 'Enforces strict model allowlists, automatic fallback chains, and output token caps for FinOps cost control.',
-      },
-      {
-        step: '03',
-        title: 'UK Cloud & Observability',
-        detail: 'Runs containerized TypeScript APIs in UK cloud regions with per-request model telemetry and state sync.',
-      },
-      {
-        step: '04',
-        title: 'Branded PPTX & Coaching',
-        detail: 'Exports unified themed PowerPoint decks, Q&A coaching cards, and actionable operational AI playbooks.',
-      },
-    ],
-    testimonials: [
-      {
-        quote:
-          'A truly transformational 6-month mentoring journey from task execution to PMBOK portfolio oversight and leadership, exploring practical AI workflows that led directly to an introduction to our senior management team for operational automation.',
-        authorRole: 'PMI UK Mentoring Programme Mentee (UK Design Studio)',
-      },
-    ],
-    highlightMetric: 'Production B2B AI SaaS Delivery with FinOps Guardrails & UK SME AI Coaching',
-    liveUrl: 'https://www.betterpresenting.ai/home?ref=tactical-scale',
-    liveLabel: 'Live: BetterPresenting.ai',
-  },
-  {
     id: 'post-event-survey-analyzer',
-    title: 'Post-Event Survey & Slide Intelligence',
-    subtitle: 'Platform-Agnostic Conference Analytics Engine Built from PMI UK Delivery',
+    title: 'Post-Event Survey & Slide Analyzer (Beta)',
+    subtitle: 'Independent Conference Analytics Prototype (In Testing / Pre-Launch)',
     track: 'ai-systems',
-    trackLabel: 'Part A: Applied AI Build',
-    role: 'Creator & PMI UK AI Automation Lead',
+    trackLabel: 'Part A: Active R&D Prototype',
+    role: 'Creator & Lead Architect',
     category: 'Applied AI & Conference Operations',
     filterGroups: ['all', 'ai-systems', 'agile-advisory'],
     techOrSectorLabel: 'Tech Stack',
@@ -428,35 +428,34 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'TypeScript',
       'Tailwind CSS',
       'Persistent Archiving',
-      'Planning Chatbots',
+      'Pre-Launch Beta',
     ],
     overview:
-      'Evolved from PMI UK flagship event workflows (Sustainability Summit 2023/2025/2026, PM4THEWORLD 2024, PMI Synergy 2026) into a full-stack survey and slide analyzer with configurable analysis depth, comparison modes, and persistent archiving.',
+      'Independent full-stack R&D prototype currently in testing, inspired by earlier Gemini Gem and NotebookLM survey analysis experiments for UK professional conferences. Built as a standalone, platform-agnostic web workspace with configurable analysis depth, comparison modes, and persistent archiving.',
     blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
         title: 'Survey & Deck Ingestion',
-        detail: 'Ingests raw conference attendee feedback, speaker slide decks, and multi-event datasets.',
+        detail: 'Ingests raw post-event feedback exports, attendee comments, and speaker slide decks.',
       },
       {
         step: '02',
-        title: 'Configurable Gemini Core',
-        detail: 'Applies selectable reasoning depth and comparison modes to synthesize sentiment, ROI, and lessons learned.',
+        title: 'Configurable Reasoning Core',
+        detail: 'Applies selectable analysis depth and comparison modes to extract sentiment and actionable lessons.',
       },
       {
         step: '03',
-        title: 'Archive & Chatbot Ops',
-        detail: 'Persists analyzed presentations in structured storage alongside automated PMI UK conference planning chatbots.',
+        title: 'Persistent App Storage',
+        detail: 'Archives analyzed presentations and multi-session comparisons in an independent web workspace.',
       },
       {
         step: '04',
-        title: 'Executive Insights',
-        detail: 'Produces board-ready post-event scorecards supporting 500+ attendee PMI UK conferences (+60% engagement, +35% attendance).',
+        title: 'Structured Insights (Beta)',
+        detail: 'Generates executive summaries and slide-by-slide feedback reports (currently in pre-launch testing).',
       },
     ],
-    highlightMetric: 'Full-Stack Conference Intelligence Supporting 500+ Attendee PMI UK Flagship Events',
-    organizationOrEvent: 'PMI UK Chapter',
+    highlightMetric: 'Independent Pre-Launch Prototype Evolving Gem & NotebookLM Experiments into a Standalone Web App',
   },
 
   // Part B: Enterprise Transformation & Regulatory Delivery

@@ -2,43 +2,7 @@
 
 ## Part A: Applied AI Systems & Technical Builds
 
-### 1. SprintClarify: Agile Backlog & Dependency Decomposition Engine
-* **Role:** Co-Creator & Lead Architect
-* **Tech Stack:** Gemini 3.8 Flash, React 19, TypeScript, Tailwind CSS, Typed JSON Schemas
-* **Category:** AI Product & Agile Governance
-* **Overview & Business Value:** SprintClarify enforces structured engineering planning before code generation. The platform ingests high-level product requirements and decomposes them into granular, sprint-ready user stories complete with acceptance criteria, dependency graphs, and technical risk flags. By enforcing strict JSON schema outputs from Gemini models, it eliminates vague backlog items and accelerates sprint planning for agile delivery teams.
-
-### 2. GuardianAI: Autonomous Compliance & Security Auditing Agent
-* **Role:** Co-Creator & Security Architect
-* **Tech Stack:** Gemma 4, Gemini 3.7 Flash, Google Cloud Run, Containerized Microservices
-* **Category:** Agentic AI & Cybersecurity Compliance
-* **Overview & Business Value:** Built for the #AllThingsAgentic Hackathon, GuardianAI is an autonomous auditing agent deployed on Google Cloud Run. It evaluates technical documentation, system configurations, and operational workflows against regulatory and cybersecurity frameworks. Combining open-weights Gemma 4 models with Gemini 3.7 Flash, the system surfaces compliance gaps and generates actionable remediation logs automatically.
-
-### 3. EchoHire: Adaptive Dual-Mode AI Career Coach & Interviewer
-* **Role:** Co-Creator & AI Systems Lead
-* **Tech Stack:** Gemini 3.1 Pro, Gemini 2.5 Live, Firebase, React, Tailwind CSS
-* **Category:** Real-Time Multimodal AI
-* **Overview & Business Value:** Developed for the Google Gemini Live Agent Challenge, EchoHire provides low-latency voice and text interview simulations. It operates in two distinct modes: an interactive interviewer that adapts follow-up questions in real time based on candidate responses, and an analytical career coach that evaluates transcripts against structured competency rubrics to provide actionable feedback.
-
-### 4. Dual-Market Corporate Compliance Analytics
-* **Role:** Co-Creator & Compliance Lead
-* **Tech Stack:** Gemini API, React, TypeScript, Tailwind CSS
-* **Category:** RegTech & Financial Compliance
-* **Overview & Business Value:** A specialized analytical platform designed to cross-reference corporate governance disclosures and regulatory requirements across dual-market jurisdictions. The tool streamlines compliance verification by extracting key statutory obligations and highlighting discrepancies across complex regulatory filings.
-
-### 5. CineFact AI: Serverless Video Intelligence & Multimodal Claim Verification Pipeline
-* **Role:** Co-Creator & Lead Architect
-* **Tech Stack:** Gemini API, Serverless Video Intelligence, Firestore, React, TypeScript
-* **Category:** Real-Time Multimodal AI
-* **Overview & Business Value:** A high-throughput serverless multimodal verification engine that analyzes video streams in real time, extracting factual assertions and cross-referencing them against authoritative knowledge bases with low-latency parallel claim verification. Designed for broadcast media verification and automated digital compliance workflows.
-
-### 6. Extraordinary Agents: Multi-AI Storyboarding & Video Production Pipeline
-* **Role:** Lead Architect
-* **Tech Stack:** Google GenMedia APIs, Multi-Agent Workflow, GitHub, WSL
-* **Category:** Generative Media & Workflow Automation
-* **Overview & Business Value:** A collaborative multi-AI orchestration pipeline that automates creative scriptwriting, character-consistent visual storyboarding, and video generation. The architecture separates narrative planning, visual prompt enforcement, and quality assurance across specialized agent roles to maintain visual and thematic continuity.
-
-### 7. Commercial AI SaaS Engineering & Advisory
+### 1. Commercial AI SaaS Engineering & Advisory
 * **Role:** Principal Consultant & Technical Advisor (supported by Technical Engineering Partner)
 * **Tech Stack:** Gemini Fallback Chains, FinOps Token Caps, React 19 & TypeScript, Firebase Auth & Share Gates, Automated PPTX Export, UK SME AI Advisory
 * **Category:** Technical Advisory & Production Support
@@ -46,13 +10,49 @@
 * **Highlight Metric:** Production B2B AI SaaS Delivery with FinOps Guardrails & UK SME AI Coaching
 * **Live Product:** [BetterPresenting.ai](https://www.betterpresenting.ai/home?ref=tactical-scale)
 
-### 8. Post-Event Survey & Slide Intelligence
-* **Role:** Creator & PMI UK AI Automation Lead
-* **Organization / Event:** PMI UK Chapter
-* **Tech Stack:** Gemini Multi-Depth Reasoning, React 19, TypeScript, Tailwind CSS, Persistent Archiving, Planning Chatbots
+### 2. SprintClarify: Agile Backlog & Dependency Decomposition Engine
+* **Role:** Co-Creator & Lead Architect
+* **Tech Stack:** Gemini 3.8 Flash, React 19, TypeScript, Tailwind CSS, Typed JSON Schemas
+* **Category:** AI Product & Agile Governance
+* **Overview & Business Value:** SprintClarify enforces structured engineering planning before code generation. The platform ingests high-level product requirements and decomposes them into granular, sprint-ready user stories complete with acceptance criteria, dependency graphs, and technical risk flags. By enforcing strict JSON schema outputs from Gemini models, it eliminates vague backlog items and accelerates sprint planning for agile delivery teams.
+
+### 3. GuardianAI: Autonomous Compliance & Security Auditing Agent
+* **Role:** Co-Creator & Security Architect
+* **Tech Stack:** Gemma 4, Gemini 3.7 Flash, Google Cloud Run, Containerized Microservices
+* **Category:** Agentic AI & Cybersecurity Compliance
+* **Overview & Business Value:** Built for the #AllThingsAgentic Hackathon, GuardianAI is an autonomous auditing agent deployed on Google Cloud Run. It evaluates technical documentation, system configurations, and operational workflows against regulatory and cybersecurity frameworks. Combining open-weights Gemma 4 models with Gemini 3.7 Flash, the system surfaces compliance gaps and generates actionable remediation logs automatically.
+
+### 4. EchoHire: Adaptive Dual-Mode AI Career Coach & Interviewer
+* **Role:** Co-Creator & AI Systems Lead
+* **Tech Stack:** Gemini 3.1 Pro, Gemini 2.5 Live, Firebase, React, Tailwind CSS
+* **Category:** Real-Time Multimodal AI
+* **Overview & Business Value:** Developed for the Google Gemini Live Agent Challenge, EchoHire provides low-latency voice and text interview simulations. It operates in two distinct modes: an interactive interviewer that adapts follow-up questions in real time based on candidate responses, and an analytical career coach that evaluates transcripts against structured competency rubrics to provide actionable feedback.
+
+### 5. Dual-Market Corporate Compliance Analytics
+* **Role:** Co-Creator & Compliance Lead
+* **Tech Stack:** Gemini API, React, TypeScript, Tailwind CSS
+* **Category:** RegTech & Financial Compliance
+* **Overview & Business Value:** A specialized analytical platform designed to cross-reference corporate governance disclosures and regulatory requirements across dual-market jurisdictions. The tool streamlines compliance verification by extracting key statutory obligations and highlighting discrepancies across complex regulatory filings.
+
+### 6. CineFact AI: Serverless Video Intelligence & Multimodal Claim Verification Pipeline
+* **Role:** Co-Creator & Lead Architect
+* **Tech Stack:** Gemini API, Serverless Video Intelligence, Firestore, React, TypeScript
+* **Category:** Real-Time Multimodal AI
+* **Overview & Business Value:** A high-throughput serverless multimodal verification engine that analyzes video streams in real time, extracting factual assertions and cross-referencing them against authoritative knowledge bases with low-latency parallel claim verification. Designed for broadcast media verification and automated digital compliance workflows.
+
+### 7. Extraordinary Agents: Multi-AI Storyboarding & Video Production Pipeline
+* **Role:** Lead Architect
+* **Tech Stack:** Google GenMedia APIs, Multi-Agent Workflow, GitHub, WSL
+* **Category:** Generative Media & Workflow Automation
+* **Overview & Business Value:** A collaborative multi-AI orchestration pipeline that automates creative scriptwriting, character-consistent visual storyboarding, and video generation. The architecture separates narrative planning, visual prompt enforcement, and quality assurance across specialized agent roles to maintain visual and thematic continuity.
+
+### 8. Post-Event Survey & Slide Analyzer (Beta)
+* **Role:** Creator & Lead Architect
+* **Status:** Active R&D Prototype (In Testing / Pre-Launch)
+* **Tech Stack:** Gemini Multi-Depth Reasoning, React 19, TypeScript, Tailwind CSS, Persistent Archiving, Pre-Launch Beta
 * **Category:** Applied AI & Conference Operations
-* **Overview & Business Value:** Evolved from PMI UK flagship event workflows (Sustainability Summit 2023/2025/2026, PM4THEWORLD 2024, PMI Synergy 2026) into a full-stack survey and slide analyzer with configurable analysis depth, comparison modes, persistent presentation archiving, and automated conference planning chatbots supporting 500+ attendee conferences (+60% engagement, +35% attendance).
-* **Highlight Metric:** Full-Stack Conference Intelligence Supporting 500+ Attendee PMI UK Flagship Events
+* **Overview & Business Value:** Independent full-stack R&D prototype currently in testing, inspired by earlier Gemini Gem and NotebookLM survey analysis experiments for UK professional conferences. Built as a standalone, platform-agnostic web workspace with configurable analysis depth, comparison modes, and persistent archiving.
+* **Highlight Metric:** Independent Pre-Launch Prototype Evolving Gem & NotebookLM Experiments into a Standalone Web App
 
 ---
 
