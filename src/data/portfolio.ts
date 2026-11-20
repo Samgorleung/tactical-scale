@@ -69,6 +69,8 @@ export interface PortfolioItem {
   highlightMetric?: string;
   organizationOrEvent?: string;
   videoUrl?: string;
+  liveUrl?: string;
+  liveLabel?: string;
 }
 
 export const FILTER_TABS: {
@@ -358,7 +360,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: 'production-ai-coaching',
     title: 'Commercial AI SaaS Engineering & Advisory',
-    subtitle: 'Production Speech Evaluator, Presentation Impact Analyst (PIA) & Executive AI Coaching',
+    subtitle: 'AI Architecture Partner for BetterPresenting.ai (AskMerv: Speech Evaluator & PIA) & UK SME Advisory',
     track: 'ai-systems',
     trackLabel: 'Part A: Technical Advisory',
     role: 'Principal Consultant & Technical Advisor',
@@ -375,7 +377,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'UK SME AI Advisory',
     ],
     overview:
-      'Co-architected and stabilized two production B2B AI SaaS tools (Presentation Impact Analyst and AI Speech Evaluator) for a UK coaching partner with model fallback chains, FinOps token caps, and automated PPTX exports, alongside executive PMBOK and AI workflow coaching for UK SMEs.',
+      'Co-architected and stabilized production B2B AI SaaS tools powering BetterPresenting.ai (AskMerv), including Presentation Impact Analyst (PIA) and AI Speech Evaluator, with model fallback chains, FinOps token caps, and automated PPTX exports, alongside executive PMBOK and AI coaching for UK SMEs.',
     blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
@@ -407,6 +409,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       },
     ],
     highlightMetric: 'Production B2B AI SaaS Delivery with FinOps Guardrails & UK SME AI Coaching',
+    liveUrl: 'https://www.betterpresenting.ai/home?ref=tactical-scale',
+    liveLabel: 'Live: BetterPresenting.ai',
   },
   {
     id: 'post-event-survey-analyzer',

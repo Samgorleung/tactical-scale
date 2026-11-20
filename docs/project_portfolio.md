@@ -42,8 +42,9 @@
 * **Role:** Principal Consultant & Technical Advisor (supported by Technical Engineering Partner)
 * **Tech Stack:** Gemini Fallback Chains, FinOps Token Caps, React 19 & TypeScript, Firebase Auth & Share Gates, Automated PPTX Export, UK SME AI Advisory
 * **Category:** Technical Advisory & Production Support
-* **Overview & Business Value:** Co-architected and stabilized two production B2B AI SaaS tools (Presentation Impact Analyst and AI Speech Evaluator) for a UK coaching partner with strict model allowlists, automatic fallback chains, FinOps output token caps, UK-region containerized API telemetry, and automated branded PPTX exports, alongside executive PMBOK and practical AI workflow coaching for UK SMEs.
+* **Overview & Business Value:** Co-architected and stabilized production B2B AI SaaS tools powering BetterPresenting.ai (AskMerv), including Presentation Impact Analyst (PIA) and AI Speech Evaluator, with model fallback chains, FinOps token caps, UK-region containerized API telemetry, and automated branded PPTX exports, alongside executive PMBOK and AI coaching for UK SMEs.
 * **Highlight Metric:** Production B2B AI SaaS Delivery with FinOps Guardrails & UK SME AI Coaching
+* **Live Product:** [BetterPresenting.ai](https://www.betterpresenting.ai/home?ref=tactical-scale)
 
 ### 8. Post-Event Survey & Slide Intelligence
 * **Role:** Creator & PMI UK AI Automation Lead

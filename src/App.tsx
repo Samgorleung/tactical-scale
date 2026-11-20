@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import {
   ArrowUpRight,
   ArrowRight,
+  ExternalLink,
   Menu,
   X,
   Play,
@@ -1365,6 +1366,17 @@ export function App() {
                     <span>Watch Demo</span>
                   </button>
                 )}
+                {activeBlueprintItem.liveUrl && (
+                  <a
+                    href={activeBlueprintItem.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-950 border border-slate-300 text-xs font-bold transition-colors duration-250 ease-out inline-flex items-center space-x-1.5"
+                  >
+                    <span>{activeBlueprintItem.liveLabel || 'Live Product'}</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-sky-700" />
+                  </a>
+                )}
                 <a
                   href={`mailto:sam@tactical-scale.com?subject=${encodeURIComponent(
                     `Architecture Blueprint Walkthrough: ${activeBlueprintItem.title}`
@@ -2145,6 +2157,17 @@ function PortfolioCard({
                 <span>View Blueprint</span>
                 <ArrowUpRight className="w-3 h-3 text-sky-700" />
               </button>
+              {item.liveUrl && (
+                <a
+                  href={item.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg bg-slate-950 hover:bg-sky-700 text-white text-[11px] font-bold transition-colors duration-250 ease-out"
+                >
+                  <span>{item.liveLabel || 'Live Product'}</span>
+                  <ExternalLink className="w-3 h-3 text-sky-400" />
+                </a>
+              )}
               {item.videoUrl && (
                 <button
                   type="button"
