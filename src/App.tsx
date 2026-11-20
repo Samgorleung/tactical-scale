@@ -1283,6 +1283,25 @@ export function App() {
                     </div>
                   </div>
 
+                  {/* Contextual Stakeholder Endorsements */}
+                  {activeBlueprintItem.testimonials && activeBlueprintItem.testimonials.length > 0 && (
+                    <div className="space-y-3">
+                      {activeBlueprintItem.testimonials.map((t) => (
+                        <div
+                          key={t.authorRole}
+                          className="bg-white border border-slate-200 border-l-2 border-l-sky-700 rounded-lg p-4 sm:p-5"
+                        >
+                          <p className="text-xs sm:text-sm text-slate-700 italic leading-relaxed mb-2">
+                            "{t.quote}"
+                          </p>
+                          <div className="text-[11px] font-bold text-slate-950">
+                            {t.authorRole}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
                   {/* Outcome & Role Callout */}
                   <div className="bg-slate-950 text-white border border-slate-800 rounded-lg p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div>
@@ -1723,6 +1742,78 @@ export function App() {
                     Leadership, Atlassian ITSM/Agile & Aha! Product Management
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Compact 3-Column Executive Endorsement Strip */}
+          <div className="mb-14">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-4">
+              <div>
+                <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700 mb-1">
+                  Independent Stakeholder Validation
+                </div>
+                <h4 className="text-xl font-extrabold text-slate-950">
+                  Verified Executive & Partner Endorsements
+                </h4>
+              </div>
+              <a
+                href="https://linkedin.com/in/samgorleung"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs font-bold text-sky-700 hover:text-slate-950 transition-colors duration-250 ease-out inline-flex items-center space-x-1 shrink-0"
+              >
+                <span>Verify All 14+ on LinkedIn</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+
+            <div className="grid md:grid-cols-3 border-t border-b border-slate-200 divide-y md:divide-y-0 md:divide-x divide-slate-200 bg-slate-50/50">
+              <div className="p-6 flex flex-col justify-between">
+                <div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-sky-700 mb-2">
+                    Applied AI Leadership
+                  </div>
+                  <p className="text-xs text-slate-700 leading-relaxed italic mb-4">
+                    "Sam's initiative to lead and shape the AI working group has been a
+                    game-changer for us. His work has undoubtedly raised the bar for what we can
+                    achieve in project management through technology."
+                  </p>
+                </div>
+                <div className="text-[11px] font-bold text-slate-950 pt-3 border-t border-slate-200">
+                  Programme Manager, PMI UK Chapter
+                </div>
+              </div>
+
+              <div className="p-6 flex flex-col justify-between">
+                <div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-sky-700 mb-2">
+                    Executive Delivery
+                  </div>
+                  <p className="text-xs text-slate-700 leading-relaxed italic mb-4">
+                    "A seasoned BA/PM with a customer-first and result-first mentality,
+                    demonstrating excellent stakeholder management, cross-functional collaboration,
+                    and risk management."
+                  </p>
+                </div>
+                <div className="text-[11px] font-bold text-slate-950 pt-3 border-t border-slate-200">
+                  VP of Technology, Direct Line Manager
+                </div>
+              </div>
+
+              <div className="p-6 flex flex-col justify-between">
+                <div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-sky-700 mb-2">
+                    GSI Subcontracting
+                  </div>
+                  <p className="text-xs text-slate-700 leading-relaxed italic mb-4">
+                    "Very well organized, takes initiative beyond the expected parameters of his
+                    job, and runs an efficient project with no unpleasant surprises."
+                  </p>
+                </div>
+                <div className="text-[11px] font-bold text-slate-950 pt-3 border-t border-slate-200">
+                  Project Manager, Global System Integrator
+                </div>
               </div>
             </div>
           </div>

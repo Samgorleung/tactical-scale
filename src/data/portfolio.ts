@@ -605,6 +605,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         detail: 'Delivered zero-breach service transition on regulatory schedule.',
       },
     ],
+    testimonials: [
+      {
+        quote:
+          'Dedicated in addressing End of Life remediation plans, connecting Business and IT Owners with strong communication and an audit-ready information trail.',
+        authorRole: 'Portfolio Manager, Tier-1 UK Financial Market Infrastructure',
+      },
+    ],
     organizationOrEvent: 'United Kingdom',
     highlightMetric: '100% On-Schedule Governance Gate & Audit Control Compliance',
   },
@@ -668,6 +675,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         step: '04',
         title: '18-Office Cutover',
         detail: 'Completed synchronized production cutover across Asian markets.',
+      },
+    ],
+    testimonials: [
+      {
+        quote:
+          'Managed vendors across APAC and business users across 18 markets, removing critical roadblocks and highlighting risks early to deliver within time, scope, and budget.',
+        authorRole: 'Enterprise Solutions Architect, Pan-Asian Life Insurance Group',
       },
     ],
     organizationOrEvent: '18 Regional Offices, Multiple Asian Markets',
@@ -867,6 +881,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         step: '04',
         title: '18 Global Cutovers',
         detail: 'Executed zero-downtime migrations across 12 Greater China cities & 10 hubs.',
+      },
+    ],
+    testimonials: [
+      {
+        quote:
+          'Organises and manages complex project pipelines in a highly structured way, keeping cross-functional tasks aligned to schedule across multi-year engagements.',
+        authorRole: 'Senior Distributed Systems Engineer, Microsoft Partner Delivery',
       },
     ],
     organizationOrEvent: 'APAC, Greater China, Europe & Americas',
