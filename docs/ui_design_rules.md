@@ -21,3 +21,12 @@ All code, UI components, styles, and documentation in this repository must stric
 ## 5. KISS Copywriting & Zero Em-Dashes
 * Never use em-dashes or en-dashes anywhere in UI text, code strings, or markdown files. Use commas, colons, or periods instead.
 * Keep all copy concise, concrete, and free of generic AI buzzwords.
+
+
+## Pre-Push Verification Gate (Mandatory)
+
+Before committing or pushing any changes to `main`, complete all three checks below and fix any failures locally:
+
+1. **Code, Typography & Privacy Check:** Run `npx tsc --noEmit && npm run build` (exit code `0`), confirm zero em-dashes (`\u2014`) or en-dashes (`\u2013`) across `src/` and `docs/`, confirm `private_docs/` stays untracked (`git status --short`), and ensure all items in `PORTFOLIO_ITEMS` satisfy `PortfolioItem`.
+2. **Live Desktop & Mobile Render Check:** Start the local preview server (`npm run preview`) and inspect the rendered application at both **Desktop (`1440x900`)** and **Mobile (`390x844`)** with zero browser console errors, zero horizontal page overflow, working interactive controls (filters, interactive layers, mobile menu, external links), and visual verification across all three blueprint modal variants (`flagship-hybrid-cloud`, `ai-pipeline`, `infra-stack`).
+3. **Zero Fabricated Claims:** Never invent metrics, client quotes, or project outcomes; use only verified data provided by the user.

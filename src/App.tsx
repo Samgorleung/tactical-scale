@@ -15,14 +15,65 @@ import {
   PortfolioItem,
 } from './data/portfolio';
 
+const OPERATING_MODEL_STAGES = [
+  {
+    code: '01. Principal Governance & Security',
+    title: 'PMP, DASSM, SC-100',
+    subtitle: 'Sam Leung | Principal Architect',
+    badge: null as string | null,
+    points: [
+      'SteerCo Alignment & RAID Controls',
+      'Cybersecurity & Zero-Trust Gate Design',
+      'Architecture Blueprints & Governance',
+    ],
+    deliverableLabel: 'Governance Deliverable',
+    deliverableReadout:
+      'Architecture Decision Records (ADRs), RAID register, SC-100 Zero-Trust security gate review, and executive SteerCo sign-off.',
+  },
+  {
+    code: '02. Multi-Cloud & Agentic Execution',
+    title: 'MS Foundry, Azure AI, Gemini, ADK 2.0, Cloud Run',
+    subtitle: 'Microsoft + Google Cloud + Partner Network',
+    badge: null as string | null,
+    points: [
+      'Microsoft Foundry SDK & Azure AI',
+      'Google Gemini, ADK 2.0 & Cloud Run',
+      'Specialist Engineering Partner Network',
+    ],
+    deliverableLabel: 'Execution Deliverable',
+    deliverableReadout:
+      'Containerized Azure AI / Microsoft Foundry SDK or Google Cloud Run / Gemini / ADK 2.0 services built with FinOps token guardrails.',
+  },
+  {
+    code: '03. Production Release & Handover',
+    title: 'Typed JSON Schemas, CI/CD, Self-Service Enablement',
+    subtitle: 'Deterministic Delivery & Enablement',
+    badge: 'Live',
+    points: [
+      'Typed JSON Schemas & Automated QA',
+      'CI/CD Pipelines & Zero-Downtime Cutover',
+      'Self-Service Team Enablement',
+    ],
+    deliverableLabel: 'Handover Deliverable',
+    deliverableReadout:
+      'Schema-validated production pipelines, automated CI/CD release gates, runbook documentation, and self-service internal team coaching.',
+  },
+];
+
 export function App() {
   const [activeFilter, setActiveFilter] = useState<FilterTabId>('all');
   const [activeScenarioIdx, setActiveScenarioIdx] = useState<number>(0);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [activeVideoItem, setActiveVideoItem] = useState<PortfolioItem | null>(null);
   const [activeBlueprintItem, setActiveBlueprintItem] = useState<PortfolioItem | null>(null);
+  const [selectedLayerIdx, setSelectedLayerIdx] = useState<number | null>(null);
+  const [activeModelLayerIdx, setActiveModelLayerIdx] = useState<number | null>(null);
   const [showAllBadges, setShowAllBadges] = useState<boolean>(false);
   const [portraitError, setPortraitError] = useState<boolean>(false);
+
+  useEffect(() => {
+    setSelectedLayerIdx(null);
+  }, [activeBlueprintItem]);
 
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
@@ -583,114 +634,111 @@ export function App() {
                   Tactical Scale Architecture & Delivery Blueprint
                 </h4>
               </div>
-              <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-slate-400 shrink-0">
-                <span>Governance</span>
-                <ArrowRight className="w-3.5 h-3.5 text-sky-400" />
-                <span>Execution</span>
-                <ArrowRight className="w-3.5 h-3.5 text-sky-400" />
-                <span>Handover</span>
+              <div className="flex flex-wrap items-center gap-3 shrink-0">
+                <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                  <span>Governance</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-sky-400" />
+                  <span>Execution</span>
+                  <ArrowRight className="w-3.5 h-3.5 text-sky-400" />
+                  <span>Handover</span>
+                </div>
+                {activeModelLayerIdx !== null ? (
+                  <button
+                    type="button"
+                    onClick={() => setActiveModelLayerIdx(null)}
+                    className="px-2.5 py-1 rounded bg-slate-800 hover:bg-sky-700 text-slate-200 hover:text-white text-[10px] font-bold uppercase tracking-wider transition-colors duration-250 ease-out"
+                  >
+                    Reset View
+                  </button>
+                ) : (
+                  <span className="text-[11px] font-semibold text-slate-400">
+                    Click stage to inspect
+                  </span>
+                )}
               </div>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-0 mt-6 border border-slate-800 rounded-lg divide-y lg:divide-y-0 lg:divide-x divide-slate-800 bg-slate-900/60">
-              {/* Layer 01 */}
-              <div className="p-6 relative flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
-                      01. Principal Governance & Security
-                    </span>
-                    <ArrowRight className="hidden lg:block w-4 h-4 text-sky-400" />
-                  </div>
-                  <h5 className="text-base font-extrabold text-white mb-2">
-                    PMP, DASSM, SC-100
-                  </h5>
-                  <div className="text-xs font-semibold text-slate-300 mb-4">
-                    Sam Leung | Principal Architect
-                  </div>
-                </div>
-                <ul className="text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>SteerCo Alignment & RAID Controls</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>Cybersecurity & Zero-Trust Gate Design</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>Architecture Blueprints & Governance</span>
-                  </li>
-                </ul>
-              </div>
+            <div className="grid lg:grid-cols-3 gap-4 mt-6">
+              {OPERATING_MODEL_STAGES.map((stage, idx) => {
+                const isActive = activeModelLayerIdx === idx;
+                const isDimmed = activeModelLayerIdx !== null && !isActive;
 
-              {/* Layer 02 */}
-              <div className="p-6 relative flex flex-col justify-between bg-slate-900">
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
-                      02. Multi-Cloud & Agentic Execution
-                    </span>
-                    <ArrowRight className="hidden lg:block w-4 h-4 text-sky-400" />
-                  </div>
-                  <h5 className="text-base font-extrabold text-white mb-2">
-                    MS Foundry, Azure AI, Gemini, ADK 2.0, Cloud Run
-                  </h5>
-                  <div className="text-xs font-semibold text-slate-300 mb-4">
-                    Microsoft + Google Cloud + Partner Network
-                  </div>
-                </div>
-                <ul className="text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>Microsoft Foundry SDK & Azure AI</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>Google Gemini, ADK 2.0 & Cloud Run</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>Specialist Engineering Partner Network</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Layer 03 */}
-              <div className="p-6 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
-                      03. Production Release & Handover
-                    </span>
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-800 text-sky-400">
-                      Live
-                    </span>
-                  </div>
-                  <h5 className="text-base font-extrabold text-white mb-2">
-                    Typed JSON Schemas, CI/CD, Self-Service Enablement
-                  </h5>
-                  <div className="text-xs font-semibold text-slate-300 mb-4">
-                    Deterministic Delivery & Enablement
-                  </div>
-                </div>
-                <ul className="text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>Typed JSON Schemas & Automated QA</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>CI/CD Pipelines & Zero-Downtime Cutover</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <span className="text-sky-400 font-bold">/</span>
-                    <span>Self-Service Team Enablement</span>
-                  </li>
-                </ul>
-              </div>
+                return (
+                  <button
+                    key={stage.code}
+                    type="button"
+                    onClick={() =>
+                      setActiveModelLayerIdx((prev) => (prev === idx ? null : idx))
+                    }
+                    aria-expanded={isActive}
+                    className={`rounded-lg border p-6 text-left flex flex-col justify-between transition-all duration-250 ease-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 ${
+                      isActive
+                        ? 'border-sky-700 bg-slate-950 text-white ring-1 ring-sky-400 -translate-y-0.5'
+                        : isDimmed
+                          ? 'border-slate-800 bg-slate-900/70 text-slate-200 opacity-65 hover:opacity-100 hover:border-sky-700'
+                          : 'border-slate-800 bg-slate-900 text-white hover:border-sky-700 hover:-translate-y-0.5'
+                    }`}
+                  >
+                    <div className="w-full">
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <span className="text-[11px] font-bold uppercase tracking-widest text-sky-400">
+                          {stage.code}
+                        </span>
+                        {stage.badge ? (
+                          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-800 text-sky-400">
+                            {stage.badge}
+                          </span>
+                        ) : (
+                          <ArrowRight
+                            className={`hidden lg:block w-4 h-4 transition-colors duration-250 ease-out ${
+                              isActive ? 'text-white' : 'text-sky-400'
+                            }`}
+                          />
+                        )}
+                      </div>
+                      <h5 className="text-base font-extrabold text-white mb-2">
+                        {stage.title}
+                      </h5>
+                      <div className="text-xs font-semibold text-slate-300 mb-4">
+                        {stage.subtitle}
+                      </div>
+                    </div>
+                    <ul className="w-full text-xs text-slate-300 space-y-1.5 pt-4 border-t border-slate-800">
+                      {stage.points.map((pt) => (
+                        <li key={pt} className="flex items-start space-x-2">
+                          <span className="text-sky-400 font-bold">/</span>
+                          <span>{pt}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </button>
+                );
+              })}
             </div>
+
+            {activeModelLayerIdx !== null ? (
+              <div className="mt-4 px-5 py-3.5 rounded-lg bg-slate-900 border border-sky-700 border-l-2 border-l-sky-400 flex flex-col sm:flex-row sm:items-center justify-between gap-3 transition-all duration-250 ease-out">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+                  <span className="text-[10px] font-extrabold uppercase tracking-widest text-sky-400 shrink-0">
+                    {OPERATING_MODEL_STAGES[activeModelLayerIdx].deliverableLabel}
+                  </span>
+                  <span className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                    {OPERATING_MODEL_STAGES[activeModelLayerIdx].deliverableReadout}
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setActiveModelLayerIdx(null)}
+                  className="self-start sm:self-auto px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-[10px] font-bold uppercase tracking-wider shrink-0 transition-colors duration-250 ease-out"
+                >
+                  Reset
+                </button>
+              </div>
+            ) : (
+              <div className="mt-4 px-5 py-3 rounded-lg bg-slate-900/50 border border-slate-800 text-xs text-slate-400">
+                Click stage 01, 02, or 03 above to inspect its governance deliverable and handover output.
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -928,19 +976,50 @@ export function App() {
                   {/* Stacked 3-Tier Hybrid Multi-Cloud System Topology Diagram */}
                   {activeBlueprintItem.topologyLayers && (
                     <div>
-                      <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700 mb-3">
-                        3-Tier Hybrid Multi-Cloud System Topology (AWS Pre-Prod + Azure Prod)
+                      <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700">
+                          3-Tier Hybrid Multi-Cloud System Topology (AWS Pre-Prod + Azure Prod)
+                        </div>
+                        {selectedLayerIdx !== null ? (
+                          <button
+                            type="button"
+                            onClick={() => setSelectedLayerIdx(null)}
+                            className="px-2.5 py-0.5 rounded bg-slate-200 hover:bg-slate-950 text-slate-800 hover:text-white text-[10px] font-bold uppercase tracking-wider transition-colors duration-250 ease-out"
+                          >
+                            Reset View
+                          </button>
+                        ) : (
+                          <span className="text-[11px] font-semibold text-slate-500">
+                            Click any layer to inspect
+                          </span>
+                        )}
                       </div>
                       <div className="space-y-0">
                         {activeBlueprintItem.topologyLayers.map((tier, idx) => {
                           const isDark = tier.emphasis === 'dark';
+                          const isSelected = selectedLayerIdx === idx;
+                          const isDimmed = selectedLayerIdx !== null && !isSelected;
+                          const isArrowActive =
+                            selectedLayerIdx === idx || selectedLayerIdx === idx + 1;
+
                           return (
                             <React.Fragment key={tier.layer}>
-                              <div
-                                className={`rounded-lg border p-5 ${
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setSelectedLayerIdx((prev) => (prev === idx ? null : idx))
+                                }
+                                aria-expanded={isSelected}
+                                className={`w-full text-left rounded-lg border p-5 transition-all duration-250 ease-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 ${
                                   isDark
                                     ? 'bg-slate-950 text-white border-slate-800'
                                     : 'bg-white text-slate-950 border-slate-300'
+                                } ${
+                                  isSelected
+                                    ? 'ring-2 ring-sky-700 shadow-md -translate-y-0.5'
+                                    : isDimmed
+                                      ? 'opacity-60 hover:opacity-100'
+                                      : 'hover:border-sky-700 hover:-translate-y-0.5'
                                 }`}
                               >
                                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -975,11 +1054,62 @@ export function App() {
                                     ))}
                                   </div>
                                 </div>
-                              </div>
+
+                                {isSelected &&
+                                  (tier.focusSummary ||
+                                    (tier.governanceControls &&
+                                      tier.governanceControls.length > 0)) && (
+                                    <div
+                                      className={`mt-4 pt-4 border-t ${
+                                        isDark ? 'border-slate-800' : 'border-slate-200'
+                                      }`}
+                                    >
+                                      <div
+                                        className={`text-[10px] font-bold uppercase tracking-widest mb-1.5 ${
+                                          isDark ? 'text-sky-400' : 'text-sky-700'
+                                        }`}
+                                      >
+                                        Layer Scope & Governance Focus
+                                      </div>
+                                      {tier.focusSummary && (
+                                        <p
+                                          className={`text-xs leading-relaxed ${
+                                            isDark ? 'text-slate-300' : 'text-slate-600'
+                                          }`}
+                                        >
+                                          {tier.focusSummary}
+                                        </p>
+                                      )}
+                                      {tier.governanceControls &&
+                                        tier.governanceControls.length > 0 && (
+                                          <div className="flex flex-wrap gap-2 mt-3">
+                                            {tier.governanceControls.map((ctrl) => (
+                                              <span
+                                                key={ctrl}
+                                                className={`px-2.5 py-1 rounded text-[11px] font-bold border ${
+                                                  isDark
+                                                    ? 'bg-slate-900 border-sky-400 text-sky-400'
+                                                    : 'bg-slate-50 border-sky-700 text-sky-700'
+                                                }`}
+                                              >
+                                                {ctrl}
+                                              </span>
+                                            ))}
+                                          </div>
+                                        )}
+                                    </div>
+                                  )}
+                              </button>
                               {idx < activeBlueprintItem.topologyLayers!.length - 1 && (
                                 <div className="flex justify-center py-1" aria-hidden="true">
                                   <svg
-                                    className="w-5 h-6 text-sky-700"
+                                    className={`w-5 h-6 transition-all duration-250 ease-out ${
+                                      selectedLayerIdx === null
+                                        ? 'text-slate-400'
+                                        : isArrowActive
+                                          ? 'text-sky-700'
+                                          : 'text-slate-300 opacity-50'
+                                    }`}
                                     viewBox="0 0 20 24"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -1227,54 +1357,157 @@ export function App() {
                   {/* Layered Enterprise Architecture & Governance Zones */}
                   {activeBlueprintItem.topologyLayers && (
                     <div>
-                      <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700 mb-3">
-                        Enterprise Architecture Zones & Delivery Stack
+                      <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <div className="text-[11px] font-bold uppercase tracking-widest text-sky-700">
+                          Enterprise Architecture Zones & Delivery Stack
+                        </div>
+                        {selectedLayerIdx !== null ? (
+                          <button
+                            type="button"
+                            onClick={() => setSelectedLayerIdx(null)}
+                            className="px-2.5 py-0.5 rounded bg-slate-200 hover:bg-slate-950 text-slate-800 hover:text-white text-[10px] font-bold uppercase tracking-wider transition-colors duration-250 ease-out"
+                          >
+                            Reset View
+                          </button>
+                        ) : (
+                          <span className="text-[11px] font-semibold text-slate-500">
+                            Click any layer to inspect
+                          </span>
+                        )}
                       </div>
-                      <div className="space-y-3">
-                        {activeBlueprintItem.topologyLayers.map((zone) => {
+                      <div className="space-y-0">
+                        {activeBlueprintItem.topologyLayers.map((zone, idx) => {
                           const isDark = zone.emphasis === 'dark';
+                          const isSelected = selectedLayerIdx === idx;
+                          const isDimmed = selectedLayerIdx !== null && !isSelected;
+                          const isArrowActive =
+                            selectedLayerIdx === idx || selectedLayerIdx === idx + 1;
+
                           return (
-                            <div
-                              key={zone.layer}
-                              className={`rounded-lg border p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 ${
-                                isDark
-                                  ? 'bg-slate-950 text-white border-slate-800'
-                                  : 'bg-white text-slate-950 border-slate-300'
-                              }`}
-                            >
-                              <div className="md:w-1/3 shrink-0">
-                                <span
-                                  className={`inline-block px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider mb-1.5 ${
-                                    isDark
-                                      ? 'bg-slate-800 text-sky-400'
-                                      : 'bg-slate-100 text-sky-700 border border-slate-200'
-                                  }`}
-                                >
-                                  {zone.layer}
-                                </span>
-                                <div
-                                  className={`text-sm font-extrabold leading-snug ${
-                                    isDark ? 'text-white' : 'text-slate-950'
-                                  }`}
-                                >
-                                  {zone.label}
+                            <React.Fragment key={zone.layer}>
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  setSelectedLayerIdx((prev) => (prev === idx ? null : idx))
+                                }
+                                aria-expanded={isSelected}
+                                className={`w-full text-left rounded-lg border p-5 transition-all duration-250 ease-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 ${
+                                  isDark
+                                    ? 'bg-slate-950 text-white border-slate-800'
+                                    : 'bg-white text-slate-950 border-slate-300'
+                                } ${
+                                  isSelected
+                                    ? 'ring-2 ring-sky-700 shadow-md -translate-y-0.5'
+                                    : isDimmed
+                                      ? 'opacity-60 hover:opacity-100'
+                                      : 'hover:border-sky-700 hover:-translate-y-0.5'
+                                }`}
+                              >
+                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                                  <div className="md:w-1/3 shrink-0">
+                                    <span
+                                      className={`inline-block px-2 py-0.5 rounded text-[10px] font-extrabold uppercase tracking-wider mb-1.5 ${
+                                        isDark
+                                          ? 'bg-slate-800 text-sky-400'
+                                          : 'bg-slate-100 text-sky-700 border border-slate-200'
+                                      }`}
+                                    >
+                                      {zone.layer}
+                                    </span>
+                                    <div
+                                      className={`text-sm font-extrabold leading-snug ${
+                                        isDark ? 'text-white' : 'text-slate-950'
+                                      }`}
+                                    >
+                                      {zone.label}
+                                    </div>
+                                  </div>
+                                  <div className="flex flex-wrap gap-2 md:justify-end">
+                                    {zone.nodes.map((node) => (
+                                      <span
+                                        key={node}
+                                        className={`px-3 py-1.5 rounded text-xs font-bold border ${
+                                          isDark
+                                            ? 'bg-slate-900 border-slate-700 text-slate-100'
+                                            : 'bg-slate-100 border-slate-200 text-slate-900'
+                                        }`}
+                                      >
+                                        {node}
+                                      </span>
+                                    ))}
+                                  </div>
                                 </div>
-                              </div>
-                              <div className="flex flex-wrap gap-2 md:justify-end">
-                                {zone.nodes.map((node) => (
-                                  <span
-                                    key={node}
-                                    className={`px-3 py-1.5 rounded text-xs font-bold border ${
-                                      isDark
-                                        ? 'bg-slate-900 border-slate-700 text-slate-100'
-                                        : 'bg-slate-100 border-slate-200 text-slate-900'
+
+                                {isSelected &&
+                                  (zone.focusSummary ||
+                                    (zone.governanceControls &&
+                                      zone.governanceControls.length > 0)) && (
+                                    <div
+                                      className={`mt-4 pt-4 border-t ${
+                                        isDark ? 'border-slate-800' : 'border-slate-200'
+                                      }`}
+                                    >
+                                      <div
+                                        className={`text-[10px] font-bold uppercase tracking-widest mb-1.5 ${
+                                          isDark ? 'text-sky-400' : 'text-sky-700'
+                                        }`}
+                                      >
+                                        Zone Scope & Governance Focus
+                                      </div>
+                                      {zone.focusSummary && (
+                                        <p
+                                          className={`text-xs leading-relaxed ${
+                                            isDark ? 'text-slate-300' : 'text-slate-600'
+                                          }`}
+                                        >
+                                          {zone.focusSummary}
+                                        </p>
+                                      )}
+                                      {zone.governanceControls &&
+                                        zone.governanceControls.length > 0 && (
+                                          <div className="flex flex-wrap gap-2 mt-3">
+                                            {zone.governanceControls.map((ctrl) => (
+                                              <span
+                                                key={ctrl}
+                                                className={`px-2.5 py-1 rounded text-[11px] font-bold border ${
+                                                  isDark
+                                                    ? 'bg-slate-900 border-sky-400 text-sky-400'
+                                                    : 'bg-slate-50 border-sky-700 text-sky-700'
+                                                }`}
+                                              >
+                                                {ctrl}
+                                              </span>
+                                            ))}
+                                          </div>
+                                        )}
+                                    </div>
+                                  )}
+                              </button>
+                              {idx < activeBlueprintItem.topologyLayers!.length - 1 && (
+                                <div className="flex justify-center py-1" aria-hidden="true">
+                                  <svg
+                                    className={`w-5 h-6 transition-all duration-250 ease-out ${
+                                      selectedLayerIdx === null
+                                        ? 'text-slate-400'
+                                        : isArrowActive
+                                          ? 'text-sky-700'
+                                          : 'text-slate-300 opacity-50'
                                     }`}
+                                    viewBox="0 0 20 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
                                   >
-                                    {node}
-                                  </span>
-                                ))}
-                              </div>
-                            </div>
+                                    <path
+                                      d="M10 1V19M10 19L5 14M10 19L15 14"
+                                      stroke="currentColor"
+                                      strokeWidth="1.75"
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                    />
+                                  </svg>
+                                </div>
+                              )}
+                            </React.Fragment>
                           );
                         })}
                       </div>

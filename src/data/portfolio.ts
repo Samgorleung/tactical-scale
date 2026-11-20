@@ -41,6 +41,8 @@ export interface TopologyLayer {
   label: string;
   nodes: string[];
   emphasis?: 'dark' | 'light';
+  focusSummary?: string;
+  governanceControls?: string[];
 }
 
 export interface ClientTestimonial {
@@ -497,6 +499,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
           'Interim Bancassurance TPA Portal',
         ],
         emphasis: 'light',
+        focusSummary:
+          'Directs omnichannel claims intake across 1.55M+ policy records via mobile, CRM APIs, hospital portals, and an interim bancassurance TPA routing portal prior to core integration.',
+        governanceControls: ['API Contract Validation', 'Hospital Provider Onboarding', 'Interim TPA Sync'],
       },
       {
         layer: 'TIER 02',
@@ -508,6 +513,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
           'Azure DevOps / JIRA / ServiceNow',
         ],
         emphasis: 'light',
+        focusSummary:
+          'Establishes AWS Pre-Production CI/CD staging built from scratch, executes the Active Directory 2016 to 2019 upgrade, and governs MoSCoW Scrum delivery across 40+ specialists.',
+        governanceControls: ['AWS Pre-Prod Release Gates', 'Change Management Forums', 'L1 Scrum Escalation SLA'],
       },
       {
         layer: 'TIER 03',
@@ -519,6 +527,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
           '99.9% Production SLA',
         ],
         emphasis: 'dark',
+        focusSummary:
+          'Delivers zero-downtime On-Prem to Azure UAT/Prod core migration, closes 200+ cybersecurity vulnerabilities with FWA controls, and powers enterprise Power BI reporting.',
+        governanceControls: ['99.9% Production SLA', '20% Infra Cost Reduction', '80% Faster Power BI Reporting'],
       },
     ],
     architectureFlow: [
@@ -588,6 +599,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         label: 'Legacy Estate & Exposure Baseline',
         nodes: ['300+ EOL Servers', 'Legacy Clearing Dependencies', 'Third-Party Vendor Interfaces'],
         emphasis: 'light',
+        focusSummary:
+          'Catalogues 300+ end-of-life server dependencies, clearing operational pathways, and third-party vendor interfaces to establish an audit-ready remediation baseline.',
       },
       {
         layer: 'ZONE 02',
@@ -599,12 +612,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
           'Vendor Security Gates',
         ],
         emphasis: 'light',
+        focusSummary:
+          'Coordinates weekly executive risk forums with Senior Operations and Risk Directors to enforce firewall rule hardening, multi-path server remediation, and vendor security gates.',
       },
       {
         layer: 'ZONE 03',
         label: 'Audit Assurance & Clearing Service Transition',
         nodes: ['100% Audit Milestone Clearance', 'Zero-Breach Cutover', 'Operational Runbook Sign-Off'],
         emphasis: 'dark',
+        focusSummary:
+          'Completes zero-breach clearing service transition with formal operational runbook sign-off and 100% on-schedule audit milestone clearance.',
       },
     ],
     architectureFlow: [
@@ -665,18 +682,24 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         label: '18-Market On-Premises Actuarial Estate',
         nodes: ['18 Regional Offices', 'Prophet Professional Workloads', 'Local Valuation Datasets'],
         emphasis: 'light',
+        focusSummary:
+          'Inventories local Prophet Professional actuarial workloads, compute requirements, and valuation datasets across 18 regional Asian offices.',
       },
       {
         layer: 'ZONE 02',
         label: 'Microsoft Azure Landing Zone & Security',
         nodes: ['Azure Compute Pools', 'Security Compliance Controls', 'Cross-Market UAT & Parity'],
         emphasis: 'light',
+        focusSummary:
+          'Provisions standardized Microsoft Azure compute pools with security compliance controls and validates actuarial output parity across cross-market UAT waves.',
       },
       {
         layer: 'ZONE 03',
         label: 'Synchronized Regional Cloud Production',
         nodes: ['18-Office Azure Cutover', 'Centralized Actuarial Modeling', 'Audit-Ready Governance'],
         emphasis: 'dark',
+        focusSummary:
+          'Executes synchronized 18-office production cutovers onto centralized Azure actuarial modeling infrastructure within time, scope, and budget.',
       },
     ],
     architectureFlow: [
@@ -736,18 +759,24 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         label: 'Statutory & Regulatory Baseline',
         nodes: ['Licensing Act 2003', 'HMRC AWRS Criteria', 'Wholesale Supply-Chain Mapping'],
         emphasis: 'light',
+        focusSummary:
+          'Audits operational models against Licensing Act 2003 obligations, HMRC AWRS statutory criteria, and wholesale supply-chain provenance requirements.',
       },
       {
         layer: 'ZONE 02',
         label: 'Control Framework & Operating Schedules',
         nodes: ['Due Diligence Policies', 'Premises Operating Schedules', 'Audit Evidence Vault'],
         emphasis: 'light',
+        focusSummary:
+          'Builds verifiable due diligence policies, premises operating schedules, standard operating procedures, and an inspection-ready audit evidence vault.',
       },
       {
         layer: 'ZONE 03',
         label: 'Regulatory Submission & Statutory Sign-Off',
         nodes: ['Local Council Filings', 'HMRC Inspection Clearance', 'Unconditional Licences Granted'],
         emphasis: 'dark',
+        focusSummary:
+          'Manages formal local council and HMRC authority submissions through inspection clearance to secure unconditional UK Premises Licences and AWRS approval.',
       },
     ],
     architectureFlow: [
@@ -801,18 +830,24 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         label: '65-Site Telemetry & Estate Discovery',
         nodes: ['65 Global Offices', '1,000+ Server Inventory', 'Workload Utilization Baselines'],
         emphasis: 'light',
+        focusSummary:
+          'Collects automated infrastructure telemetry across 65 global offices and 1,000+ servers to establish accurate workload utilization baselines.',
       },
       {
         layer: 'ZONE 02',
         label: 'Dependency & FinOps Capacity Modelling',
         nodes: ['Application Coupling Matrix', 'Latency & Region Mapping', 'Azure SKU Right-Sizing'],
         emphasis: 'light',
+        focusSummary:
+          'Models cross-application coupling, regional network latency, and FinOps target Azure SKUs to eliminate over-provisioning prior to migration.',
       },
       {
         layer: 'ZONE 03',
         label: '6-Region Azure Migration Roadmap',
         nodes: ['6 Cloud Regions', 'Wave Execution Sequencing', 'Board-Approved TCO Blueprint'],
         emphasis: 'dark',
+        focusSummary:
+          'Synthesizes findings into a sequenced 6-region Azure migration wave roadmap and board-approved total cost of ownership blueprint.',
       },
     ],
     architectureFlow: [
@@ -867,12 +902,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         label: 'DMZ F5, Edge & Global MPLS Perimeter',
         nodes: ['Dual F5 Reverse Proxy NAT', 'SfB Edge Server Pools', '10-Country MPLS QoS (+20%)'],
         emphasis: 'light',
+        focusSummary:
+          'Secures external voice and federation traffic behind dual F5 reverse proxy NAT load balancers, Skype for Business Edge pools, and 10-country MPLS QoS routing (+20% QoS).',
       },
       {
         layer: 'ZONE 02',
         label: 'HA Front-End, Cloud PBX & SQL Mirroring',
         nodes: ['11-Server HA Pools', 'O365 Cloud PBX (CCE x2)', 'SQL 2014 Mirroring + Witness'],
         emphasis: 'light',
+        focusSummary:
+          'Operates 11-server High Availability Front-End pools, Office 365 Cloud PBX (CCE x2) appliances, and SQL 2014 mirroring with witness servers for resilient enterprise voice.',
       },
       {
         layer: 'ZONE 03',
@@ -883,6 +922,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
           '10-Port VXML IVR & 18 Mandates',
         ],
         emphasis: 'dark',
+        focusSummary:
+          'Integrates AudioCodes and Sonus E1/T1 SBC gateways with Cisco, Avaya, Mitel, ShoreTel, and 10-port VXML IVRs across 18 concurrent global cutovers.',
       },
     ],
     architectureFlow: [
