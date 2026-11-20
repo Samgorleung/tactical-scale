@@ -38,17 +38,20 @@
 * **Category:** Generative Media & Workflow Automation
 * **Overview & Business Value:** A collaborative multi-AI orchestration pipeline that automates creative scriptwriting, character-consistent visual storyboarding, and video generation. The architecture separates narrative planning, visual prompt enforcement, and quality assurance across specialized agent roles to maintain visual and thematic continuity.
 
-### 7. Production AI Coaching & Environment Synchronization
+### 7. Commercial AI SaaS Engineering & Advisory
 * **Role:** Principal Consultant & Technical Advisor (supported by Technical Engineering Partner)
-* **Tech Stack:** Google AI Studio, Cloud Run, Production CI/CD Workflows
+* **Tech Stack:** Gemini Fallback Chains, FinOps Token Caps, React 19 & TypeScript, Firebase Auth & Share Gates, Automated PPTX Export, UK SME AI Advisory
 * **Category:** Technical Advisory & Production Support
-* **Overview & Business Value:** Ongoing client consultancy focused on transitioning AI Studio prototypes into stable production environments. Work includes resolving deployment pipeline discrepancies, synchronizing prompt and model configurations between staging and production, and coaching internal stakeholders on sustainable self-service maintenance.
+* **Overview & Business Value:** Co-architected and stabilized two production B2B AI SaaS tools (Presentation Impact Analyst and AI Speech Evaluator) for a UK coaching partner with strict model allowlists, automatic fallback chains, FinOps output token caps, UK-region containerized API telemetry, and automated branded PPTX exports, alongside executive PMBOK and practical AI workflow coaching for UK SMEs.
+* **Highlight Metric:** Production B2B AI SaaS Delivery with FinOps Guardrails & UK SME AI Coaching
 
-### 8. AI Festival Card Maker
-* **Role:** Co-Creator & Lead Architect
-* **Tech Stack:** Gemini 2.5 Flash, HTML5 Canvas, Tailwind CSS
-* **Category:** Consumer Web Application
-* **Overview & Business Value:** A lightweight, high-speed web application that generates culturally tailored digital greeting cards across global festivals while preserving subject likeness. Built with a streamlined frontend and automated canvas compositing for instant sharing.
+### 8. Post-Event Survey & Slide Intelligence
+* **Role:** Creator & PMI UK AI Automation Lead
+* **Organization / Event:** PMI UK Chapter
+* **Tech Stack:** Gemini Multi-Depth Reasoning, React 19, TypeScript, Tailwind CSS, Persistent Archiving, Planning Chatbots
+* **Category:** Applied AI & Conference Operations
+* **Overview & Business Value:** Evolved from PMI UK flagship event workflows (Sustainability Summit 2023/2025/2026, PM4THEWORLD 2024, PMI Synergy 2026) into a full-stack survey and slide analyzer with configurable analysis depth, comparison modes, persistent presentation archiving, and automated conference planning chatbots supporting 500+ attendee conferences (+60% engagement, +35% attendance).
+* **Highlight Metric:** Full-Stack Conference Intelligence Supporting 500+ Attendee PMI UK Flagship Events
 
 ---
 

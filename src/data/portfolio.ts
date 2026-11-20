@@ -7,7 +7,7 @@ export type PortfolioCategoryTag =
   | 'RegTech & Financial Compliance'
   | 'Generative Media & Workflow Automation'
   | 'Technical Advisory & Production Support'
-  | 'Consumer Web Application'
+  | 'Applied AI & Conference Operations'
   | 'Financial Market Infrastructure & Clearing Operations'
   | 'Insurance & Healthcare Financial Services'
   | 'Actuarial Systems & Cloud Infrastructure'
@@ -357,8 +357,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
   {
     id: 'production-ai-coaching',
-    title: 'Production AI Coaching & Environment Synchronization',
-    subtitle: 'AI Studio to Production CI/CD & Stakeholder Enablement',
+    title: 'Commercial AI SaaS Engineering & Advisory',
+    subtitle: 'Production Speech Evaluator, Presentation Impact Analyst (PIA) & Executive AI Coaching',
     track: 'ai-systems',
     trackLabel: 'Part A: Technical Advisory',
     role: 'Principal Consultant & Technical Advisor',
@@ -366,72 +366,93 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     category: 'Technical Advisory & Production Support',
     filterGroups: ['all', 'ai-systems', 'agile-advisory'],
     techOrSectorLabel: 'Tech Stack',
-    techStack: ['Google AI Studio', 'Cloud Run', 'Production CI/CD Workflows'],
+    techStack: [
+      'Gemini Fallback Chains',
+      'FinOps Token Caps',
+      'React 19 & TypeScript',
+      'Firebase Auth & Share Gates',
+      'Automated PPTX Export',
+      'UK SME AI Advisory',
+    ],
     overview:
-      'Principal advisory transitioning fragile Google AI Studio prototypes into stable Cloud Run production pipelines. Resolves staging drift and enables internal self-service maintenance.',
+      'Co-architected and stabilized two production B2B AI SaaS tools (Presentation Impact Analyst and AI Speech Evaluator) for a UK coaching partner with model fallback chains, FinOps token caps, and automated PPTX exports, alongside executive PMBOK and AI workflow coaching for UK SMEs.',
     blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
-        title: 'Prototype Drift Audit',
-        detail: 'Captures AI Studio prompts, secrets, and staging discrepancies.',
+        title: 'Speech & Deck Intake',
+        detail: 'Captures speaker audio, transcripts, and slide decks behind staff auth gates or public share links.',
       },
       {
         step: '02',
-        title: 'Schema & Prompt Sync',
-        detail: 'Standardizes model configs, parameters, and deterministic outputs.',
+        title: 'Guarded Gemini Engine',
+        detail: 'Enforces strict model allowlists, automatic fallback chains, and output token caps for FinOps cost control.',
       },
       {
         step: '03',
-        title: 'Cloud Run CI/CD',
-        detail: 'Automates container builds, environment parity, and release gates.',
+        title: 'UK Cloud & Observability',
+        detail: 'Runs containerized TypeScript APIs in UK cloud regions with per-request model telemetry and state sync.',
       },
       {
         step: '04',
-        title: 'Self-Service Handover',
-        detail: 'Delivers production runbooks and hands-on team coaching.',
+        title: 'Branded PPTX & Coaching',
+        detail: 'Exports unified themed PowerPoint decks, Q&A coaching cards, and actionable operational AI playbooks.',
       },
     ],
-    highlightMetric: 'Staging-to-Production Prompt Sync & Self-Service Handover',
+    testimonials: [
+      {
+        quote:
+          'A truly transformational 6-month mentoring journey from task execution to PMBOK portfolio oversight and leadership, exploring practical AI workflows that led directly to an introduction to our senior management team for operational automation.',
+        authorRole: 'PMI UK Mentoring Programme Mentee (UK Design Studio)',
+      },
+    ],
+    highlightMetric: 'Production B2B AI SaaS Delivery with FinOps Guardrails & UK SME AI Coaching',
   },
   {
-    id: 'ai-festival-card-maker',
-    title: 'AI Festival Card Maker',
-    subtitle: 'Culturally Tailored Generative Greeting Application',
+    id: 'post-event-survey-analyzer',
+    title: 'Post-Event Survey & Slide Intelligence',
+    subtitle: 'Platform-Agnostic Conference Analytics Engine Built from PMI UK Delivery',
     track: 'ai-systems',
     trackLabel: 'Part A: Applied AI Build',
-    role: 'Co-Creator & Lead Architect',
-    collaborator: 'Technical Engineering Partner',
-    category: 'Consumer Web Application',
-    filterGroups: ['all', 'ai-systems', 'multimodal-web'],
+    role: 'Creator & PMI UK AI Automation Lead',
+    category: 'Applied AI & Conference Operations',
+    filterGroups: ['all', 'ai-systems', 'agile-advisory'],
     techOrSectorLabel: 'Tech Stack',
-    techStack: ['Gemini 2.5 Flash', 'HTML5 Canvas', 'Tailwind CSS'],
+    techStack: [
+      'Gemini Multi-Depth Reasoning',
+      'React 19',
+      'TypeScript',
+      'Tailwind CSS',
+      'Persistent Archiving',
+      'Planning Chatbots',
+    ],
     overview:
-      'High-speed web application generating culturally tailored greeting cards across global festivals while preserving subject likeness. Uses automated HTML5 canvas compositing.',
+      'Evolved from PMI UK flagship event workflows (Sustainability Summit 2023/2025/2026, PM4THEWORLD 2024, PMI Synergy 2026) into a full-stack survey and slide analyzer with configurable analysis depth, comparison modes, and persistent archiving.',
     blueprintVariant: 'ai-pipeline',
     architectureFlow: [
       {
         step: '01',
-        title: 'Subject & Festival Input',
-        detail: 'Accepts user portrait photo and selected cultural celebration theme.',
+        title: 'Survey & Deck Ingestion',
+        detail: 'Ingests raw conference attendee feedback, speaker slide decks, and multi-event datasets.',
       },
       {
         step: '02',
-        title: 'Gemini 2.5 Generation',
-        detail: 'Preserves subject facial identity while styling festival imagery.',
+        title: 'Configurable Gemini Core',
+        detail: 'Applies selectable reasoning depth and comparison modes to synthesize sentiment, ROI, and lessons learned.',
       },
       {
         step: '03',
-        title: 'HTML5 Canvas Compositor',
-        detail: 'Renders typography, framing, and layout client-side at low latency.',
+        title: 'Archive & Chatbot Ops',
+        detail: 'Persists analyzed presentations in structured storage alongside automated PMI UK conference planning chatbots.',
       },
       {
         step: '04',
-        title: 'Instant Card Export',
-        detail: 'Produces high-resolution downloadable greeting cards for sharing.',
+        title: 'Executive Insights',
+        detail: 'Produces board-ready post-event scorecards supporting 500+ attendee PMI UK conferences (+60% engagement, +35% attendance).',
       },
     ],
-    highlightMetric: 'Subject-Likeness Preservation & Automated HTML5 Canvas Compositing',
+    highlightMetric: 'Full-Stack Conference Intelligence Supporting 500+ Attendee PMI UK Flagship Events',
+    organizationOrEvent: 'PMI UK Chapter',
   },
 
   // Part B: Enterprise Transformation & Regulatory Delivery

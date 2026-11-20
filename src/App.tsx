@@ -1164,6 +1164,25 @@ export function App() {
                     </div>
                   </div>
 
+                  {/* Contextual Stakeholder Endorsements */}
+                  {activeBlueprintItem.testimonials && activeBlueprintItem.testimonials.length > 0 && (
+                    <div className="space-y-3">
+                      {activeBlueprintItem.testimonials.map((t) => (
+                        <div
+                          key={t.authorRole}
+                          className="bg-white border border-slate-200 border-l-2 border-l-sky-700 rounded-lg p-4 sm:p-5"
+                        >
+                          <p className="text-xs sm:text-sm text-slate-700 italic leading-relaxed mb-2">
+                            "{t.quote}"
+                          </p>
+                          <div className="text-[11px] font-bold text-slate-950">
+                            {t.authorRole}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
                   {/* Architecture Stack Nodes & Outcome Metric */}
                   <div className="grid md:grid-cols-3 gap-4 border-t border-slate-200 pt-6">
                     <div className="md:col-span-2 bg-white border border-slate-200 rounded-lg p-5">
@@ -1881,6 +1900,16 @@ export function App() {
                       in London (bilingual EN / ZH).
                     </span>
                   </li>
+                  <li className="flex items-start space-x-2.5">
+                    <span className="text-sky-400 font-bold shrink-0">04.</span>
+                    <span>
+                      <strong className="text-white">PMI UK Chapter Leadership & Mentoring:</strong> Key
+                      contributor to PMI UK flagship events (Sustainability Summit 2023/2025/2026,
+                      PM4THEWORLD 2024, PMI Synergy 2026) and PMI UK 6-Month Programme Mentor
+                      coaching practitioners on PMBOK portfolio oversight and practical AI
+                      adoption for UK SMEs.
+                    </span>
+                  </li>
                 </ul>
 
                 {/* Technical Engineering Partner Callout */}
@@ -1898,7 +1927,7 @@ export function App() {
                     <span className="text-white font-semibold">SprintClarify</span>,{' '}
                     <span className="text-white font-semibold">EchoHire</span>,{' '}
                     <span className="text-white font-semibold">CineFact AI</span>, and{' '}
-                    <span className="text-white font-semibold">Production AI Coaching</span>.
+                    <span className="text-white font-semibold">Commercial AI SaaS Engineering</span>.
                   </p>
                 </div>
 
