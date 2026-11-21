@@ -48,7 +48,16 @@ const HOME_FLAGSHIP_IDS = [
   'uk-market-infrastructure',
 ];
 
-const HOME_TOP_BADGE_CODES = ['PMP', 'DASSM', 'AI-102 Associate', 'SC-100 Expert'];
+const HOME_TOP_BADGE_CODES = [
+  'PMP',
+  'DASSM',
+  'SC-100 Expert',
+  'AI-102 Associate',
+  'DP-100 Associate',
+  'AZ-104 Associate',
+  'MS Foundry SDK',
+  'Gemini Multi-Agent',
+];
 
 const OPERATING_MODEL_STAGES = [
   {
@@ -99,6 +108,7 @@ interface CertificationBadge {
   issuer: string;
   code: string;
   name: string;
+  shortName?: string;
   tier: string;
   imageUrl: string;
   verifyUrl?: string;
@@ -158,6 +168,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     issuer: 'Microsoft',
     code: 'MS Foundry SDK',
     name: 'Generative AI Chat Apps with Microsoft Foundry SDK',
+    shortName: 'GenAI Chat Apps (Foundry SDK)',
     tier: 'Microsoft Applied Skills',
     imageUrl: '/Badges/applied-skill.svg',
   },
@@ -165,6 +176,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     issuer: 'Google Cloud',
     code: 'Gemini Multi-Agent',
     name: 'Orchestrate Multi-Agent Workflows with Gemini Enterprise',
+    shortName: 'Gemini Multi-Agent Workflows',
     tier: 'Google Skill Badge',
     imageUrl: '/Badges/orchestrate-multi-agent-workflows-with-gemini-enter.png',
   },
@@ -830,7 +842,7 @@ export function App() {
               </div>
             </section>
 
-            {/* Block 4: Core Credentials (Top 4) & Verified Endorsements */}
+            {/* Block 4: Featured Credentials (8 of Total) & Verified Endorsements */}
             <section className="py-20 sm:py-24 px-6 bg-slate-50 border-b border-slate-200">
               <div className="max-w-6xl mx-auto space-y-12">
                 <div>
@@ -840,8 +852,12 @@ export function App() {
                         Executive Accreditations
                       </div>
                       <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-950">
-                        Core Programme, AI & Security Credentials
+                        Featured Credentials ({homeTopBadges.length} of {CERTIFICATION_BADGES.length})
                       </h3>
+                      <p className="text-xs sm:text-sm text-slate-600 mt-1">
+                        Core PMI governance, Microsoft Azure/AI, cybersecurity, and multi-cloud
+                        GenAI highlights.
+                      </p>
                     </div>
                     <a
                       href="#enterprise"
@@ -851,12 +867,16 @@ export function App() {
                       }}
                       className="text-xs font-bold text-sky-700 hover:text-slate-950 transition-colors duration-250 ease-out inline-flex items-center space-x-1.5 shrink-0"
                     >
-                      <span>View all credentials on Enterprise ({CERTIFICATION_BADGES.length})</span>
+                      <span>View Full Matrix on Enterprise</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                   </div>
 
-                  <BadgeGrid badges={homeTopBadges} columnsClass="grid-cols-2 lg:grid-cols-4" />
+                  <BadgeGrid
+                    badges={homeTopBadges}
+                    columnsClass="grid-cols-2 lg:grid-cols-4"
+                    compact
+                  />
                 </div>
 
                 <ExecutiveEndorsementsStrip />
@@ -2537,10 +2557,63 @@ export function App() {
 function BadgeGrid({
   badges,
   columnsClass,
+  compact = false,
 }: {
   badges: CertificationBadge[];
   columnsClass: string;
+  compact?: boolean;
 }) {
+  if (compact) {
+    return (
+      <div className={`grid ${columnsClass} gap-3`}>
+        {badges.map((badge) => {
+          const compactContent = (
+            <>
+              <div className="flex items-center justify-between gap-2 mb-2.5">
+                <img
+                  src={badge.imageUrl}
+                  alt={badge.name}
+                  className="w-9 h-9 object-contain shrink-0"
+                  loading="lazy"
+                />
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 text-right">
+                  {badge.issuer}
+                </span>
+              </div>
+              <div>
+                <div className="text-xs sm:text-sm font-extrabold text-slate-950 leading-snug">
+                  {badge.code}
+                </div>
+                <div className="text-[11px] sm:text-xs text-slate-600 mt-0.5 leading-snug">
+                  {badge.shortName || badge.name}
+                </div>
+              </div>
+            </>
+          );
+
+          return badge.verifyUrl ? (
+            <a
+              key={`${badge.issuer}-${badge.code}`}
+              href={badge.verifyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white border border-slate-200 hover:border-sky-700 rounded-lg p-3.5 sm:p-4 flex flex-col justify-between transition-colors duration-250 ease-out"
+            >
+              {compactContent}
+            </a>
+          ) : (
+            <div
+              key={`${badge.issuer}-${badge.code}`}
+              className="bg-white border border-slate-200 hover:border-sky-700 rounded-lg p-3.5 sm:p-4 flex flex-col justify-between transition-colors duration-250 ease-out"
+            >
+              {compactContent}
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
   return (
     <div className={`grid ${columnsClass} border-t border-l border-slate-200 bg-white`}>
       {badges.map((badge) => {
