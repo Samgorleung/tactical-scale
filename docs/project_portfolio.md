@@ -58,31 +58,35 @@
 
 ## Part B: Enterprise Transformation & Regulatory Delivery
 
-### 1. Global Multinational Health & General Insurer
+### 1. Multinational Insurer: Hong Kong Health & General Transformation
 * **Role:** Project Manager / Delivery Lead
+* **Scope Boundary:** Hong Kong Core Mandate (Coordinating Group Operations Infrastructure, India Offshore Vendor & HK CSO to Group Security Governance)
 * **Sector:** Insurance & Healthcare Financial Services
 * **Budget & Scale:** ~HKD$ 100M RFP & Vendor Turnaround | 4 Workstreams | 40+ Specialists | 1.55M+ Policy Records
-* **Overview & Business Value:** Rescued a troubled offshore-delivered core claims transformation under ~HKD$ 100M RFP and supplier transition governance across 4 chronological phases: (1) stabilized Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ post-live issues in 6 months; (2) architected AWS Pre-Prod CI/CD staging from scratch, delivered VHIS Phase 2, embedded MoSCoW Scrum via Azure DevOps, JIRA, and ServiceNow, and transitioned L1 Support; (3) mitigated 200+ cybersecurity vulnerabilities, strengthened Fraud, Waste, and Abuse (FWA) controls, launched VHIS Revamp, and deployed an interim bancassurance TPA portal prior to full core integration; and (4) migrated UAT/Prod core claims and Active Directory (2016 to 2019) from on-prem to Microsoft Azure alongside Power BI reporting, reducing infrastructure costs 20%, achieving 99.9% production uptime, speeding reporting 80%, cutting IT operational costs ~30%, and automating 80% of manual claims processing.
+* **Overview & Business Value:** Rescued a troubled offshore-delivered Hong Kong core Health & General Insurance claims transformation (not a global business rollout) under ~HKD$ 100M RFP and supplier transition governance, coordinating across an India offshore delivery vendor, Group Operations multi-country infrastructure teams, and Hong Kong CSO up to Group Security governance sign-offs across 4 chronological phases: (1) stabilized Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ post-live issues in 6 months; (2) architected AWS Pre-Prod CI/CD staging from scratch, delivered VHIS Phase 2, embedded MoSCoW Scrum via Azure DevOps, JIRA, and ServiceNow, and transitioned L1 Support; (3) mitigated 200+ cybersecurity vulnerabilities cleared via HK CSO and Group Security gates, strengthened Fraud, Waste, and Abuse (FWA) controls, launched VHIS Revamp, and deployed an interim bancassurance TPA portal prior to full core integration; and (4) migrated UAT/Prod core claims and Active Directory (2016 to 2019) from on-prem to Microsoft Azure alongside Power BI reporting, reducing infrastructure costs 20%, achieving 99.9% production uptime, speeding reporting 80%, cutting IT operational costs ~30%, and automating 80% of manual claims processing.
 
 ### 2. Tier-1 UK Financial Market Infrastructure & Clearing House
 * **Role:** Senior IT Project Manager
+* **Scope Boundary:** UK-Led Delivery Collaborating Across UK, Paris & Romania Teams
 * **Sector:** Financial Market Infrastructure & Clearing Operations
-* **Overview & Business Value:** Chaired weekly executive risk forums with Senior Operations and Risk Directors and directed multi-path remediation across 300+ end-of-life (EOL) servers, firewall rule hardening, and vendor security controls for a Tier-1 UK Financial Market Infrastructure & Clearing House, clearing 100% of audit milestones on schedule.
+* **Overview & Business Value:** UK-led IT delivery chairing weekly executive risk forums with Senior Operations and Risk Directors and coordinating across cross-border UK, Paris, and Romania delivery teams to direct multi-path remediation across 300+ end-of-life (EOL) servers, firewall rule hardening, and vendor security controls, clearing 100% of audit milestones on schedule.
 
 ### 3. Pan-Asian Life Insurance Group (18 Regional Markets)
 * **Role:** IT Project Manager
+* **Scope Boundary:** Led from Group Global Office (HQ) Across All 18 APAC Offices
 * **Sector:** Actuarial Systems & Cloud Infrastructure
-* **Overview & Business Value:** Managed the regional migration of mission-critical Prophet Professional actuarial applications across 18 offices onto Microsoft Azure for a Pan-Asian Life Insurance Group (18 Regional Markets). Coordinated infrastructure provisioning, security compliance, user acceptance testing, and cutover execution across multiple Asian markets.
+* **Overview & Business Value:** Led from the Group Global Office (HQ), managing the full production migration of mission-critical Prophet Professional actuarial applications across all 18 APAC offices onto Microsoft Azure while clearing formal IT, Security, Regulatory, Risk, and Legal governance gates alongside UAT and cutover execution.
 
 ### 4. UK Commercial Licensing & AWRS Regulatory Compliance (Confidential UK Commercial & Hospitality Operator)
 * **Role:** Compliance & Delivery Lead
 * **Sector:** UK Retail, Wholesale & Regulatory Compliance
 * **Overview & Business Value:** Successfully managed complex UK statutory applications, including local authority Premises Licenses and HMRC Alcohol Wholesaler Registration Scheme (AWRS) compliance for a Confidential UK Commercial & Hospitality Operator. Prepared comprehensive operating schedules, due diligence frameworks, and audit trails to secure full regulatory approval.
 
-### 5. Global Media & Digital Communications Network (UK)
+### 5. Global Cloud Assessment (Assessment Only) | Global Media & Digital Communications Network
 * **Role:** Project Manager, Cloud Assessment
+* **Scope Boundary:** Pre-Migration Cloud Readiness & Capacity Right-Sizing (Assessment Only) Across APAC, EMEA & AMER
 * **Sector:** Global Cloud Readiness & Infrastructure Assessment
-* **Overview & Business Value:** Directed a global Azure cloud readiness and capacity right-sizing assessment across 65 offices and 6 cloud regions covering 1,000+ servers for a Global Media & Digital Communications Network (UK).
+* **Overview & Business Value:** Directed a global Azure cloud readiness and capacity right-sizing assessment (Assessment Only scope, prior to migration execution) across 65 offices and 6 cloud regions covering 1,000+ servers across APAC, EMEA, and AMER, delivering a board-approved target SKU and wave migration blueprint.
 
 ### 6. Microsoft Gold Partner Hybrid Cloud & Enterprise Voice Programme (18 Global Mandates)
 * **Role:** Project Manager (18 Concurrent Mandates)

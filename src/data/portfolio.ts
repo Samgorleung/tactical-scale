@@ -73,6 +73,7 @@ export interface PortfolioItem {
   videoUrl?: string;
   liveUrl?: string;
   liveLabel?: string;
+  githubUrl?: string;
 }
 
 export const FILTER_TABS: {
@@ -463,8 +464,9 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   // Part B: Enterprise Transformation & Regulatory Delivery
   {
     id: 'multinational-health-insurer',
-    title: 'Global Multinational Health & General Insurer',
-    subtitle: '~HKD$ 100M Offshore Turnaround, 4-Phase Core Claims Modernization & AWS/Azure Hybrid Cloud',
+    title: 'Multinational Insurer: Hong Kong Health & General Transformation',
+    subtitle:
+      '~HKD$ 100M Hong Kong Core Claims Modernization, Group Operations Infrastructure & Group Security Sign-Off',
     track: 'enterprise-delivery',
     trackLabel: 'Part B: Enterprise Delivery',
     role: 'Project Manager / Delivery Lead',
@@ -480,7 +482,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       'Power BI & FWA Controls',
     ],
     overview:
-      'Rescued a troubled offshore-delivered claims transformation (4 workstreams, 40+ specialists, 1.55M+ records) under ~HKD$ 100M RFP and vendor governance, burning down 1,500+ issues in 6 months. Built AWS Pre-Prod CI/CD, closed 200+ security vulnerabilities, launched VHIS and interim bancassurance TPA portals, and migrated UAT/Prod to Azure with Power BI (99.9% uptime, ~30% IT cost savings, 80% claims automation).',
+      'Rescued a troubled ~HKD$ 100M Hong Kong core Health & General Insurance claims transformation (4 workstreams, 40+ specialists, 1.55M+ records), coordinating across an India offshore delivery vendor, Group Operations multi-country infrastructure teams, and Hong Kong CSO up to Group Security governance sign-offs. Burned down 1,500+ issues in 6 months, built AWS Pre-Prod CI/CD, closed 200+ vulnerabilities, and migrated UAT/Prod to Azure with Power BI (99.9% uptime, ~30% IT cost savings, 80% claims automation).',
     blueprintVariant: 'flagship-hybrid-cloud',
     impactStats: [
       { value: '1,500+', label: 'Post-Live Issues Cleared in 6 Months' },
@@ -500,7 +502,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         ],
         emphasis: 'light',
         focusSummary:
-          'Directs omnichannel claims intake across 1.55M+ policy records via mobile, CRM APIs, hospital portals, and an interim bancassurance TPA routing portal prior to core integration.',
+          'Directs omnichannel Hong Kong claims intake across 1.55M+ policy records via mobile, CRM APIs, hospital portals, and an interim bancassurance TPA routing portal prior to core integration.',
         governanceControls: ['API Contract Validation', 'Hospital Provider Onboarding', 'Interim TPA Sync'],
       },
       {
@@ -514,7 +516,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         ],
         emphasis: 'light',
         focusSummary:
-          'Establishes AWS Pre-Production CI/CD staging built from scratch, executes the Active Directory 2016 to 2019 upgrade, and governs MoSCoW Scrum delivery across 40+ specialists.',
+          'Coordinates an India offshore delivery vendor and Group Operations multi-country infrastructure teams to build AWS Pre-Prod CI/CD staging from scratch, upgrade Active Directory (2016 to 2019), and govern MoSCoW Scrum across 40+ specialists.',
         governanceControls: ['AWS Pre-Prod Release Gates', 'Change Management Forums', 'L1 Scrum Escalation SLA'],
       },
       {
@@ -528,16 +530,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         ],
         emphasis: 'dark',
         focusSummary:
-          'Delivers zero-downtime On-Prem to Azure UAT/Prod core migration, closes 200+ cybersecurity vulnerabilities with FWA controls, and powers enterprise Power BI reporting.',
+          'Executes zero-downtime On-Prem to Azure UAT/Prod core migration for the Hong Kong business, clears 200+ cybersecurity fixes from Hong Kong CSO through Group Security governance sign-off, and powers Power BI reporting.',
         governanceControls: ['99.9% Production SLA', '20% Infra Cost Reduction', '80% Faster Power BI Reporting'],
       },
     ],
     architectureFlow: [
       {
         step: '01',
-        title: 'Phase 1: Offshore Reset & 4 Workstreams',
+        title: 'Phase 1: India Vendor Reset & 4 Workstreams',
         detail:
-          'Stabilised Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs, burning down 1,500+ post-live issues in 6 months.',
+          'Stabilised Hong Kong Life & General Insurance (1.55M+ records), Hospital Provider Portal, and Mobile/CRM APIs with the India offshore delivery vendor, burning down 1,500+ post-live issues in 6 months.',
       },
       {
         step: '02',
@@ -547,15 +549,15 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       },
       {
         step: '03',
-        title: 'Phase 3: Cyber, FWA, VHIS Revamp & TPA',
+        title: 'Phase 3: HK CSO to Group Security, FWA & TPA',
         detail:
-          'Mitigated 200+ security vulnerabilities, strengthened Fraud, Waste, and Abuse (FWA) controls, launched VHIS Revamp, and built an interim bancassurance TPA portal prior to core integration.',
+          'Mitigated 200+ security vulnerabilities cleared from Hong Kong CSO up to Group Security governance sign-offs, strengthened FWA controls, launched VHIS Revamp, and built an interim bancassurance TPA portal.',
       },
       {
         step: '04',
-        title: 'Phase 4: Azure Cloud & Power BI',
+        title: 'Phase 4: Group Ops Azure Cloud & Power BI',
         detail:
-          'Migrated UAT/Prod claims and Active Directory (2016 to 2019) from on-prem to Azure and launched Power BI, cutting infra costs 20%, hitting 99.9% uptime, and speeding reporting 80%.',
+          'Partnered with Group Operations multi-country infrastructure teams to migrate Hong Kong UAT/Prod claims and AD (2016 to 2019) to Azure with Power BI (20% lower infra cost, 99.9% uptime, 80% faster reporting).',
       },
     ],
     testimonials: [
@@ -570,13 +572,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         authorRole: 'Enterprise Cyber Security Manager (CISSP, Azure Solutions Architect Expert)',
       },
     ],
-    organizationOrEvent: 'Hong Kong / APAC',
+    organizationOrEvent: 'Hong Kong Core Mandate | Group Operations & India Offshore',
     highlightMetric: '~30% IT Cost Cut, 20% Infra Savings, 99.9% Uptime & 80% Claims Automation (1.55M+ Records)',
   },
   {
     id: 'uk-market-infrastructure',
     title: 'Tier-1 UK Financial Market Infrastructure & Clearing House',
-    subtitle: 'Financial Market Infrastructure & Clearing Transformation',
+    subtitle: 'UK-Led EOL Remediation & Cross-Border Audit Governance (UK, Paris & Romania)',
     track: 'enterprise-delivery',
     trackLabel: 'Part B: Enterprise Delivery',
     role: 'Senior IT Project Manager',
@@ -585,13 +587,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techOrSectorLabel: 'Sector & Mandate',
     techStack: [
       'Financial Market Infrastructure',
+      'UK / Paris / Romania Teams',
       '300+ EOL Server Remediation',
       'Firewall Rule Hardening',
       'Executive Risk Forums',
-      'Vendor Security Controls',
     ],
     overview:
-      'Chaired weekly executive risk forums across 300+ EOL servers for a Tier-1 UK Financial Market Infrastructure & Clearing House. Directed firewall hardening and security controls to clear 100% of audit milestones.',
+      'UK-led IT delivery chairing weekly executive risk forums and coordinating across UK, Paris, and Romania teams to remediate 300+ EOL servers, harden firewall rules, and enforce vendor security controls for a Tier-1 UK clearing house, clearing 100% of audit milestones on schedule.',
     blueprintVariant: 'infra-stack',
     topologyLayers: [
       {
@@ -607,13 +609,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         label: 'Risk Governance & Hardening Controls',
         nodes: [
           'Weekly Executive Risk Forums',
+          'UK, Paris & Romania Delivery Teams',
           'Firewall Rule Hardening',
-          'Multi-Path Server Remediation',
           'Vendor Security Gates',
         ],
         emphasis: 'light',
         focusSummary:
-          'Coordinates weekly executive risk forums with Senior Operations and Risk Directors to enforce firewall rule hardening, multi-path server remediation, and vendor security gates.',
+          'Leads UK-based weekly executive risk forums with Senior Operations and Risk Directors while coordinating cross-border UK, Paris, and Romania engineering teams on firewall rule hardening and multi-path server remediation.',
       },
       {
         layer: 'ZONE 03',
@@ -628,17 +630,17 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
       {
         step: '01',
         title: '300+ EOL Estate Audit',
-        detail: 'Mapped legacy server dependencies, firewall exposures, and vendors.',
+        detail: 'Mapped legacy server dependencies, firewall exposures, and vendors across UK operations.',
       },
       {
         step: '02',
         title: 'Executive Risk Forums',
-        detail: 'Chaired weekly RAID reviews with Operations and Risk Directors.',
+        detail: 'Chaired weekly UK-led RAID reviews with Senior Operations and Risk Directors.',
       },
       {
         step: '03',
-        title: 'Firewall & Path Hardening',
-        detail: 'Executed multi-path server remediation and strict security gates.',
+        title: 'UK, Paris & Romania Execution',
+        detail: 'Coordinated cross-border UK, Paris, and Romania engineering teams on firewall and server hardening.',
       },
       {
         step: '04',
@@ -653,13 +655,13 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         authorRole: 'Portfolio Manager, Tier-1 UK Financial Market Infrastructure',
       },
     ],
-    organizationOrEvent: 'United Kingdom',
+    organizationOrEvent: 'UK-Led | UK, Paris & Romania Delivery Teams',
     highlightMetric: '100% On-Schedule Governance Gate & Audit Control Compliance',
   },
   {
     id: 'pan-asian-life-insurer',
     title: 'Pan-Asian Life Insurance Group (18 Regional Markets)',
-    subtitle: 'Prophet Professional Actuarial Migration to Microsoft Azure',
+    subtitle: 'Group Global Office (HQ) Led 18-Market APAC Azure Migration & Multi-Function Governance',
     track: 'enterprise-delivery',
     trackLabel: 'Part B: Enterprise Delivery',
     role: 'IT Project Manager',
@@ -669,59 +671,63 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     techStack: [
       'Microsoft Azure',
       'Prophet Professional',
-      '18 Regional Offices',
-      'Security Compliance',
-      'Regional Cutover Execution',
+      'Group HQ | 18 APAC Offices',
+      'IT/Security/Reg/Risk/Legal Gates',
+      'Full Production Cutover',
     ],
     overview:
-      'Led regional migration of Prophet Professional actuarial systems across 18 offices onto Microsoft Azure. Coordinated security compliance, UAT, and multi-market cutovers.',
+      'Led from the Group Global Office (HQ), delivering full production migration of Prophet Professional actuarial systems across all 18 APAC offices onto Microsoft Azure while clearing formal IT, Security, Regulatory, Risk, and Legal governance gates.',
     blueprintVariant: 'infra-stack',
     topologyLayers: [
       {
         layer: 'ZONE 01',
-        label: '18-Market On-Premises Actuarial Estate',
-        nodes: ['18 Regional Offices', 'Prophet Professional Workloads', 'Local Valuation Datasets'],
+        label: '18-Office APAC Actuarial Estate (HQ-Led)',
+        nodes: ['Group Global Office (HQ)', '18 APAC Offices', 'Prophet Professional Workloads'],
         emphasis: 'light',
         focusSummary:
-          'Inventories local Prophet Professional actuarial workloads, compute requirements, and valuation datasets across 18 regional Asian offices.',
+          'Directed from the Group Global Office (HQ) to inventory local Prophet Professional actuarial workloads, compute requirements, and valuation datasets across all 18 APAC offices.',
       },
       {
         layer: 'ZONE 02',
-        label: 'Microsoft Azure Landing Zone & Security',
-        nodes: ['Azure Compute Pools', 'Security Compliance Controls', 'Cross-Market UAT & Parity'],
+        label: 'Azure Landing Zone & Multi-Function Governance',
+        nodes: [
+          'Azure Compute Pools',
+          'IT & Security Sign-Off',
+          'Regulatory, Risk & Legal Gates',
+        ],
         emphasis: 'light',
         focusSummary:
-          'Provisions standardized Microsoft Azure compute pools with security compliance controls and validates actuarial output parity across cross-market UAT waves.',
+          'Provisions standardized Microsoft Azure compute pools while clearing formal cross-functional IT, Security, Regulatory, Risk, and Legal governance gates prior to regional go-live.',
       },
       {
         layer: 'ZONE 03',
-        label: 'Synchronized Regional Cloud Production',
-        nodes: ['18-Office Azure Cutover', 'Centralized Actuarial Modeling', 'Audit-Ready Governance'],
+        label: 'Full 18-Office Production Cloud Cutover',
+        nodes: ['18 APAC Offices Live on Azure', 'Centralized Actuarial Modeling', 'Audit-Ready Governance'],
         emphasis: 'dark',
         focusSummary:
-          'Executes synchronized 18-office production cutovers onto centralized Azure actuarial modeling infrastructure within time, scope, and budget.',
+          'Completes full production migration across all 18 APAC offices onto centralized Microsoft Azure actuarial modeling infrastructure within time, scope, and budget.',
       },
     ],
     architectureFlow: [
       {
         step: '01',
-        title: '18-Market Assessment',
-        detail: 'Inventoried local actuarial compute workloads and compliance rules.',
+        title: 'Group HQ Baseline Assessment',
+        detail: 'Led from Group Global Office (HQ) across all 18 APAC actuarial workloads and local datasets.',
       },
       {
         step: '02',
-        title: 'Azure Compute Provision',
-        detail: 'Built standardized Prophet Professional environments on Azure.',
+        title: 'Azure Landing Zone Build',
+        detail: 'Provisioned standardized Prophet Professional cloud compute environments on Microsoft Azure.',
       },
       {
         step: '03',
-        title: 'Cross-Region UAT',
-        detail: 'Validated security compliance and actuarial parity across offices.',
+        title: '5-Function Governance Clearance',
+        detail: 'Cleared formal IT, Security, Regulatory, Risk, and Legal governance gates plus cross-market UAT.',
       },
       {
         step: '04',
-        title: '18-Office Cutover',
-        detail: 'Completed synchronized production cutover across Asian markets.',
+        title: 'Full 18-Office Prod Cutover',
+        detail: 'Completed full production migration across all 18 APAC offices within time, scope, and budget.',
       },
     ],
     testimonials: [
@@ -731,8 +737,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         authorRole: 'Enterprise Solutions Architect, Pan-Asian Life Insurance Group',
       },
     ],
-    organizationOrEvent: '18 Regional Offices, Multiple Asian Markets',
-    highlightMetric: '18-Office Regional Actuarial Cloud Migration to Microsoft Azure',
+    organizationOrEvent: 'Group Global Office (HQ) | 18 APAC Offices',
+    highlightMetric: 'HQ-Led Full Production Azure Migration Across All 18 APAC Offices',
   },
   {
     id: 'uk-commercial-licensing',
@@ -806,32 +812,32 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   },
   {
     id: 'global-media-cloud-assessment',
-    title: 'Global Media & Digital Communications Network (UK)',
-    subtitle: 'Global Azure Cloud Readiness & Capacity Right-Sizing Assessment',
+    title: 'Global Cloud Assessment (Assessment Only) | Global Media Network',
+    subtitle: 'Azure Cloud Readiness & Capacity Right-Sizing Across 1,000+ Servers (APAC, EMEA & AMER)',
     track: 'enterprise-delivery',
-    trackLabel: 'Part B: Enterprise Delivery',
+    trackLabel: 'Part B: Cloud Assessment (Assessment Only)',
     role: 'Project Manager, Cloud Assessment',
     category: 'Global Cloud Readiness & Infrastructure Assessment',
     filterGroups: ['all', 'enterprise-delivery', 'agile-advisory'],
     techOrSectorLabel: 'Sector & Mandate',
     techStack: [
+      'Assessment Only Scope',
       'Microsoft Azure',
-      '65 Global Offices',
-      '6 Cloud Regions',
-      '1,000+ Servers',
-      'Capacity Right-Sizing',
+      '1,000+ Servers (65 Offices)',
+      'APAC / EMEA / AMER',
+      'Capacity Right-Sizing & FinOps',
     ],
     overview:
-      'Directed a global Azure cloud readiness and right-sizing assessment across 65 offices and 6 regions covering 1,000+ servers. Delivered an executive migration roadmap.',
+      'Directed a global Azure cloud readiness and capacity right-sizing assessment (Assessment Only, pre-migration scope) across 65 offices and 1,000+ servers spanning APAC, EMEA, and AMER, delivering a board-approved target SKU and wave migration blueprint.',
     blueprintVariant: 'infra-stack',
     topologyLayers: [
       {
         layer: 'ZONE 01',
-        label: '65-Site Telemetry & Estate Discovery',
-        nodes: ['65 Global Offices', '1,000+ Server Inventory', 'Workload Utilization Baselines'],
+        label: 'APAC, EMEA & AMER Telemetry Discovery (Assessment Only)',
+        nodes: ['65 Global Offices', '1,000+ Server Inventory', 'APAC / EMEA / AMER Baselines'],
         emphasis: 'light',
         focusSummary:
-          'Collects automated infrastructure telemetry across 65 global offices and 1,000+ servers to establish accurate workload utilization baselines.',
+          'Collects automated infrastructure telemetry across 65 global offices and 1,000+ servers spanning APAC, EMEA, and AMER to establish utilization baselines strictly under an Assessment Only discovery scope.',
       },
       {
         layer: 'ZONE 02',
@@ -839,41 +845,41 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
         nodes: ['Application Coupling Matrix', 'Latency & Region Mapping', 'Azure SKU Right-Sizing'],
         emphasis: 'light',
         focusSummary:
-          'Models cross-application coupling, regional network latency, and FinOps target Azure SKUs to eliminate over-provisioning prior to migration.',
+          'Models cross-application coupling, regional network latency across APAC, EMEA, and AMER, and FinOps target Azure SKUs to eliminate over-provisioning prior to migration.',
       },
       {
         layer: 'ZONE 03',
-        label: '6-Region Azure Migration Roadmap',
+        label: '6-Region Azure Migration Blueprint (Pre-Migration Handover)',
         nodes: ['6 Cloud Regions', 'Wave Execution Sequencing', 'Board-Approved TCO Blueprint'],
         emphasis: 'dark',
         focusSummary:
-          'Synthesizes findings into a sequenced 6-region Azure migration wave roadmap and board-approved total cost of ownership blueprint.',
+          'Synthesizes Assessment Only findings into a sequenced 6-region Azure migration wave blueprint and board-approved total cost of ownership roadmap for downstream migration teams.',
       },
     ],
     architectureFlow: [
       {
         step: '01',
-        title: '65-Site Discovery',
-        detail: 'Catalogued 1,000+ servers across global offices and 6 regions.',
+        title: 'APAC, EMEA & AMER Discovery',
+        detail: 'Catalogued 1,000+ servers across 65 global offices under an Assessment Only scope.',
       },
       {
         step: '02',
         title: 'Dependency Mapping',
-        detail: 'Profiled application coupling, network latency, and peak load.',
+        detail: 'Profiled application coupling, cross-region latency, and peak utilization.',
       },
       {
         step: '03',
         title: 'Azure Right-Sizing Model',
-        detail: 'Calculated target Azure SKUs, FinOps TCO, and wave sequencing.',
+        detail: 'Calculated target Azure SKUs, FinOps TCO, and migration wave sequencing.',
       },
       {
         step: '04',
-        title: 'Executive Cloud Roadmap',
-        detail: 'Delivered board-approved Azure migration blueprint.',
+        title: 'Assessment Blueprint Handover',
+        detail: 'Delivered board-approved pre-migration Azure roadmap and readiness scorecard.',
       },
     ],
-    organizationOrEvent: 'London, UK & 6 Global Cloud Regions',
-    highlightMetric: '1,000+ Servers Assessed Across 65 Offices & 6 Cloud Regions',
+    organizationOrEvent: 'UK-Led | APAC, EMEA & AMER (Assessment Only)',
+    highlightMetric: '1,000+ Servers Assessed Across 65 Offices in APAC, EMEA & AMER (Assessment Only)',
   },
   {
     id: 'microsoft-partner-hybrid-voice',
@@ -986,7 +992,7 @@ export const DIAGNOSTIC_SCENARIOS: DiagnosticScenario[] = [
     days90:
       'Stabilised production cutover, service transition sign-off, and measurable operational turnaround.',
     proof:
-      'Track Record Proof: Directed complex transformation and cloud migration workstreams across Tier-1 UK Financial Market Infrastructure & Clearing House, Global Multinational Health & General Insurer, Pan-Asian Life Insurance Group (18-office Prophet Professional migration to Azure), Global Media & Digital Communications Network (65 offices, 6 regions, 1,000+ servers), and 18 concurrent Microsoft Gold Partner hybrid cloud & enterprise voice mandates.',
+      'Track Record Proof: Directed UK-led EOL remediation across UK, Paris, and Romania for a Tier-1 UK Financial Market Infrastructure & Clearing House; rescued a ~HKD$ 100M Hong Kong core Health & General Insurance transformation across Group Operations, India offshore vendor, and Group Security sign-offs; led HQ-level full production migration across 18 APAC offices onto Azure; directed a Global Cloud Assessment (Assessment Only) across 1,000+ servers in APAC, EMEA, and AMER; and delivered 18 concurrent Microsoft Gold Partner hybrid cloud & enterprise voice mandates.',
   },
   {
     id: 'ai-poc-to-prod',
