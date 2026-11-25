@@ -55,7 +55,7 @@ const HOME_TOP_BADGE_CODES = [
   'AI-102 Associate',
   'DP-100 Associate',
   'AZ-104 Associate',
-  'MS Foundry SDK',
+  'MS Foundry MCP',
   'Gemini Multi-Agent',
 ];
 
@@ -171,6 +171,15 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     shortName: 'GenAI Chat Apps (Foundry SDK)',
     tier: 'Microsoft Applied Skills',
     imageUrl: '/Badges/applied-skill.svg',
+  },
+  {
+    issuer: 'Microsoft',
+    code: 'MS Foundry MCP',
+    name: 'Integrate Model Context Protocol Tools with Agents in Microsoft Foundry',
+    shortName: 'MCP Tools & Agents (Foundry)',
+    tier: 'Microsoft Applied Skills',
+    imageUrl: '/Badges/applied-skill.svg',
+    verifyUrl: 'https://learn.microsoft.com/api/credentials/share/en-us/TatShunLeung-6120/B2D27F983C20CC50?sharingId=2043B9AF99CE0AA2',
   },
   {
     issuer: 'Google Cloud',
