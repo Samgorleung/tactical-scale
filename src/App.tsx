@@ -379,13 +379,30 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
 function parseHashToView(hash: string): ViewId {
   const normalized = hash.replace(/^#/, '').toLowerCase();
   if (normalized === 'ai-lab') return 'ai-lab';
-  if (normalized === 'enterprise') return 'enterprise';
+  if (
+    normalized === 'enterprise' ||
+    normalized === 'enterprise-credentials' ||
+    normalized === 'credentials'
+  ) {
+    return 'enterprise';
+  }
   return 'home';
+}
+
+function parseHashTargetSection(hash: string): string | null {
+  const normalized = hash.replace(/^#/, '').toLowerCase();
+  if (normalized === 'enterprise-credentials' || normalized === 'credentials') {
+    return 'credentials';
+  }
+  return null;
 }
 
 export function App() {
   const [activeView, setActiveView] = useState<ViewId>(() =>
     typeof window !== 'undefined' ? parseHashToView(window.location.hash) : 'home'
+  );
+  const [pendingScrollTarget, setPendingScrollTarget] = useState<string | null>(() =>
+    typeof window !== 'undefined' ? parseHashTargetSection(window.location.hash) : null
   );
   const [aiSubFilter, setAiSubFilter] = useState<AiSubFilterId>('all');
   const [expandedWorkflowIds, setExpandedWorkflowIds] = useState<Record<string, boolean>>({});
@@ -398,15 +415,18 @@ export function App() {
   const [showAllBadges, setShowAllBadges] = useState<boolean>(false);
   const [portraitError, setPortraitError] = useState<boolean>(false);
 
-  const navigateToView = (view: ViewId) => {
+  const navigateToView = (view: ViewId, sectionId?: string) => {
     setActiveView(view);
     setMobileMenuOpen(false);
+    setPendingScrollTarget(sectionId ?? null);
     if (typeof window !== 'undefined') {
-      const targetHash = `#${view}`;
+      const targetHash = sectionId ? `#${view}-${sectionId}` : `#${view}`;
       if (window.location.hash !== targetHash) {
         window.location.hash = targetHash;
       }
-      window.scrollTo({ top: 0, behavior: 'auto' });
+      if (!sectionId) {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      }
     }
   };
 
@@ -430,13 +450,32 @@ export function App() {
         }
         return;
       }
-      setActiveView(parseHashToView(currentHash));
+      const nextView = parseHashToView(currentHash);
+      const nextSection = parseHashTargetSection(currentHash);
+      setActiveView(nextView);
       setMobileMenuOpen(false);
-      window.scrollTo({ top: 0, behavior: 'auto' });
+      setPendingScrollTarget(nextSection);
+      if (!nextSection) {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+      }
     }
     window.addEventListener('hashchange', handleHashChange);
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+
+  useEffect(() => {
+    if (!pendingScrollTarget || typeof window === 'undefined') {
+      return undefined;
+    }
+    const rafId = window.requestAnimationFrame(() => {
+      const el = document.getElementById(pendingScrollTarget);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      setPendingScrollTarget(null);
+    });
+    return () => window.cancelAnimationFrame(rafId);
+  }, [activeView, pendingScrollTarget]);
 
   useEffect(() => {
     setSelectedLayerIdx(null);
@@ -872,8 +911,8 @@ export function App() {
                         View Full Enterprise Track Record (6 Mandates & Governance)
                       </div>
                       <div className="text-xs text-slate-600 mt-1">
-                        Includes Operating Model blueprint, 30-60-90 Scoper, and all 31 verified
-                        certifications.
+                        Includes Operating Model blueprint, 30-60-90 Scoper, and all{' '}
+                        {CERTIFICATION_BADGES.length} verified certifications.
                       </div>
                     </div>
                     <ArrowRight className="w-5 h-5 text-sky-700 shrink-0 group-hover:translate-x-1 transition-transform duration-250 ease-out" />
@@ -900,10 +939,10 @@ export function App() {
                       </p>
                     </div>
                     <a
-                      href="#enterprise"
+                      href="#enterprise-credentials"
                       onClick={(e) => {
                         e.preventDefault();
-                        navigateToView('enterprise');
+                        navigateToView('enterprise', 'credentials');
                       }}
                       className="text-xs font-bold text-sky-700 hover:text-slate-950 transition-colors duration-250 ease-out inline-flex items-center space-x-1.5 shrink-0"
                     >
@@ -1204,8 +1243,8 @@ export function App() {
                         Enterprise Track Record & Governance
                       </div>
                       <div className="text-base sm:text-lg font-extrabold text-white">
-                        Inspect All 6 Enterprise Transformation Mandates, Operating Model & 31
-                        Credentials
+                        Inspect All 6 Enterprise Transformation Mandates, Operating Model &{' '}
+                        {CERTIFICATION_BADGES.length} Credentials
                       </div>
                     </div>
                     <ArrowRight className="w-5 h-5 text-sky-400 shrink-0 group-hover:translate-x-1 transition-transform duration-250 ease-out" />
@@ -1521,7 +1560,10 @@ export function App() {
             </section>
 
             {/* Full Credentials, Ecosystem Provenance & Principal Leadership */}
-            <section id="credentials" className="py-16 sm:py-20 px-6 bg-white border-b border-slate-200">
+            <section
+              id="credentials"
+              className="py-16 sm:py-20 px-6 bg-white border-b border-slate-200 scroll-mt-24"
+            >
               <div className="max-w-6xl mx-auto space-y-14">
                 <div>
                   <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
@@ -1559,7 +1601,8 @@ export function App() {
                       badges={
                         showAllBadges ? CERTIFICATION_BADGES : CERTIFICATION_BADGES.slice(0, 12)
                       }
-                      columnsClass="grid-cols-2 sm:grid-cols-4"
+                      columnsClass="grid-cols-2 lg:grid-cols-4"
+                      compact
                     />
                   </div>
 
@@ -2597,88 +2640,35 @@ export function App() {
 function BadgeGrid({
   badges,
   columnsClass,
-  compact = false,
 }: {
   badges: CertificationBadge[];
   columnsClass: string;
   compact?: boolean;
 }) {
-  if (compact) {
-    return (
-      <div className={`grid ${columnsClass} gap-3`}>
-        {badges.map((badge) => {
-          const compactContent = (
-            <>
-              <div className="flex items-center justify-between gap-2 mb-2.5">
-                <img
-                  src={badge.imageUrl}
-                  alt={badge.name}
-                  className="w-9 h-9 object-contain shrink-0"
-                  loading="lazy"
-                />
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 text-right">
-                  {badge.issuer}
-                </span>
-              </div>
-              <div>
-                <div className="text-xs sm:text-sm font-extrabold text-slate-950 leading-snug">
-                  {badge.code}
-                </div>
-                <div className="text-[11px] sm:text-xs text-slate-600 mt-0.5 leading-snug">
-                  {badge.shortName || badge.name}
-                </div>
-              </div>
-            </>
-          );
-
-          return badge.verifyUrl ? (
-            <a
-              key={`${badge.issuer}-${badge.code}`}
-              href={badge.verifyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white border border-slate-200 hover:border-sky-700 rounded-lg p-3.5 sm:p-4 flex flex-col justify-between transition-colors duration-250 ease-out"
-            >
-              {compactContent}
-            </a>
-          ) : (
-            <div
-              key={`${badge.issuer}-${badge.code}`}
-              className="bg-white border border-slate-200 hover:border-sky-700 rounded-lg p-3.5 sm:p-4 flex flex-col justify-between transition-colors duration-250 ease-out"
-            >
-              {compactContent}
-            </div>
-          );
-        })}
-      </div>
-    );
-  }
-
   return (
-    <div className={`grid ${columnsClass} border-t border-l border-slate-200 bg-white`}>
+    <div className={`grid ${columnsClass} gap-3`}>
       {badges.map((badge) => {
-        const badgeContent = (
+        const cardContent = (
           <>
-            <div className="flex items-start justify-between gap-2 mb-2">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-                {badge.issuer}
-              </span>
-              {badge.verifyUrl && <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 shrink-0" />}
-            </div>
-            <div className="my-2 flex items-center justify-center bg-slate-50/70 rounded p-2.5 border border-slate-100">
+            <div className="flex items-center justify-between gap-2 mb-2.5">
               <img
                 src={badge.imageUrl}
                 alt={badge.name}
-                className="w-14 h-14 object-contain"
+                className="w-9 h-9 object-contain shrink-0"
                 loading="lazy"
               />
+              <span className="inline-flex items-center space-x-1 text-[10px] font-bold uppercase tracking-wider text-slate-500 text-right">
+                <span>{badge.issuer}</span>
+                {badge.verifyUrl && <ArrowUpRight className="w-3 h-3 text-slate-400 shrink-0" />}
+              </span>
             </div>
-            <div className="mt-2">
-              <div className="text-sm font-extrabold text-slate-950">{badge.code}</div>
-              <div className="text-xs text-slate-600 mt-0.5 leading-snug">{badge.name}</div>
-            </div>
-            <div className="mt-3 pt-2.5 border-t border-slate-100 text-[10px] font-bold uppercase tracking-wider text-sky-700">
-              {badge.tier}
+            <div>
+              <div className="text-xs sm:text-sm font-extrabold text-slate-950 leading-snug">
+                {badge.code}
+              </div>
+              <div className="text-[11px] sm:text-xs text-slate-600 mt-0.5 leading-snug">
+                {badge.shortName || badge.name}
+              </div>
             </div>
           </>
         );
@@ -2689,16 +2679,16 @@ function BadgeGrid({
             href={badge.verifyUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-5 border-r border-b border-slate-200 flex flex-col justify-between hover:bg-slate-50 transition-colors duration-250 ease-out"
+            className="bg-white border border-slate-200 hover:border-sky-700 rounded-lg p-3.5 sm:p-4 flex flex-col justify-between transition-colors duration-250 ease-out"
           >
-            {badgeContent}
+            {cardContent}
           </a>
         ) : (
           <div
             key={`${badge.issuer}-${badge.code}`}
-            className="p-5 border-r border-b border-slate-200 flex flex-col justify-between hover:bg-slate-50 transition-colors duration-250 ease-out"
+            className="bg-white border border-slate-200 hover:border-sky-700 rounded-lg p-3.5 sm:p-4 flex flex-col justify-between transition-colors duration-250 ease-out"
           >
-            {badgeContent}
+            {cardContent}
           </div>
         );
       })}
