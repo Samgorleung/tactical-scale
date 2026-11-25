@@ -121,6 +121,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Project Management Professional',
     tier: 'Verified Credential',
     imageUrl: '/Badges/project-management-professional-pmp.png',
+    verifyUrl: 'https://www.credly.com/badges/e059bc88-93f5-454d-b11e-68431d57427c/public_url',
   },
   {
     issuer: 'PMI',
@@ -128,6 +129,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Disciplined Agile Senior Scrum Master',
     tier: 'Verified Credential',
     imageUrl: '/Badges/disciplined-agile-senior-scrum-master-dassm.png',
+    verifyUrl: 'https://www.credly.com/badges/c9b98bbe-c191-4d55-82c5-ce71b6220845/public_url',
   },
   {
     issuer: 'PMI',
@@ -135,6 +137,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Agile Hybrid Project Pro',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/agile-hybrid-project-pro.png',
+    verifyUrl: 'https://www.credly.com/badges/fced5f69-8256-45b9-a225-5f84b9cebc62/public_url',
   },
   {
     issuer: 'Microsoft',
@@ -142,6 +145,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Cybersecurity Architect Expert',
     tier: 'Microsoft Certified Expert',
     imageUrl: '/Badges/microsoft-certified-expert-badge.svg',
+    verifyUrl: 'https://learn.microsoft.com/en-us/users/tatshunleung-6120/credentials/certification/cybersecurity-architect-expert',
   },
   {
     issuer: 'Microsoft',
@@ -149,6 +153,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Azure AI Engineer Associate',
     tier: 'Microsoft Certified Associate',
     imageUrl: '/Badges/microsoft-certified-associate-badge.svg',
+    verifyUrl: 'https://learn.microsoft.com/en-us/users/tatshunleung-6120/credentials/certification/azure-ai-engineer',
   },
   {
     issuer: 'Microsoft',
@@ -156,6 +161,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Azure Data Scientist Associate',
     tier: 'Microsoft Certified Associate',
     imageUrl: '/Badges/microsoft-certified-associate-badge.svg',
+    verifyUrl: 'https://learn.microsoft.com/en-us/users/tatshunleung-6120/credentials/certification/azure-data-scientist',
   },
   {
     issuer: 'Microsoft',
@@ -163,6 +169,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Azure Administrator Associate',
     tier: 'Microsoft Certified Associate',
     imageUrl: '/Badges/microsoft-certified-associate-badge.svg',
+    verifyUrl: 'https://learn.microsoft.com/en-us/users/tatshunleung-6120/credentials/certification/azure-administrator',
   },
   {
     issuer: 'Microsoft',
@@ -171,6 +178,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     shortName: 'GenAI Chat Apps (Foundry SDK)',
     tier: 'Microsoft Applied Skills',
     imageUrl: '/Badges/applied-skill.svg',
+    verifyUrl: 'https://learn.microsoft.com/en-us/users/tatshunleung-6120/credentials/applied-skill/build-a-generative-ai-chat-app',
   },
   {
     issuer: 'Microsoft',
@@ -188,6 +196,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     shortName: 'Gemini Multi-Agent Workflows',
     tier: 'Google Skill Badge',
     imageUrl: '/Badges/orchestrate-multi-agent-workflows-with-gemini-enter.png',
+    verifyUrl: 'https://www.credly.com/badges/8513250c-406f-4828-a465-c96466f432a7/public_url',
   },
   {
     issuer: 'PMI',
@@ -195,6 +204,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Agentic AI Build Lab for Project Managers',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/pmi-essentials-agentic-ai-build-lab-for-project-man.png',
+    verifyUrl: 'https://www.credly.com/badges/c8b97acb-2c06-4207-b5db-77faaba3eeb0/public_url',
   },
   {
     issuer: 'Make Academy',
@@ -202,6 +212,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Autonomous AI Agent & Workflow Builder',
     tier: 'Verified Automation Credential',
     imageUrl: '/Badges/ai-agent-builder.1.png',
+    verifyUrl: 'https://www.credly.com/badges/313f7580-072d-4caf-b52b-3543806e9f42/public_url',
   },
   {
     issuer: 'Make Academy',
@@ -209,6 +220,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Advanced Enterprise Workflow & API Automation',
     tier: 'Advanced Certification',
     imageUrl: '/Badges/make-advanced.png',
+    verifyUrl: 'https://www.credly.com/badges/b809f959-5be5-4fe0-ab63-4f51c95a6c90/public_url',
   },
   {
     issuer: 'Google Cloud',
@@ -216,6 +228,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Develop AI-Powered Prototypes in Google AI Studio',
     tier: 'Google Skill Badge',
     imageUrl: '/Badges/develop-ai-powered-prototypes-in-google-ai-studio.png',
+    verifyUrl: 'https://www.credly.com/badges/c66fac1e-0c03-4830-a7ed-bbba366868aa/public_url',
   },
   {
     issuer: 'Google Cloud',
@@ -223,6 +236,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Prompt Design in Vertex AI',
     tier: 'Google Skill Badge',
     imageUrl: '/Badges/prompt-design-in-vertex-ai-skill-badge.png',
+    verifyUrl: 'https://www.credly.com/badges/84dce267-719d-4a09-88ce-fd3f6ce8c580/public_url',
   },
   {
     issuer: 'PMI',
@@ -230,6 +244,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Generative AI Overview for Project Managers',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/generative-ai-overview-for-project-managers.png',
+    verifyUrl: 'https://www.credly.com/badges/ca4a97c4-8db4-4dff-847c-9b5618728d8c/public_url',
   },
   {
     issuer: 'PMI',
@@ -237,6 +252,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Practical Application of GenAI for Project Managers',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/practical-application-of-gen-ai-for-project-manager.png',
+    verifyUrl: 'https://www.credly.com/badges/656d9ca3-6cec-43ab-b599-78433ea8fd25/public_url',
   },
   {
     issuer: 'PMI',
@@ -244,6 +260,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Data Landscape of GenAI for Project Managers',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/data-landscape-of-genai-for-project-managers.png',
+    verifyUrl: 'https://www.credly.com/badges/9622cff5-6753-407f-89c7-5bf862cfa9e0/public_url',
   },
   {
     issuer: 'PMI',
@@ -251,6 +268,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Foundations: Agentic AI for Project Managers',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/pmi-foundations-agentic-ai-for-project-managers.png',
+    verifyUrl: 'https://www.credly.com/badges/91ca8f4b-a32a-4bd2-87ca-e58d4ea10f46/public_url',
   },
   {
     issuer: 'PMI',
@@ -258,6 +276,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Seven AI Project Patterns',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/pmi-essentials-seven-ai-project-patterns.png',
+    verifyUrl: 'https://www.credly.com/badges/08e27759-807e-47af-8a1c-f24483e585c5/public_url',
   },
   {
     issuer: 'PMI',
@@ -265,6 +284,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'AI in Agile Delivery',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/ai-in-agile-delivery.png',
+    verifyUrl: 'https://www.credly.com/badges/996fe6ef-ab07-4127-8485-17488e09086f/public_url',
   },
   {
     issuer: 'PMI',
@@ -272,6 +292,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'AI in Infrastructure & Construction Projects',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/ai-in-infrastructure-construction-projects.png',
+    verifyUrl: 'https://www.credly.com/badges/6b1f191e-3aaa-4cbf-bf09-84a9201ba52f/public_url',
   },
   {
     issuer: 'Google Cloud',
@@ -279,6 +300,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Develop GenAI Apps with Gemini & Streamlit',
     tier: 'Google Skill Badge',
     imageUrl: '/Badges/develop-genai-apps-with-gemini-and-streamlit-skill-.png',
+    verifyUrl: 'https://www.credly.com/badges/e08e3162-25e6-48c1-bbec-f84bfa07bc7d/public_url',
   },
   {
     issuer: 'PMI',
@@ -286,6 +308,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Talking to AI: Prompt Engineering for Project Managers',
     tier: 'Verified Micro-Credential',
     imageUrl: '/Badges/talking-to-ai-prompt-engineering-for-project-manage.png',
+    verifyUrl: 'https://www.credly.com/badges/20189fb3-5448-489d-bc31-41dc912e128a/public_url',
   },
   {
     issuer: 'Automation',
@@ -293,6 +316,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'AI Automation Explorer',
     tier: 'Workflow Badge',
     imageUrl: '/Badges/ai-automation-explorer.png',
+    verifyUrl: 'https://www.credly.com/badges/2d4c40a6-5cb7-4434-9390-ac182ccb94d0/public_url',
   },
   {
     issuer: 'PMI',
@@ -300,6 +324,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Disciplined Agile Essentials',
     tier: 'Agile Competency',
     imageUrl: '/Badges/disciplined-agile-essentials.png',
+    verifyUrl: 'https://www.credly.com/badges/5eb6cf00-91db-41f9-a192-2defdcf3a26e/public_url',
   },
   {
     issuer: 'PMI',
@@ -307,6 +332,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Agile Metrics for Success',
     tier: 'Agile Competency',
     imageUrl: '/Badges/agile-metrics-for-success.png',
+    verifyUrl: 'https://www.credly.com/badges/96f72954-8137-49f4-8fd8-38892fbe5beb/public_url',
   },
   {
     issuer: 'PMI',
@@ -314,6 +340,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Value Stream Management',
     tier: 'Agile Competency',
     imageUrl: '/Badges/value-stream-management.1.png',
+    verifyUrl: 'https://www.credly.com/badges/b0cb4839-0697-447b-afcd-5f4ca19327d7/public_url',
   },
   {
     issuer: 'PMI',
@@ -321,6 +348,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Product & Project Collaboration',
     tier: 'Agile Competency',
     imageUrl: '/Badges/product-and-project-collaboration.png',
+    verifyUrl: 'https://www.credly.com/badges/180443fa-15c3-4761-ad2f-cb7e9410c4cd/public_url',
   },
   {
     issuer: 'PMI',
@@ -328,6 +356,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Maximizing Project Success',
     tier: 'Delivery Competency',
     imageUrl: '/Badges/pmi-essentials-m-o-r-e-maximizing-project-success.png',
+    verifyUrl: 'https://www.credly.com/badges/2b9070dd-a35d-4a6e-83c2-0fe7e4841461/public_url',
   },
   {
     issuer: 'PMI',
@@ -335,6 +364,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Citizen Developer Business Architect',
     tier: 'Low-Code Architecture',
     imageUrl: '/Badges/pmi-citizen-developer-business-architect-skills.png',
+    verifyUrl: 'https://www.credly.com/badges/9656485b-f8b5-488f-b2bc-112521d8ff97/public_url',
   },
   {
     issuer: 'PMI',
@@ -342,6 +372,7 @@ const CERTIFICATION_BADGES: CertificationBadge[] = [
     name: 'Citizen Developer Practitioner',
     tier: 'Low-Code Delivery',
     imageUrl: '/Badges/pmi-citizen-developer-practitioner-skills.png',
+    verifyUrl: 'https://www.credly.com/badges/61c60ffc-b657-466b-93d0-68fa44dc0f16/public_url',
   },
 ];
 
